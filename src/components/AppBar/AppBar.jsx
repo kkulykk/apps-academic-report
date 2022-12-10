@@ -1,33 +1,41 @@
-import { useEffect, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import i18n from 'i18next';
+import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import styles from './AppBar.module.css';
 
 import FacultyLogo from '../../imgs/faculty_logo.svg';
 import MenuIcon from '../../imgs/menu.svg';
 
+const lang = {
+  uk: { native: 'UK' },
+  en: { native: 'EN' }
+};
+
 const AppBar = ({ name }) => {
-  const isActive = useMediaQuery('(min-width: 767px)');
+  const [t] = useTranslation();
+  // const isActive = useMediaQuery('(min-width: 767px)');
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   document.body.style.position = show ? 'fixed' : '';
 
-  function useMediaQuery(query) {
-    const [matches, setMatches] = useState(false);
-
-    useEffect(() => {
-      const mediaQuery = window.matchMedia(query);
-      setMatches(mediaQuery.matches);
-      const handler = (event) => setMatches(event.matches);
-      mediaQuery.addEventListener('change', handler);
-      return () => mediaQuery.removeEventListener('change', handler);
-    }, [query]);
-
-    return matches;
-  }
+  // function useMediaQuery(query) {
+  //   const [matches, setMatches] = useState(false);
+  //
+  //   useEffect(() => {
+  //     const mediaQuery = window.matchMedia(query);
+  //     setMatches(mediaQuery.matches);
+  //     const handler = (event) => setMatches(event.matches);
+  //     mediaQuery.addEventListener('change', handler);
+  //     return () => mediaQuery.removeEventListener('change', handler);
+  //   }, [query]);
+  //
+  //   return matches;
+  // }
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -40,8 +48,16 @@ const AppBar = ({ name }) => {
       </Link>
 
       <div className={styles.nameGroup}>
-        <span className={styles.mainName}>{isActive ? <span>Академічний</span> : null}звіт 2020-2021</span>
+        <span className={styles.mainName}>{t('appBar.title')}</span>
         <span className={styles.name}>{name}</span>
+      </div>
+
+      <div>
+        {Object.keys(lang).map((lan) => (
+          <button key={lan} onClick={() => i18n.changeLanguage(lan)}>
+            {lang[lan].native}
+          </button>
+        ))}
       </div>
 
       <button type="button" className={styles.button} onClick={handleShow}>
@@ -62,9 +78,7 @@ const AppBar = ({ name }) => {
                 pointerEvents: isActive ? 'none' : ''
               })}
               to="/who-we-are"
-            >
-              Хто ми?
-            </NavLink>
+            ></NavLink>
 
             <NavLink
               onClick={scrollToTop}
@@ -75,7 +89,7 @@ const AppBar = ({ name }) => {
               })}
               to="/introductory-campaign-results"
             >
-              Результати вступної кампанії
+              {t('appBar.admissionResults')}
             </NavLink>
 
             <NavLink
@@ -87,7 +101,7 @@ const AppBar = ({ name }) => {
               })}
               to="/strategy-goals"
             >
-              Стратегічні цілі факультету 2025
+              {t('appBar.strategyGoals2025')}
             </NavLink>
 
             <NavLink
@@ -99,7 +113,7 @@ const AppBar = ({ name }) => {
               })}
               to="/structure-changes"
             >
-              Структурні зміни
+              {t('appBar.structuralChanges')}
             </NavLink>
 
             <NavLink
@@ -111,7 +125,7 @@ const AppBar = ({ name }) => {
               })}
               to="/students-wins"
             >
-              Студентські перемоги
+              {t('appBar.studentsWins')}
             </NavLink>
 
             <NavLink
@@ -123,7 +137,7 @@ const AppBar = ({ name }) => {
               })}
               to="/professors-wins"
             >
-              Успіхи викладачів
+              {t('appBar.teacherSuccesses')}
             </NavLink>
 
             <NavLink
@@ -135,7 +149,7 @@ const AppBar = ({ name }) => {
               })}
               to="/social-projects"
             >
-              Суспільно-орієнтовані проекти
+              {t('appBar.socialProjects')}
             </NavLink>
 
             <NavLink
@@ -147,7 +161,7 @@ const AppBar = ({ name }) => {
               })}
               to="/certificate-programs"
             >
-              Сертифікаційні програми
+              {t('appBar.certificatePrograms')}
             </NavLink>
 
             <NavLink
@@ -159,7 +173,7 @@ const AppBar = ({ name }) => {
               })}
               to="/graduates"
             >
-              Випускники
+              {t('appBar.graduates')}
             </NavLink>
 
             <NavLink
@@ -171,7 +185,7 @@ const AppBar = ({ name }) => {
               })}
               to="/science"
             >
-              Наука
+              {t('appBar.science')}
             </NavLink>
 
             <NavLink
@@ -183,7 +197,7 @@ const AppBar = ({ name }) => {
               })}
               to="/ratings"
             >
-              Рейтинги
+              {t('appBar.ratings')}
             </NavLink>
           </nav>
         </Offcanvas.Body>
