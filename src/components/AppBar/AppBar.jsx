@@ -36,7 +36,7 @@ const AppBar = ({ name }) => {
   return (
     <div className={styles.appBar}>
       <Link className={styles.logo} to="/">
-        <FacultyLogo className={styles.logo} width="50" height="50" alt="logo" />
+        <img className={styles.logo} src={FacultyLogo} width="50" height="50" alt="logo" />
       </Link>
 
       <div className={styles.nameGroup}>
@@ -45,7 +45,7 @@ const AppBar = ({ name }) => {
       </div>
 
       <button type="button" className={styles.button} onClick={handleShow}>
-        <MenuIcon className={styles.menu} width="30" height="30" alt="menu" />
+        <img className={styles.menu} src={MenuIcon} width="30" height="30" alt="menu" />
       </button>
 
       <Offcanvas show={show} onHide={handleClose} placement="end">
