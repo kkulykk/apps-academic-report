@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import MainPage from './pages/MainPage';
 import StrategyPage from './pages/StrategyPage/StrategyPage';
 import ScrollUpBtn from './components/ScrollUpBtn/ScrollUpBtn';
-import IntroCampaignResPage from './pages/IntroCampaignResPage/IntroCampaignResPage';
+import AdmissionCampaignResPage from './pages/IntroCampaignResPage/IntroCampaignResPage';
 import StructureChangesPage from './pages/StructureChangesPage/StructureChangesPage';
 import StudentsWinsPage from './pages/StudentWinsPage/StudentsWinsPage';
 import ProfessorsWinsPage from './pages/ProfessorsWinsPage/ProfessorsWinsPage';
@@ -27,7 +27,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/strategy-goals" element={<StrategyPage />} />
-          <Route path="/introductory-campaign-results" element={<IntroCampaignResPage />} />
+          <Route path="/admission-campaign-results" element={<AdmissionCampaignResPage />} />
           <Route path="/structure-changes" element={<StructureChangesPage />} />
           <Route path="/students-wins" element={<StudentsWinsPage />} />
           <Route path="/professors-wins" element={<ProfessorsWinsPage />} />

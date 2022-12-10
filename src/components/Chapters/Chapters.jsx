@@ -16,7 +16,7 @@ const Chapters = () => {
           <Link onClick={scrollToTop} className={styles.item} to="/who-we-are">
             Хто ми?
           </Link>
-          <Link onClick={scrollToTop} className={styles.item} to="/introductory-campaign-results">
+          <Link onClick={scrollToTop} className={styles.item} to="/admission-campaign-results">
             Результати вступної кампанії
           </Link>
           <Link onClick={scrollToTop} className={styles.item} to="/strategy-goals">

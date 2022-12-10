@@ -78,7 +78,9 @@ const AppBar = ({ name }) => {
                 pointerEvents: isActive ? 'none' : ''
               })}
               to="/who-we-are"
-            ></NavLink>
+            >
+              {t('pages.whoWeAre.title')}
+            </NavLink>
 
             <NavLink
               onClick={scrollToTop}
@@ -87,9 +89,9 @@ const AppBar = ({ name }) => {
                 color: isActive ? 'rgb(102, 45, 145)' : '',
                 pointerEvents: isActive ? 'none' : ''
               })}
-              to="/introductory-campaign-results"
+              to="/admission-campaign-results"
             >
-              {t('appBar.admissionResults')}
+              {t('pages.admissionCampaign.title')}
             </NavLink>
 
             <NavLink
@@ -101,7 +103,7 @@ const AppBar = ({ name }) => {
               })}
               to="/strategy-goals"
             >
-              {t('appBar.strategyGoals2025')}
+              {t('pages.strategyGoals2025.title')}
             </NavLink>
 
             <NavLink
@@ -113,7 +115,7 @@ const AppBar = ({ name }) => {
               })}
               to="/structure-changes"
             >
-              {t('appBar.structuralChanges')}
+              {t('pages.structuralChanges.title')}
             </NavLink>
 
             <NavLink
@@ -125,7 +127,7 @@ const AppBar = ({ name }) => {
               })}
               to="/students-wins"
             >
-              {t('appBar.studentsWins')}
+              {t('pages.studentsWins.title')}
             </NavLink>
 
             <NavLink
@@ -137,7 +139,7 @@ const AppBar = ({ name }) => {
               })}
               to="/professors-wins"
             >
-              {t('appBar.teacherSuccesses')}
+              {t('pages.teachersWins.title')}
             </NavLink>
 
             <NavLink
@@ -149,7 +151,7 @@ const AppBar = ({ name }) => {
               })}
               to="/social-projects"
             >
-              {t('appBar.socialProjects')}
+              {t('pages.socialProjects.title')}
             </NavLink>
 
             <NavLink
@@ -161,7 +163,7 @@ const AppBar = ({ name }) => {
               })}
               to="/certificate-programs"
             >
-              {t('appBar.certificatePrograms')}
+              {t('pages.certificatePrograms.title')}
             </NavLink>
 
             <NavLink
@@ -173,7 +175,7 @@ const AppBar = ({ name }) => {
               })}
               to="/graduates"
             >
-              {t('appBar.graduates')}
+              {t('pages.graduates.title')}
             </NavLink>
 
             <NavLink
@@ -185,7 +187,7 @@ const AppBar = ({ name }) => {
               })}
               to="/science"
             >
-              {t('appBar.science')}
+              {t('pages.science.title')}
             </NavLink>
 
             <NavLink
@@ -197,7 +199,7 @@ const AppBar = ({ name }) => {
               })}
               to="/ratings"
             >
-              {t('appBar.ratings')}
+              {t('pages.ratings.title')}
             </NavLink>
           </nav>
         </Offcanvas.Body>

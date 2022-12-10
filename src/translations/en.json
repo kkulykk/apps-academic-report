@@ -1,16 +1,45 @@
 {
   "appBar": {
-    "title": "Academic report 2021-2022",
-    "whoWeAre": "Who we are?",
-    "admissionResults": "Admission campaign results",
-    "strategyGoals2025": "Faculty 2025 strategy goals",
-    "structuralChanges": "Structural changes",
-    "studentsWins": "Students' wins",
-    "teacherSuccesses": "Teaches successes",
-    "socialProjects": "Socially-oriented projects",
-    "certificatePrograms": "Certificate programs",
-    "graduates": "Graduates",
-    "science": "Science",
-    "ratings": "Ratings"
+    "title": "Academic report 2021-2022"
+  },
+  "header": {
+    "title": "Академічний звіт 2021-2022",
+    "mission": "Місія",
+    "subtitle": " Факультет прикладних наук УКУ готує лідерів галузі, що своїми знаннями, навичками і настановами змінюватимуть сьогоднішнє та майбутнє України та світу."
+  },
+  "pages": {
+    "certificatePrograms": {
+      "title": "Certificate programs"
+    },
+    "graduates": {
+      "title": "Graduates"
+    },
+    "admissionCampaign": {
+      "title": "Admission campaign results"
+    },
+    "teachersWins": {
+      "title": "Teachers' successes"
+    },
+    "ratings": {
+      "title": "Ratings"
+    },
+    "science": {
+      "title": "Science"
+    },
+    "socialProjects": {
+      "title": "Socially-oriented projects"
+    },
+    "strategyGoals2025": {
+      "title": "Faculty 2025 strategy goals"
+    },
+    "structuralChanges": {
+      "title": "Structural changes"
+    },
+    "studentsWins": {
+      "title": "Students' wins"
+    },
+    "whoWeAre": {
+      "title": "Who we are?"
+    }
   }
 }
