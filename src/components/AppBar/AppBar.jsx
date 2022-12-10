@@ -8,11 +8,7 @@ import styles from './AppBar.module.css';
 
 import FacultyLogo from '../../imgs/faculty_logo.svg';
 import MenuIcon from '../../imgs/menu.svg';
-
-const lang = {
-  uk: { native: 'UK' },
-  en: { native: 'EN' }
-};
+import UCULogo from '../../imgs/ucu_logo.svg';
 
 const AppBar = ({ name }) => {
   const [t] = useTranslation();
@@ -47,22 +43,39 @@ const AppBar = ({ name }) => {
         <img className={styles.logo} src={FacultyLogo} width="50" height="50" alt="logo" />
       </Link>
 
-      <div className={styles.nameGroup}>
-        <span className={styles.mainName}>{t('appBar.title')}</span>
-        <span className={styles.name}>{name}</span>
-      </div>
+      {name ? (
+        <div className={styles.nameGroup}>
+          <span className={styles.mainName}>{t('appBar.title')}</span>
+          <span className={styles.name}>{name}</span>
+        </div>
+      ) : (
+        <img className={styles.logo} src={UCULogo} width="50" height="50" alt="UCU Logo" />
+      )}
 
-      <div>
-        {Object.keys(lang).map((lan) => (
-          <button key={lan} onClick={() => i18n.changeLanguage(lan)}>
-            {lang[lan].native}
+      <div className={styles.buttonsContainer}>
+        <div className={styles.languageButtons}>
+          <button
+            type="button"
+            style={{ fontWeight: i18n.language === 'en' ? 'bold' : 'normal' }}
+            className={styles.langButton}
+            onClick={() => i18n.changeLanguage('en')}
+          >
+            EN
           </button>
-        ))}
+          {'/'}
+          <button
+            type="button"
+            style={{ fontWeight: i18n.language === 'uk' ? 'bold' : 'normal' }}
+            className={styles.langButton}
+            onClick={() => i18n.changeLanguage('uk')}
+          >
+            UK
+          </button>
+        </div>
+        <button type="button" className={styles.button} onClick={handleShow}>
+          <img className={styles.menu} src={MenuIcon} width="30" height="30" alt="menu" />
+        </button>
       </div>
-
-      <button type="button" className={styles.button} onClick={handleShow}>
-        <img className={styles.menu} src={MenuIcon} width="30" height="30" alt="menu" />
-      </button>
 
       <Offcanvas show={show} onHide={handleClose} placement="end">
         <Offcanvas.Header closeButton>

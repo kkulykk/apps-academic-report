@@ -1,5 +1,7 @@
-import styles from './Introduction.module.css';
 import Container from '../Container';
+
+import styles from './Introduction.module.css';
+
 import decan from '../../imgs/Introduction/dekan.jpg';
 
 const Introduction = () => {
