@@ -1,16 +1,16 @@
 .scrollUpBtn {
-  position: fixed; 
+  position: fixed;
   width: 40px;
   height: 40px;
-  bottom: 55px; 
-  right: -5px; 
+  bottom: 55px;
+  right: -5px;
   padding: 0;
-  z-index: 99; 
-  border: none; 
+  z-index: 99;
+  border: none;
   outline: none;
   background-color: transparent;
-  cursor: pointer; 
-  transition: 0.5s
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .scrollUpBtn:hover,
@@ -19,16 +19,14 @@
   transition: 0.5s;
 }
 
-
-@media (min-width: 768px) and (max-width: 1199px){
+@media (min-width: 768px) and (max-width: 1199px) {
   .scrollUpBtn {
-        right: 15px; 
+    right: 15px;
   }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .scrollUpBtn {
-        right: 30px; 
+    right: 30px;
   }
 }
-

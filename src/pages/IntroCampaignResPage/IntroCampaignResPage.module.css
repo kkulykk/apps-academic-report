@@ -1,4 +1,4 @@
-.section{
+.section {
   padding-top: 80px;
   padding-bottom: 30px;
 }
@@ -7,35 +7,32 @@
   max-width: 100%;
   height: auto;
   object-fit: cover;
-  
 }
 
-
-@media (min-width:480px) and (max-width: 767px) {
-  .section{
+@media (min-width: 480px) and (max-width: 767px) {
+  .section {
     padding-top: 120px;
     padding-bottom: 50px;
   }
 
-  .imgWrapper{
-  
+  .imgWrapper {
     max-width: 588px;
   }
 }
 
-@media (min-width:768px)  {
-  .section{
+@media (min-width: 768px) {
+  .section {
     padding-top: 140px;
     padding-bottom: 100px;
   }
 
-  .imgWrapper{
+  .imgWrapper {
     max-width: 920px;
   }
 }
 
-@media (min-width:1200px)  {
-  .section{
+@media (min-width: 1200px) {
+  .section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;

@@ -1,1 +1,1 @@
-export {default} from './CertificateProgramsPage'
+export { default } from './CertificateProgramsPage';

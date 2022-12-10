@@ -1,1 +1,1 @@
-export {default} from './IntroCampaignResPage'
+export { default } from './IntroCampaignResPage';

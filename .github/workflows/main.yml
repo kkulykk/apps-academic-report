@@ -2,7 +2,7 @@ name: Build and deploy to staging
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ['main']
 
   workflow_dispatch:
 
@@ -50,5 +50,3 @@ jobs:
           args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-
-

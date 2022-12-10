@@ -3,13 +3,10 @@
   padding-bottom: 75px;
   width: 100%;
   height: fit-content;
-  background-image: url("../../imgs/mobile/partners/firework1.png"),
-    url("../../imgs/mobile/partners/ellipse1.png"),
-    url("../../imgs/mobile/partners/wirework2.png"),
-    url("../../imgs/mobile/partners/ecllipse2.png");
+  background-image: url('../../imgs/mobile/partners/firework1.png'), url('../../imgs/mobile/partners/ellipse1.png'),
+    url('../../imgs/mobile/partners/wirework2.png'), url('../../imgs/mobile/partners/ecllipse2.png');
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top -30px right 0px, top 120px right 45px,
-    left bottom -50px, left 20px bottom 25px;
+  background-position: top -30px right 0px, top 120px right 45px, left bottom -50px, left 20px bottom 25px;
 }
 
 .headingWrapper {
@@ -27,31 +24,28 @@
   letter-spacing: 0.25em;
 }
 
-.text{
+.text {
   margin-top: 30px;
   font-size: 14px;
 }
 
-.partnersHeading{
+.partnersHeading {
   align-self: flex-start;
 }
 
-.partnersWrapper{
+.partnersWrapper {
   display: flex;
   padding: 0;
   margin-bottom: 30px;
-  
 }
 
-.sponsoredPartner{
+.sponsoredPartner {
   max-width: 100px;
 }
 
-.imgWrapper:first-of-type{
- margin-right: 30px;
+.imgWrapper:first-of-type {
+  margin-right: 30px;
 }
-
-
 
 .partners img {
   width: 100%;
@@ -65,7 +59,7 @@
     padding-left: 40px;
   }
 
-  .text{
+  .text {
     margin-top: 50px;
     font-size: 16px;
     margin-bottom: 30px;
@@ -75,7 +69,7 @@
     font-size: 22px;
   }
 
-  .sponsoredPartner{
+  .sponsoredPartner {
     max-width: 150px;
   }
 }
@@ -85,15 +79,12 @@
     padding-top: 100px;
     padding-bottom: 100px;
 
-    background-image: url("../../imgs/tablet/partners/firework01.png"),
-      url("../../imgs/tablet/partners/ecllipse01.png"),
-      url("../../imgs/tablet/partners/firework02.png"),
-      url("../../imgs/tablet/partners/ellipse02.png"),
-      url("../../imgs/tablet/partners/ellipse03.png");
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-      no-repeat;
-    background-position: top -50px right 0px, top 120px right 250px,
-      left bottom -120px, left 10px bottom 60px, right 10px bottom 50px;
+    background-image: url('../../imgs/tablet/partners/firework01.png'), url('../../imgs/tablet/partners/ecllipse01.png'),
+      url('../../imgs/tablet/partners/firework02.png'), url('../../imgs/tablet/partners/ellipse02.png'),
+      url('../../imgs/tablet/partners/ellipse03.png');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top -50px right 0px, top 120px right 250px, left bottom -120px, left 10px bottom 60px,
+      right 10px bottom 50px;
   }
 
   .headingWrapper {
@@ -103,19 +94,18 @@
     font-size: 16px;
   }
 
-  .text{
+  .text {
     margin-top: 50px;
     font-size: 16px;
     margin-bottom: 40px;
   }
-
 
   .partnersHeading {
     font-size: 25px;
     margin-bottom: 20px;
   }
 
-  .sponsoredPartner{
+  .sponsoredPartner {
     max-width: 200px;
   }
 
@@ -129,15 +119,12 @@
     padding-top: 220px;
     padding-bottom: 220px;
 
-    background-image: url("../../imgs/tablet/partners/firework01.png"),
-      url("../../imgs/tablet/partners/ecllipse01.png"),
-      url("../../imgs/tablet/partners/firework02.png"),
-      url("../../imgs/tablet/partners/ellipse02.png"),
-      url("../../imgs/tablet/partners/ellipse03.png");
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-      no-repeat;
-    background-position: top -50px right 0px, top 120px right 250px,
-      left bottom -120px, left 10px bottom 60px, right 10px bottom 50px;
+    background-image: url('../../imgs/tablet/partners/firework01.png'), url('../../imgs/tablet/partners/ecllipse01.png'),
+      url('../../imgs/tablet/partners/firework02.png'), url('../../imgs/tablet/partners/ellipse02.png'),
+      url('../../imgs/tablet/partners/ellipse03.png');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top -50px right 0px, top 120px right 250px, left bottom -120px, left 10px bottom 60px,
+      right 10px bottom 50px;
   }
 
   .headingWrapper {
@@ -147,21 +134,21 @@
     font-size: 18px;
   }
 
-  .text{
+  .text {
     margin-top: 100px;
     font-size: 18px;
     margin-bottom: 50px;
   }
-  .partnersHeading{
+  .partnersHeading {
     font-size: 30px;
-    margin-bottom:30px;
+    margin-bottom: 30px;
   }
 
-  .sponsoredPartner{
+  .sponsoredPartner {
     max-width: 250px;
   }
 
-  .partnersWrapper{
+  .partnersWrapper {
     margin-bottom: 50px;
   }
 }

@@ -1,46 +1,44 @@
-.section{
+.section {
   /* display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 10px; */
   padding-top: 100px;
   padding-bottom: 30px;
-  
 }
 
-
 .imgWrapper img,
-.imgWrapperF img{
+.imgWrapperF img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.heading{
+.heading {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
 
- .link{
+.link {
   text-decoration: underline;
 }
 
 .link:hover,
-.link:focus{
+.link:focus {
   color: rgb(255, 255, 255);
   background-color: rgb(139, 195, 74);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .description,
-.descriptionF{
- font-size: 14px;
- margin-top: 10px;
+.descriptionF {
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 .description a,
-.descriptionF a{
+.descriptionF a {
   position: relative;
   color: rgb(88, 89, 91);
   text-decoration: none;
@@ -48,42 +46,41 @@
   border-bottom: 1px solid rgb(88, 89, 91);
 }
 .description a::after,
-.descriptionF a::after{
+.descriptionF a::after {
   position: absolute;
   top: 10px;
-  content: "";
+  content: '';
   display: block;
   height: 1px;
   width: 100%;
   color: rgb(88, 89, 91);
 }
 
-
-@media (min-width:480px) and (max-width: 767px) {
-  .section{
+@media (min-width: 480px) and (max-width: 767px) {
+  .section {
     padding-top: 120px;
     padding-bottom: 50px;
     max-width: 588px;
   }
 
-  .heading{
+  .heading {
     font-size: 18px;
     margin-bottom: 20px;
   }
 
   .description,
   .descriptionF {
-  font-size: 16px;
+    font-size: 16px;
   }
 }
 
-@media (min-width:768px)  {
-  .section{
+@media (min-width: 768px) {
+  .section {
     padding-top: 140px;
     padding-bottom: 100px;
   }
 
-  .heading{
+  .heading {
     font-size: 20px;
     margin-bottom: 20px;
   }
@@ -93,7 +90,7 @@
   }
 
   .wrapper {
-   display: flex;
+    display: flex;
   }
 
   .imgWrapperF {
@@ -112,14 +109,14 @@
   }
 }
 
-@media (min-width:1200px)  {
-  .section{
+@media (min-width: 1200px) {
+  .section {
     padding-top: 180px;
     padding-bottom: 120px;
     max-width: 1000px;
   }
 
-  .heading{
+  .heading {
     font-size: 25px;
     margin-bottom: 35px;
   }
@@ -127,7 +124,7 @@
   .heading:not(:first-of-type) {
     margin-top: 80px;
   }
-  
+
   .description,
   .descriptionF {
     font-size: 18px;
@@ -138,7 +135,7 @@
     margin-right: 15px;
   }
 
-   .descriptionF {
+  .descriptionF {
     width: 60%;
     margin-top: 0;
   }

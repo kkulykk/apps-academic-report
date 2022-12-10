@@ -1,50 +1,47 @@
 .appBar {
-  position: relative;
   width: 100%;
   position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 10px 20px;
   background-color: rgb(102, 45, 145);
   color: #ffffff;
-  font-family: "CirceRounded";
+  font-family: 'CirceRounded', serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   z-index: 150;
 }
 
-.itemsWrapper{
+.itemsWrapper {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  font-family: "CirceRounded";
+  font-family: 'CirceRounded', serif;
   font-size: 14px;
   font-weight: 700;
 }
 
-.item{
+.item {
   text-decoration: none;
-  color:rgb(88, 89, 91);
+  color: rgb(88, 89, 91);
 }
-.itemActive{
-  color:rgb(102, 45, 145);
+
+.itemActive {
+  color: rgb(102, 45, 145);
 }
 
 .item:hover,
-.item:focus{
-  color:rgb(102, 45, 145);
+.item:focus {
+  color: rgb(102, 45, 145);
   font-weight: 900;
 }
 
-.item:not(:last-child){
+.item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.logo{
+.logo {
   margin-right: auto;
   cursor: pointer;
   transition: 0.5s;
@@ -56,25 +53,24 @@
   transition: 0.5s;
 }
 
-.nameGroup{
- display: flex;
- flex-direction: column;
- align-items: center;
- text-align: center;
+.nameGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.mainName{
+.mainName {
   font-weight: 900;
   font-size: 13px;
 }
 
-.name{
-  
+.name {
   font-weight: 700;
   font-size: 10px;
 }
 
-.button{
+.button {
   width: 40px;
   height: 40px;
   margin-left: auto;
@@ -86,29 +82,25 @@
 }
 
 .button:hover,
-.button:focus{
+.button:focus {
   transform: scale(1.1);
   transition: 0.5s;
 }
 
-
 @media (min-width: 480px) and (max-width: 767px) {
   .appBar {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-   
-  }
-  .mainName{
-        font-size: 16px;
-  }
-  
-  .name{
-       font-size: 13px;
+    padding: 15px 40px;
   }
 
-  .itemsWrapper{
+  .mainName {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: 13px;
+  }
+
+  .itemsWrapper {
     font-size: 16px;
   }
 }
@@ -119,20 +111,19 @@
     padding-right: 90px;
   }
 
-  .logo{
+  .logo {
     width: 50px;
   }
-  
 
-  .mainName{
-   font-size: 18px;
-  }
-  
-  .name{
-   font-size: 13px;
+  .mainName {
+    font-size: 18px;
   }
 
-  .itemsWrapper{
+  .name {
+    font-size: 13px;
+  }
+
+  .itemsWrapper {
     font-size: 18px;
   }
 }
@@ -142,11 +133,12 @@
     padding-left: 120px;
     padding-right: 120px;
   }
-  .logo{
+
+  .logo {
     width: 55px;
   }
-  
-  .itemsWrapper{
+
+  .itemsWrapper {
     font-size: 20px;
   }
 }

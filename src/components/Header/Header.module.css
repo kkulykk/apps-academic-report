@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
-  background-image: url("../../imgs/mobile/header/header-background.jpg");
+  background-image: url('../../imgs/mobile/header/header-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -24,7 +24,7 @@
   border-bottom-left-radius: 100px;
   background-color: rgba(102, 45, 145, 0.9);
   color: #ffffff;
-  font-family: "CirceRounded";
+  font-family: 'CirceRounded';
   font-weight: 900;
   font-size: 13px;
   text-align: right;
@@ -82,7 +82,7 @@
   .header {
     padding-top: 90px;
     padding-left: 90px;
-    background-image: url("../../imgs/tablet/header/header-background.jpg");
+    background-image: url('../../imgs/tablet/header/header-background.jpg');
   }
   .headerLabel {
     font-size: 18px;
@@ -114,7 +114,7 @@
     padding-top: 100px;
     padding-bottom: 90px;
 
-    background-image: url("../../imgs/desktop/header/header-background.jpg");
+    background-image: url('../../imgs/desktop/header/header-background.jpg');
   }
   .headerLabel {
     width: 80%;

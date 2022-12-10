@@ -1,25 +1,25 @@
-.strategy{
+.strategy {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   padding-top: 100px;
   padding-bottom: 30px;
 }
 
-.headingWrapper{
+.headingWrapper {
   display: flex;
   font-size: 16px;
   font-weight: 900;
   text-transform: uppercase;
 }
 
-.strategyIcon{
+.strategyIcon {
   margin-right: 10px;
   height: 40px;
 }
 
-.list{
+.list {
   position: relative;
   margin-top: 40px;
   overflow: hidden;
@@ -30,7 +30,7 @@
   content: '';
   display: block;
   height: 1px;
-  background-color: #262F56;
+  background-color: #262f56;
   top: 0px;
   left: 6px;
   width: 1200px;
@@ -38,7 +38,7 @@
   transform: rotate(90deg);
 }
 
-.item{
+.item {
   display: flex;
   align-self: center;
 }
@@ -49,156 +49,148 @@
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background-color: #8BC34A;
+  background-color: #8bc34a;
 }
 
-
-.listIcon{
+.listIcon {
   height: 35px;
 }
 
-.text{
+.text {
   font-size: 15px;
-  
 }
 
-
 @media (max-width: 480px) {
-  .list{
+  .list {
     padding-left: 30px;
   }
 
-  .item:not(:first-child){
+  .item:not(:first-child) {
     margin-top: 30px;
-}
+  }
 
-.item::before {
-  transform: translate(-6px, 70%);
-  transform-origin: center left;
-  left: 6px;
-}
+  .item::before {
+    transform: translate(-6px, 70%);
+    transform-origin: center left;
+    left: 6px;
+  }
 
-.listIcon{
-  height: 35px;
-  margin-right: 20px;
-}
+  .listIcon {
+    height: 35px;
+    margin-right: 20px;
+  }
 
-.text{
- width: 70%;
-}
+  .text {
+    width: 70%;
+  }
 
-.imgWrapper{
-  width: 30%;
-}
+  .imgWrapper {
+    width: 30%;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .strategy{
+  .strategy {
     padding-top: 120px;
     padding-bottom: 50px;
   }
 
-  .listIcon{
-    height:45px;
-    
+  .listIcon {
+    height: 45px;
   }
 
-  .list{
+  .list {
     max-width: 550px;
     padding-left: 30px;
-    
   }
 
   .item::before {
-    
     transform: translate(-6px, 70%);
     transform-origin: center left;
     left: 6px;
   }
 
-  .item:not(:first-child){
+  .item:not(:first-child) {
     margin-top: 50px;
+  }
+
+  .text {
+    width: 70%;
+  }
+
+  .imgWrapper {
+    width: 30%;
+  }
 }
 
-.text{
-  width: 70%;
- }
- 
- .imgWrapper{
-   width: 30%;
- }
-  
-}
-
-@media (min-width: 768px) and (max-width: 1199px){
-  .strategy{
+@media (min-width: 768px) and (max-width: 1199px) {
+  .strategy {
     padding-top: 170px;
     padding-bottom: 100px;
   }
 
-  .headingWrapper{
-   font-size: 18px;
+  .headingWrapper {
+    font-size: 18px;
   }
-  
-  .strategyIcon{
+
+  .strategyIcon {
     margin-right: 10px;
     height: 45px;
   }
 
-  .listIcon{
+  .listIcon {
     height: 50px;
     margin-right: 20px;
   }
 
-  .list{
+  .list {
     max-width: 550px;
     padding-left: 50px;
   }
-  
-  .item:not(:first-child){
+
+  .item:not(:first-child) {
     margin-top: 50px;
   }
 
   .item::before {
-    
     transform: translate(-6px, 70%);
     transform-origin: center left;
     left: 6px;
   }
 
-  .text{
+  .text {
     font-size: 18px;
     width: 70%;
-   }
-   
-   .imgWrapper{
-     width: 30%;
-   }
+  }
+
+  .imgWrapper {
+    width: 30%;
+  }
 }
 
-@media (min-width:1200px) {
-  .strategy{
+@media (min-width: 1200px) {
+  .strategy {
     padding-top: 200px;
     padding-bottom: 120px;
   }
 
-  .headingWrapper{
-   align-self: flex-start;
-   font-size: 20px;
+  .headingWrapper {
+    align-self: flex-start;
+    font-size: 20px;
   }
-  
-  .strategyIcon{
+
+  .strategyIcon {
     margin-right: 10px;
     height: 50px;
   }
 
-  .listIcon{
-    height:60px;
+  .listIcon {
+    height: 60px;
     width: auto;
-   margin-bottom: 45px; 
+    margin-bottom: 45px;
   }
 
-  .list{
+  .list {
     display: flex;
     justify-content: space-between;
     padding-top: 45px;
@@ -208,9 +200,9 @@
   .list::before {
     width: 100%;
     transform: rotate(0deg);
-      }
+  }
 
-  .item{
+  .item {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
@@ -218,7 +210,7 @@
     margin-top: 0px;
   }
 
-  .item:not(:first-child){
+  .item:not(:first-child) {
     margin-left: 30px;
   }
 
@@ -228,25 +220,24 @@
     height: 14px;
     width: 14px;
     border-radius: 50%;
-    background-color: #8BC34A;
+    background-color: #8bc34a;
     top: -7px;
   }
-  
-  .text{
+
+  .text {
     font-size: 16px;
     width: 100%;
   }
 }
 
-@media (min-width:1400px) {
-  .listIcon{
-    height:70px;
+@media (min-width: 1400px) {
+  .listIcon {
+    height: 70px;
     width: auto;
-    margin-bottom: 45px; 
+    margin-bottom: 45px;
   }
-  
-  .item{
+
+  .item {
     width: 16%;
   }
-  
 }

@@ -1,1 +1,1 @@
-export {default} from './StructureChangesPage'
+export { default } from './StructureChangesPage';

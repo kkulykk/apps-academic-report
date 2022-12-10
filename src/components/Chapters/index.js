@@ -1,1 +1,1 @@
-export {default} from './Chapters'
+export { default } from './Chapters';

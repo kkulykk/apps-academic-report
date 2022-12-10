@@ -1,4 +1,4 @@
-.section{
+.section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,225 +7,204 @@
   padding-bottom: 30px;
 }
 
-
-
 .imgWrapper img {
- max-width: 100%;
- height: auto;
- object-fit: cover;
- 
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-.text{
+.text {
   font-size: 14px;
 }
 
-.text:first-of-type{
+.text:first-of-type {
   font-size: 15px;
   font-weight: 700;
 }
 
-.list{
+.list {
   padding-left: 70px;
 }
 
-.bgTop{
-    width: 100%;
-  
+.bgTop {
+  width: 100%;
 }
-.bgTop img{
- max-width: 100%;
- height: auto;
- object-fit: cover;
+.bgTop img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-
-.item{
+.item {
   position: relative;
   display: flex;
   flex-direction: column-reverse;
   width: 215px;
 }
 
-
-.item:not(:first-of-type){
- margin-top: 50px;
+.item:not(:first-of-type) {
+  margin-top: 50px;
 }
 
-.item::before{
+.item::before {
   position: absolute;
   left: -70px;
   top: 12px;
   content: url('../../imgs/whoWeAre/flag.svg');
 }
 
-.descrptn{
+.descrptn {
   font-size: 14px;
-  color: rgb(37,97,108);
+  color: rgb(37, 97, 108);
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.year{
+.year {
   margin-bottom: 0px;
   font-size: 30px;
   color: rgba(102, 45, 145);
   font-weight: 700;
 }
 
-.imgWrapper{
+.imgWrapper {
   width: 150px;
 }
-.item:nth-child(8) .imgWrapper{
+.item:nth-child(8) .imgWrapper {
   width: 70px;
 }
 
-@media (min-width:320px) and (max-width: 1399px) {
-  .year{
+@media (min-width: 320px) and (max-width: 1399px) {
+  .year {
     align-self: flex-start;
-  
   }
 }
 
-@media (min-width:480px) and (max-width: 767px) {
-  .section{
+@media (min-width: 480px) and (max-width: 767px) {
+  .section {
     padding-top: 120px;
     padding-bottom: 70px;
-   
   }
 
   .text {
     font-size: 16px;
   }
 
-  .chartIcon{
+  .chartIcon {
     width: 350px;
+  }
+
+  .list {
+    padding-left: 120px;
+  }
+
+  .item::before {
+    left: -90px;
+  }
 }
 
-.list{
-  padding-left: 120px;
-}
-
-.item::before{
-  
-  left: -90px;
-  
-}
- 
-}
-
-@media (min-width:768px)  {
-  .section{
+@media (min-width: 768px) {
+  .section {
     padding-top: 140px;
     padding-bottom: 100px;
-    
   }
 
-  .chartWrapper{
+  .chartWrapper {
     margin-top: 35px;
     display: flex;
-    
   }
 
-  .chartIcon{
+  .chartIcon {
     width: 50%;
-}
+  }
 
   .text {
     font-size: 16px;
   }
 
-  .text:first-of-type{
+  .text:first-of-type {
     font-size: 17px;
   }
 
-  .list{
+  .list {
     padding-left: 130px;
   }
-  
-  .item::before{
-    
+
+  .item::before {
     left: -130px;
-    
   }
-  
 }
 
-
-@media (min-width:1200px)  {
-  .section{
+@media (min-width: 1200px) {
+  .section {
     padding-top: 180px;
     padding-bottom: 120px;
     max-width: 920px;
   }
 
-
   .text {
     font-size: 18px;
   }
 
-  .text:first-of-type{
+  .text:first-of-type {
     font-size: 19px;
   }
 
-
-  .list{
+  .list {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-gap: 9px;
     padding-left: 0px;
   }
 
-  .item{
+  .item {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     margin-top: 0px;
     height: 100%;
     width: 84px;
   }
 
-  .item:not(:first-of-type){
+  .item:not(:first-of-type) {
     margin-top: 0px;
-   }
-
-     
-   .item::before{
-     position: absolute;
-     left: 40%;
-     top:250px;
-   }
-
-  .imgWrapper{
-    width:100%;
   }
 
-  .item:nth-child(8) .imgWrapper{
-      width: 30px;
+  .item::before {
+    position: absolute;
+    left: 40%;
+    top: 250px;
+  }
+
+  .imgWrapper {
+    width: 100%;
+  }
+
+  .item:nth-child(8) .imgWrapper {
+    width: 30px;
   }
 
   .item:nth-child(5) .imgWrapper {
     padding-top: 33px;
- }
- 
- .item:nth-child(7) .imgWrapper{
-   padding-top: 42px;
-}
+  }
 
-.item:nth-child(8) .imgWrapper{
-  padding-top: 29px;
-}
+  .item:nth-child(7) .imgWrapper {
+    padding-top: 42px;
+  }
 
+  .item:nth-child(8) .imgWrapper {
+    padding-top: 29px;
+  }
 
-  .descrptn{
+  .descrptn {
     position: absolute;
     top: 70px;
     font-size: 12px;
   }
-  
-  .year{
+
+  .year {
     margin-top: 110px;
     font-size: 30px;
     color: rgba(102, 45, 145);
@@ -233,8 +212,7 @@
     align-self: center;
   }
 
-  .bgTop:last-of-type{
+  .bgTop:last-of-type {
     margin-top: 60px;
   }
 }
-

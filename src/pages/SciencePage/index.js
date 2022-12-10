@@ -1,1 +1,1 @@
-export {default} from './SciencePage'
+export { default } from './SciencePage';

@@ -1,27 +1,24 @@
 @font-face {
-  font-family: "CirceRounded";
+  font-family: 'CirceRounded';
   font-weight: 900;
-  src: local("CirceRounded"),
-    url(./fonts/CirceRounded-Regular3.ttf) format("truetype");
+  src: local('CirceRounded'), url(./fonts/CirceRounded-Regular3.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "CirceRounded";
+  font-family: 'CirceRounded';
   font-weight: 700;
-  src: local("CirceRounded"),
-    url(./fonts/CirceRounded-Regular4.ttf) format("truetype");
+  src: local('CirceRounded'), url(./fonts/CirceRounded-Regular4.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "CirceRounded";
+  font-family: 'CirceRounded';
   font-weight: 600;
-  src: local("CirceRounded"),
-    url(./fonts/CirceRounded-Regular5.ttf) format("truetype");
+  src: local('CirceRounded'), url(./fonts/CirceRounded-Regular5.ttf) format('truetype');
 }
 
 .App {
   text-align: left;
-  font-family: "CirceRounded";
+  font-family: 'CirceRounded';
   font-weight: 600;
   color: #58595b;
 }

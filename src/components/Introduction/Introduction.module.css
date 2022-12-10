@@ -3,13 +3,10 @@
   padding-bottom: 75px;
   width: 100%;
   height: fit-content;
-  background-image: url("../../imgs/mobile/introduction/dots.png"),
-    url("../../imgs/mobile/introduction/rectangle1.png"),
-    url("../../imgs/mobile/introduction/rectangle3.png"),
-    url("../../imgs/mobile/introduction/rectangle2.png");
+  background-image: url('../../imgs/mobile/introduction/dots.png'), url('../../imgs/mobile/introduction/rectangle1.png'),
+    url('../../imgs/mobile/introduction/rectangle3.png'), url('../../imgs/mobile/introduction/rectangle2.png');
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top 5px right 10px, top -40px right -20px,
-    left -20px bottom -35px, left -20px bottom -20px;
+  background-position: top 5px right 10px, top -40px right -20px, left -20px bottom -35px, left -20px bottom -20px;
 }
 
 .headingWrapper {
@@ -47,7 +44,7 @@
 
 .wrapper {
   text-align: right;
-  background-image: url("../../imgs/mobile/introduction/circle.png");
+  background-image: url('../../imgs/mobile/introduction/circle.png');
   background-repeat: no-repeat;
   background-position: bottom 0px right 0px;
   padding-right: 20px;
@@ -61,7 +58,7 @@
   width: 100%;
   height: auto;
   border-radius: 25px;
-  
+
   overflow: auto;
 }
 
@@ -105,13 +102,11 @@
     padding-top: 100px;
     padding-bottom: 100px;
 
-    background-image: url("../../imgs/mobile/introduction/dots.png"),
-      url("../../imgs/tablet/introduction/rectangle01.png"),
-      url("../../imgs/tablet/introduction/rectangle03.png"),
-      url("../../imgs/tablet/introduction/rectangle02.png");
+    background-image: url('../../imgs/mobile/introduction/dots.png'),
+      url('../../imgs/tablet/introduction/rectangle01.png'), url('../../imgs/tablet/introduction/rectangle03.png'),
+      url('../../imgs/tablet/introduction/rectangle02.png');
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: top 5px right 10px, top -40px right,
-      left -20px bottom -35px, left -20px bottom -20px;
+    background-position: top 5px right 10px, top -40px right, left -20px bottom -35px, left -20px bottom -20px;
   }
 
   .headingWrapper {
@@ -123,9 +118,9 @@
 
   .textWrapper {
     flex-direction: row;
-    -webkit-align-items:flex-start;
+    -webkit-align-items: flex-start;
     align-items: flex-start;
-    
+
     margin-top: 50px;
   }
 
@@ -140,7 +135,7 @@
 
     padding-right: 0px;
     text-align: right;
-    background-image: url("../../imgs/tablet/introduction/circle.png");
+    background-image: url('../../imgs/tablet/introduction/circle.png');
     background-repeat: no-repeat;
     background-position: right 0px bottom 0px;
     padding-right: 40px;
@@ -202,13 +197,11 @@
   .introduction {
     padding-top: 220px;
     padding-bottom: 220px;
-    background-image: url("../../imgs/desktop/introduction/dots.png"),
-      url("../../imgs/desktop/introduction/rectangle01.png"),
-      url("../../imgs/desktop/introduction/rectangle03.png"),
-      url("../../imgs/desktop/introduction/rectangle02.png");
+    background-image: url('../../imgs/desktop/introduction/dots.png'),
+      url('../../imgs/desktop/introduction/rectangle01.png'), url('../../imgs/desktop/introduction/rectangle03.png'),
+      url('../../imgs/desktop/introduction/rectangle02.png');
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: top 10px right 40px, top -40px right,
-      left -20px bottom -35px, left -20px bottom -200px;
+    background-position: top 10px right 40px, top -40px right, left -20px bottom -35px, left -20px bottom -200px;
   }
 
   .headingWrapper {

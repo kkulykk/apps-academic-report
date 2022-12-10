@@ -1,6 +1,5 @@
 import React from 'react';
-import { Route, Routes} from 'react-router-dom';
-
+import { Route, Routes } from 'react-router-dom';
 
 import Footer from './components/Footer';
 import './App.css';
@@ -18,28 +17,25 @@ import RatingsPage from './pages/RatingsPage/RatingsPage';
 import GraduatesPage from './pages/GraduatesPage';
 import WhoWeArePage from './pages/WhoWeArePage/WhoWeArePage';
 
-
-const  App = () => (
-  <div className='App'>
-  
-    <Routes >
-      <Route path="/" element={<MainPage/>}/>
-      <Route path="/strategy-goals" element={<StrategyPage/>}/>
-      <Route path="/introductory-campaign-results" element={<IntroCampaignResPage/>}/>
-      <Route path="/structure-changes" element={<StructureChangesPage/>}/>
-      <Route path="/students-wins" element={<StudentsWinsPage/>}/>
-      <Route path="/professors-wins" element={<ProfessorsWinsPage/>}/>
-      <Route path="/social-projects" element={<SocialProjectsPage/>}/>
-      <Route path="/certificate-programs" element={<CertificateProgramsPage/>}/>
-      <Route path="/science" element={<SciencePage/>}/>
-      <Route path="/ratings" element={<RatingsPage/>}/>
-      <Route path="/graduates" element={<GraduatesPage/>}/>
-      <Route path="/who-we-are" element={<WhoWeArePage/>}/>
+const App = () => (
+  <div className="App">
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+      <Route path="/strategy-goals" element={<StrategyPage />} />
+      <Route path="/introductory-campaign-results" element={<IntroCampaignResPage />} />
+      <Route path="/structure-changes" element={<StructureChangesPage />} />
+      <Route path="/students-wins" element={<StudentsWinsPage />} />
+      <Route path="/professors-wins" element={<ProfessorsWinsPage />} />
+      <Route path="/social-projects" element={<SocialProjectsPage />} />
+      <Route path="/certificate-programs" element={<CertificateProgramsPage />} />
+      <Route path="/science" element={<SciencePage />} />
+      <Route path="/ratings" element={<RatingsPage />} />
+      <Route path="/graduates" element={<GraduatesPage />} />
+      <Route path="/who-we-are" element={<WhoWeArePage />} />
     </Routes>
-    <ScrollUpBtn/>
-    <Footer/>
-    </div>
-);    
- 
+    <ScrollUpBtn />
+    <Footer />
+  </div>
+);
 
 export default App;

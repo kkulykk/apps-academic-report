@@ -1,4 +1,4 @@
-.section{
+.section {
   /* display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 20px; */
@@ -14,13 +14,12 @@
 }
 
 .description {
- margin-top: 30px;
- font-size: 14px;
+  margin-top: 30px;
+  font-size: 14px;
 }
 
-
 .description a,
-.descriptionF a{
+.descriptionF a {
   position: relative;
   color: rgb(88, 89, 91);
   text-decoration: none;
@@ -28,42 +27,40 @@
   border-bottom: 1px solid rgb(88, 89, 91);
 }
 .description a::after,
-.descriptionF a::after{
+.descriptionF a::after {
   position: absolute;
   top: 10px;
-  content: "";
+  content: '';
   display: block;
   height: 1px;
   width: 100%;
   color: rgb(88, 89, 91);
 }
 
-
-@media (min-width:480px) and (max-width: 767px) {
-  .section{
+@media (min-width: 480px) and (max-width: 767px) {
+  .section {
     padding-top: 120px;
     padding-bottom: 50px;
   }
 
   .description {
     font-size: 14px;
-   }
+  }
 }
 
-@media (min-width:768px)  {
-  .section{
+@media (min-width: 768px) {
+  .section {
     padding-top: 140px;
     padding-bottom: 100px;
-
   }
 
   .description {
     font-size: 16px;
-   }
+  }
 }
 
-@media (min-width:1200px)  {
-  .section{
+@media (min-width: 1200px) {
+  .section {
     padding-top: 180px;
     padding-bottom: 120px;
     max-width: 1000px;
@@ -71,5 +68,5 @@
 
   .description {
     font-size: 18px;
-   }
+  }
 }

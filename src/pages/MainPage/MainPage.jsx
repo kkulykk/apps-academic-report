@@ -4,13 +4,12 @@ import Chapters from '../../components/Chapters';
 import Partners from '../../components/Partners/Partners';
 
 const MainPage = () => (
-<>
-  <Header/>
-  <Introduction/>
-  <Chapters/>
-  <Partners/>
-  
-</>
+  <>
+    <Header />
+    <Introduction />
+    <Chapters />
+    <Partners />
+  </>
 );
 
 export default MainPage;

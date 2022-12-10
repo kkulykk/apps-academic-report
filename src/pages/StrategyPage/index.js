@@ -1,1 +1,1 @@
-export {default} from './StrategyPage'
+export { default } from './StrategyPage';
