@@ -1,0 +1,95 @@
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  padding-top: 80px;
+  padding-bottom: 30px;
+  font-size: 14px;
+  
+}
+
+.imgWrapper{
+   max-width: 403px;
+}
+
+.imgWrapper img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+.link{
+  text-decoration: underline;
+}
+
+ .text a {
+  position: relative;
+  color: rgb(88, 89, 91);
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 1px solid rgb(88, 89, 91);
+}
+.text a::after {
+  position: absolute;
+  top: 10px;
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  color: rgb(88, 89, 91);
+}
+
+
+@media (min-width:480px) and (max-width: 767px) {
+  .section{
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+
+  .imgWrapper{
+      max-width: 588px;
+  }
+}
+
+@media (min-width:768px)  {
+  .section{
+    padding-top: 140px;
+    padding-bottom: 100px;
+    font-size: 16px;
+  }
+
+  .imgWrapper{
+    max-width: 600px;
+  }
+}
+@media (min-width:1200px)  {
+  .section{
+    
+    padding-top: 180px;
+    padding-bottom: 120px;
+    font-size: 18px;
+   
+  }
+  /* .imgWrapper{
+    width: 40%;
+  }
+  .text{
+    width: 60%;
+  } */
+}
+
+@media (min-width:1600px)  {
+  .section{
+    flex-direction: row;
+    
+   
+  }
+  .imgWrapper{
+    width: 50%;
+  }
+  .text{
+    width: 50%;
+  }
+}

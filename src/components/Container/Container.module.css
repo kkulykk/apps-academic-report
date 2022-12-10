@@ -1,0 +1,36 @@
+.Container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .Container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .Container {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Container {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .Container {
+    padding-left: 240px;
+    padding-right: 240px;
+  }
+}

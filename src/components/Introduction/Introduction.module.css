@@ -1,0 +1,241 @@
+.introduction {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  width: 100%;
+  height: fit-content;
+  background-image: url("../../imgs/mobile/introduction/dots.png"),
+    url("../../imgs/mobile/introduction/rectangle1.png"),
+    url("../../imgs/mobile/introduction/rectangle3.png"),
+    url("../../imgs/mobile/introduction/rectangle2.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top 5px right 10px, top -40px right -20px,
+    left -20px bottom -35px, left -20px bottom -20px;
+}
+
+.headingWrapper {
+  display: flex;
+  width: 65%;
+  padding: 14px;
+  padding-left: 20px;
+  border-top-right-radius: 95px;
+  border-bottom-right-radius: 95px;
+  background-color: rgb(102, 45, 145);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+.textWrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.introductionText {
+  text-align: left;
+  font-size: 14px;
+
+  margin: 0;
+}
+
+.introductionText h3 {
+  margin-bottom: 10px;
+}
+
+.wrapper {
+  text-align: right;
+  background-image: url("../../imgs/mobile/introduction/circle.png");
+  background-repeat: no-repeat;
+  background-position: bottom 0px right 0px;
+  padding-right: 20px;
+  margin-right: -20px;
+  padding-bottom: 20px;
+  margin-bottom: -20px;
+  margin-bottom: 10px;
+}
+
+.imgWrapper {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  
+  overflow: auto;
+}
+
+.imgWrapper img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.nameWrapper {
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.name {
+  font-weight: 700;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .headingWrapper {
+    font-size: 14px;
+    padding-left: 40px;
+  }
+
+  .textWrapper {
+    margin-top: 50px;
+  }
+
+  .wrapper {
+    max-width: 350px;
+    padding-right: 40px;
+    margin-right: -40px;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .introduction {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-image: url("../../imgs/mobile/introduction/dots.png"),
+      url("../../imgs/tablet/introduction/rectangle01.png"),
+      url("../../imgs/tablet/introduction/rectangle03.png"),
+      url("../../imgs/tablet/introduction/rectangle02.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top 5px right 10px, top -40px right,
+      left -20px bottom -35px, left -20px bottom -20px;
+  }
+
+  .headingWrapper {
+    width: 55%;
+    padding: 20px;
+    padding-left: 90px;
+    font-size: 16px;
+  }
+
+  .textWrapper {
+    flex-direction: row;
+    -webkit-align-items:flex-start;
+    align-items: flex-start;
+    
+    margin-top: 50px;
+  }
+
+  .introductionText {
+    width: 60%;
+    margin-right: 20px;
+    font-size: 16px;
+  }
+
+  .wrapper {
+    width: 40%;
+
+    padding-right: 0px;
+    text-align: right;
+    background-image: url("../../imgs/tablet/introduction/circle.png");
+    background-repeat: no-repeat;
+    background-position: right 0px bottom 0px;
+    padding-right: 40px;
+    margin-right: -40px;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+  }
+
+  .nameWrapper {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .introduction {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    /* background-image: url("../../imgs/desktop/introduction/dots.png"),
+      url("../../imgs/desktop/introduction/rectangle01.png"),
+      url("../../imgs/desktop/introduction/rectangle03.png"),
+      url("../../imgs/desktop/introduction/rectangle02.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top 10px right 40px, top -40px right,
+      left -20px bottom -35px, left -20px bottom -200px; */
+  }
+
+  .headingWrapper {
+    padding: 25px;
+    padding-left: 120px;
+    font-size: 18px;
+  }
+
+  .textWrapper {
+    flex-direction: row;
+    margin-top: 60px;
+  }
+
+  .introductionText {
+    /* width: 70%; */
+    margin-right: 50px;
+    font-size: 18px;
+  }
+
+  .wrapper {
+    /* width: 30%; */
+
+    /* text-align: right; */
+    /* background-image: url("../../imgs/desktop/introduction/circle.png"); */
+    background-repeat: no-repeat;
+    background-position: right 0px bottom 0px;
+    padding-right: 80px;
+    margin-right: -80px;
+    padding-bottom: 40px;
+    margin-bottom: -40px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .introduction {
+    padding-top: 220px;
+    padding-bottom: 220px;
+    background-image: url("../../imgs/desktop/introduction/dots.png"),
+      url("../../imgs/desktop/introduction/rectangle01.png"),
+      url("../../imgs/desktop/introduction/rectangle03.png"),
+      url("../../imgs/desktop/introduction/rectangle02.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top 10px right 40px, top -40px right,
+      left -20px bottom -35px, left -20px bottom -200px;
+  }
+
+  .headingWrapper {
+    width: 55%;
+    padding: 35px;
+    padding-left: 240px;
+    font-size: 20px;
+  }
+
+  .textWrapper {
+    flex-direction: row;
+    margin-top: 80px;
+  }
+
+  .introductionText {
+    /* width: 70%; */
+    margin-right: 50px;
+    font-size: 18px;
+  }
+
+  .wrapper {
+  }
+
+  .imgWrapper {
+    height: fit-content;
+  }
+  .wrapper {
+    width: 370px;
+  }
+}

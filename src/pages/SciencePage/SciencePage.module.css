@@ -1,0 +1,196 @@
+.section{
+  padding-top: 100px;
+  padding-bottom: 50px;
+  max-width: 400px;
+}
+
+.wrapperPart:not(:first-of-type){
+  margin-top: 40px;
+} 
+
+.workshops{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+}
+
+.section a {
+  text-decoration: none;
+}
+
+.heading{
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.heading:not(:first-of-type) {
+  margin-top: 50px;
+}
+
+.wrapper p{
+  padding: 20px;
+  margin: 0;
+  border-left: 3px solid rgb(135, 46, 172);
+  border-right: 3px solid rgb(135, 46, 172);
+  border-bottom: 3px solid rgb(135, 46, 172);
+ }
+
+.imgWrapper img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.imgWrapper {
+position: relative;
+}
+
+.expandBtn{
+  position: absolute;
+  bottom: -20px;
+  left: -3px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(135, 46, 172);
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link{
+  text-decoration: underline;
+}
+
+.banersHead{
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.highlight{
+  font-weight: 700;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.description ul{
+  padding: 0px;
+  
+}
+
+
+ .description a {
+  position: relative;
+  color: rgb(88, 89, 91);
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 1px solid rgb(88, 89, 91);
+}
+.description a::after {
+  position: absolute;
+  top: 10px;
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  color: rgb(88, 89, 91);
+}
+
+
+@media (min-width:480px) and (max-width: 767px) {
+  .section{
+    padding-top: 120px;
+    padding-bottom: 70px;
+    max-width: 588px;
+  }
+
+  .heading{
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .expandBtn{
+    bottom: -15px;
+  }
+
+}
+
+@media (min-width:768px)  {
+  .section{
+    padding-top: 140px;
+    padding-bottom: 100px;
+    max-width: 600px;
+  }
+
+  .heading{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .heading:not(:first-of-type) {
+    margin-top: 70px;
+  }
+
+  .banersHead{
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+
+  .description {
+    font-size: 16px;
+  }
+
+  .expandBtn{
+    bottom: -9px;
+  }
+}
+
+@media (min-width:1200px)  {
+  .section{
+    padding-top: 180px;
+    padding-bottom: 120px;
+    max-width: 920px;
+  }
+
+  .workshops{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    
+  }
+
+  .heading{
+    font-size: 25px;
+    margin-bottom: 35px;
+  }
+
+  .heading:not(:first-of-type) {
+    margin-top: 80px;
+  }
+
+  .banersHead{
+    margin-top: 25px;
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .expandBtn{
+    bottom: -10px;
+  }
+}
+
