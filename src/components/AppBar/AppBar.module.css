@@ -15,27 +15,17 @@
 }
 
 .itemsWrapper {
+  margin: 0 90px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  font-family: 'CirceRounded', serif;
+  gap: 20px;
+  font-family: 'e-Ukraine Head', serif;
   font-size: 14px;
-  font-weight: 700;
-}
-
-.item {
-  text-decoration: none;
-  color: rgb(88, 89, 91);
+  font-weight: 400;
 }
 
 .itemActive {
   color: rgb(102, 45, 145);
-}
-
-.item:hover,
-.item:focus {
-  color: rgb(102, 45, 145);
-  font-weight: 900;
 }
 
 .item:not(:last-child) {

@@ -1,8 +1,10 @@
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import i18n from 'i18next';
-import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+
+import MenuItem from '../MenuItem';
 
 import styles from './AppBar.module.css';
 
@@ -12,30 +14,43 @@ import UCULogo from '../../imgs/ucu_logo.svg';
 
 const AppBar = ({ name }) => {
   const [t] = useTranslation();
-  // const isActive = useMediaQuery('(min-width: 767px)');
+  const isMobile = useMediaQuery('(max-width: 767px)');
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   document.body.style.position = show ? 'fixed' : '';
 
-  // function useMediaQuery(query) {
-  //   const [matches, setMatches] = useState(false);
-  //
-  //   useEffect(() => {
-  //     const mediaQuery = window.matchMedia(query);
-  //     setMatches(mediaQuery.matches);
-  //     const handler = (event) => setMatches(event.matches);
-  //     mediaQuery.addEventListener('change', handler);
-  //     return () => mediaQuery.removeEventListener('change', handler);
-  //   }, [query]);
-  //
-  //   return matches;
-  // }
+  function useMediaQuery(query) {
+    const [matches, setMatches] = useState(false);
+
+    useEffect(() => {
+      const mediaQuery = window.matchMedia(query);
+      setMatches(mediaQuery.matches);
+      const handler = (event) => setMatches(event.matches);
+      mediaQuery.addEventListener('change', handler);
+      return () => mediaQuery.removeEventListener('change', handler);
+    }, [query]);
+
+    return matches;
+  }
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
+
+  const pages = [
+    { title: t('pages.whoWeAre.title'), to: '/who-we-are' },
+    {
+      title: t('pages.strategyGoals2025.title'),
+      to: '/strategy-goals'
+    },
+    { title: t('pages.admissionCampaign.title'), to: '/admission-campaign-results' },
+    { title: t('pages.warStories.title'), to: '/small-stories-of-a-big-war' },
+    { title: t('pages.socialProjects.title'), to: '/social-projects' },
+    { title: t('pages.structuralChanges.title'), to: '/structure-changes' },
+    { title: t('pages.graduates.title'), to: '/graduates' }
+  ];
 
   return (
     <div className={styles.appBar}>
@@ -56,20 +71,10 @@ const AppBar = ({ name }) => {
         <div className={styles.languageButtons}>
           <button
             type="button"
-            style={{ fontWeight: i18n.language === 'en' ? 'bold' : 'normal' }}
             className={styles.langButton}
-            onClick={() => i18n.changeLanguage('en')}
+            onClick={() => (i18n.language === 'en' ? i18n.changeLanguage('uk') : i18n.changeLanguage('en'))}
           >
-            EN
-          </button>
-          {'/'}
-          <button
-            type="button"
-            style={{ fontWeight: i18n.language === 'uk' ? 'bold' : 'normal' }}
-            className={styles.langButton}
-            onClick={() => i18n.changeLanguage('uk')}
-          >
-            UK
+            {i18n.language === 'en' ? 'UK' : 'EN'}
           </button>
         </div>
         <button type="button" className={styles.button} onClick={handleShow}>
@@ -77,143 +82,30 @@ const AppBar = ({ name }) => {
         </button>
       </div>
 
-      <Offcanvas show={show} onHide={handleClose} placement="end">
+      <Offcanvas show={show} onHide={handleClose} className={styles.menuContainer} placement="end">
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title></Offcanvas.Title>
+          <Offcanvas.Title>
+            <Link className={styles.logo} to="/">
+              <img className={styles.logo} src={FacultyLogo} width="50" height="50" alt="logo" />
+            </Link>
+
+            {name ? (
+              <div className={styles.nameGroup}>
+                <span className={styles.mainName}>{t('appBar.title')}</span>
+                <span className={styles.name}>{name}</span>
+              </div>
+            ) : (
+              <img className={styles.logo} src={UCULogo} width="50" height="50" alt="UCU Logo" />
+            )}
+          </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <nav className={styles.itemsWrapper}>
-            <NavLink
-              onClick={scrollToTop}
-              className={styles.item}
-              style={({ isActive }) => ({
-                color: isActive ? 'rgb(102, 45, 145)' : '',
-                pointerEvents: isActive ? 'none' : ''
-              })}
-              to="/who-we-are"
-            >
-              {t('pages.whoWeAre.title')}
-            </NavLink>
-
-            <NavLink
-              onClick={scrollToTop}
-              className={styles.item}
-              style={({ isActive }) => ({
-                color: isActive ? 'rgb(102, 45, 145)' : '',
-                pointerEvents: isActive ? 'none' : ''
-              })}
-              to="/admission-campaign-results"
-            >
-              {t('pages.admissionCampaign.title')}
-            </NavLink>
-
-            <NavLink
-              onClick={scrollToTop}
-              className={styles.item}
-              style={({ isActive }) => ({
-                color: isActive ? 'rgb(102, 45, 145)' : '',
-                pointerEvents: isActive ? 'none' : ''
-              })}
-              to="/strategy-goals"
-            >
-              {t('pages.strategyGoals2025.title')}
-            </NavLink>
-
-            <NavLink
-              onClick={scrollToTop}
-              className={styles.item}
-              style={({ isActive }) => ({
-                color: isActive ? 'rgb(102, 45, 145)' : '',
-                pointerEvents: isActive ? 'none' : ''
-              })}
-              to="/structure-changes"
-            >
-              {t('pages.structuralChanges.title')}
-            </NavLink>
-
-            <NavLink
-              onClick={scrollToTop}
-              className={styles.item}
-              style={({ isActive }) => ({
-                color: isActive ? 'rgb(102, 45, 145)' : '',
-                pointerEvents: isActive ? 'none' : ''
-              })}
-              to="/students-wins"
-            >
-              {t('pages.studentsWins.title')}
-            </NavLink>
-
-            <NavLink
-              onClick={scrollToTop}
-              className={styles.item}
-              style={({ isActive }) => ({
-                color: isActive ? 'rgb(102, 45, 145)' : '',
-                pointerEvents: isActive ? 'none' : ''
-              })}
-              to="/professors-wins"
-            >
-              {t('pages.teachersWins.title')}
-            </NavLink>
-
-            <NavLink
-              onClick={scrollToTop}
-              className={styles.item}
-              style={({ isActive }) => ({
-                color: isActive ? 'rgb(102, 45, 145)' : '',
-                pointerEvents: isActive ? 'none' : ''
-              })}
-              to="/social-projects"
-            >
-              {t('pages.socialProjects.title')}
-            </NavLink>
-
-            <NavLink
-              onClick={scrollToTop}
-              className={styles.item}
-              style={({ isActive }) => ({
-                color: isActive ? 'rgb(102, 45, 145)' : '',
-                pointerEvents: isActive ? 'none' : ''
-              })}
-              to="/certificate-programs"
-            >
-              {t('pages.certificatePrograms.title')}
-            </NavLink>
-
-            <NavLink
-              onClick={scrollToTop}
-              className={styles.item}
-              style={({ isActive }) => ({
-                color: isActive ? 'rgb(102, 45, 145)' : '',
-                pointerEvents: isActive ? 'none' : ''
-              })}
-              to="/graduates"
-            >
-              {t('pages.graduates.title')}
-            </NavLink>
-
-            <NavLink
-              onClick={scrollToTop}
-              className={styles.item}
-              style={({ isActive }) => ({
-                color: isActive ? 'rgb(102, 45, 145)' : '',
-                pointerEvents: isActive ? 'none' : ''
-              })}
-              to="/science"
-            >
-              {t('pages.science.title')}
-            </NavLink>
-
-            <NavLink
-              onClick={scrollToTop}
-              className={styles.item}
-              style={({ isActive }) => ({
-                color: isActive ? 'rgb(102, 45, 145)' : '',
-                pointerEvents: isActive ? 'none' : ''
-              })}
-              to="/ratings"
-            >
-              {t('pages.ratings.title')}
-            </NavLink>
+            {pages.map((page, num) => {
+              return (
+                <MenuItem isMobile={isMobile} title={page.title} to={page.to} onClick={scrollToTop} number={num + 1} />
+              );
+            })}
           </nav>
         </Offcanvas.Body>
       </Offcanvas>

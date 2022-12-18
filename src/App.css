@@ -1,44 +1,60 @@
-@font-face {
-  font-family: 'CirceRounded';
-  font-weight: 900;
-  src: local('CirceRounded'), url(./fonts/CirceRounded-Regular3.ttf) format('truetype');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --background: #030303;
+  --text: #f5f5f5;
+  --menu: #532870;
+  --green: #8bc751;
 }
 
 @font-face {
-  font-family: 'CirceRounded';
+  font-family: 'e-Ukraine Head';
   font-weight: 700;
-  src: local('CirceRounded'), url(./fonts/CirceRounded-Regular4.ttf) format('truetype');
+  src: local('e-Ukraine Head'), url(./fonts/e-UkraineHead-Bold.otf) format('opentype');
 }
 
 @font-face {
-  font-family: 'CirceRounded';
-  font-weight: 600;
-  src: local('CirceRounded'), url(./fonts/CirceRounded-Regular5.ttf) format('truetype');
+  font-family: 'e-Ukraine Head';
+  font-weight: 300;
+  src: local('e-Ukraine Head'), url(./fonts/e-UkraineHead-Thin.otf) format('opentype');
 }
+
+@font-face {
+  font-family: 'e-Ukraine Head';
+  font-weight: 400;
+  src: local('e-Ukraine Head'), url(./fonts/e-UkraineHead-Regular.otf) format('opentype');
+}
+
+/*@font-face {*/
+/*  font-family: 'CirceRounded';*/
+/*  font-weight: 600;*/
+/*  src: local('CirceRounded'), url(./fonts/CirceRounded-Regular5.ttf) format('truetype');*/
+/*}*/
 
 .App {
   text-align: left;
-  font-family: 'CirceRounded';
+  font-family: 'Roboto', serif;
   font-weight: 600;
-  color: #58595b;
+  color: var(--text);
+}
+.offcanvas {
+  --bs-offcanvas-width: 100vw !important;
+}
+.offcanvas-size-xl {
+  --bs-offcanvas-width: min(95vw, 600px) !important;
+}
+.offcanvas-size-xxl {
+  --bs-offcanvas-width: min(95vw, 90vw) !important;
+}
+.offcanvas-size-md {
+  /* add Responsivenes to default offcanvas */
+  --bs-offcanvas-width: min(95vw, 400px) !important;
+}
+.offcanvas-size-sm {
+  --bs-offcanvas-width: min(95vw, 250px) !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.offcanvas-body,
+.offcanvas-header {
+  background-color: var(--menu) !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

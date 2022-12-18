@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 import styles from './Header.module.css';
 
@@ -6,9 +6,18 @@ const Header = () => {
   const [t] = useTranslation();
   return (
     <header className={styles.header}>
+      {/*<div className={styles.gradient}>*/}
+      {/*  <div className={styles.shape}></div>*/}
+      {/*  <div className={styles.shape1}></div>*/}
+      {/*</div>*/}
       <h1 className={styles.title}>{t('header.title')}</h1>
       <h2 className={styles.missionHeading}>{t('header.mission')}</h2>
-      <p>{t('header.subtitle')}</p>
+      <p className={styles.subtitle}>
+        <Trans
+          i18nKey="header.subtitle"
+          components={[<span style={{ textTransform: 'uppercase', color: '#8BC751', fontWeight: '700' }} />]}
+        />
+      </p>
     </header>
   );
 };
