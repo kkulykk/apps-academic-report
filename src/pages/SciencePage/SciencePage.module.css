@@ -4,6 +4,10 @@
   max-width: 400px;
 }
 
+.image {
+  width: fit-content;
+}
+
 .wrapperPart:not(:first-of-type) {
   margin-top: 40px;
 }
@@ -30,16 +34,21 @@
 }
 
 .wrapper p {
-  padding: 20px;
-  margin: 0;
+  padding: 45px 20px 20px;
+  margin: 0 20px;
+  position: relative;
+  top: -40px;
+  z-index: 3;
   border-left: 3px solid rgb(135, 46, 172);
   border-right: 3px solid rgb(135, 46, 172);
   border-bottom: 3px solid rgb(135, 46, 172);
 }
 
 .imgWrapper img {
+  position: relative;
   max-width: 100%;
   height: auto;
+  z-index: 5;
   object-fit: cover;
 }
 
@@ -51,6 +60,7 @@
   position: absolute;
   bottom: 0;
   right: 11px;
+  z-index: 10;
   padding: 0;
   display: flex;
   align-items: center;
