@@ -1,7 +1,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   background-color: var(--background);
   height: 100vh;
   padding-top: 35px;
@@ -9,15 +9,23 @@
   padding-bottom: 35px;
 }
 
+.textContent {
+  justify-content: center;
+}
+
+.line {
+  height: 2px;
+  background-color: var(--text);
+}
+
 .title {
   font-family: 'e-Ukraine Head', serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 6em;
+  font-size: 2em;
   line-height: 148.4%;
   color: var(--text);
   white-space: pre-line;
-  z-index: 3;
 }
 
 .headerLabel {
@@ -70,13 +78,9 @@
 }
 
 .gradient {
-  margin-top: 100px;
   position: absolute;
-  transform: rotate(60deg);
   right: 0;
-  z-index: 1;
-  height: 100vh;
-  width: 50vw;
+  height: 90vh;
 }
 
 .shape1 {
@@ -125,6 +129,10 @@
     padding-left: 40px;
   }
 
+  .title {
+    font-size: 3em;
+  }
+
   .headerLabel {
     padding: 15px;
     font-size: 14px;
@@ -145,9 +153,17 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+  .title {
+    font-size: 4.5em;
+  }
+}
+
 @media (min-width: 768px) {
   .header {
-    padding: 90px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 90px;
   }
 
   .headerLabel {
@@ -167,8 +183,11 @@
 
 @media (min-width: 1200px) {
   .header {
-    padding-top: 100px;
-    padding-bottom: 90px;
+    padding: 100px 120px 90px;
+  }
+
+  .title {
+    font-size: 5.5em;
   }
 
   .headerLabel {
@@ -193,5 +212,12 @@
 
   .missionHeading {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .header {
+    padding-left: 240px;
+    padding-right: 240px;
   }
 }

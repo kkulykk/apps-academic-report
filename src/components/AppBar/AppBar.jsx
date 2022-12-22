@@ -45,6 +45,7 @@ const AppBar = ({ name }) => {
       title: t('pages.strategyGoals2025.title'),
       to: '/strategy-goals'
     },
+    { title: t('pages.science.title'), to: '/science' },
     { title: t('pages.admissionCampaign.title'), to: '/admission-campaign-results' },
     { title: t('pages.warStories.title'), to: '/small-stories-of-a-big-war' },
     { title: t('pages.socialProjects.title'), to: '/social-projects' },

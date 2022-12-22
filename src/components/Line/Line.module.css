@@ -1,0 +1,7 @@
+.line {
+  top: 100px;
+  height: 2px;
+  width: 100%;
+  margin: 0 90px;
+  background-color: var(--text);
+}
