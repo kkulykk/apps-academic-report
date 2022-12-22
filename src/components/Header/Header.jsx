@@ -2,14 +2,17 @@ import { useTranslation, Trans } from 'react-i18next';
 
 import styles from './Header.module.css';
 
+import gradient from '../../imgs/gradient.svg';
+
 const Header = () => {
   const [t] = useTranslation();
   return (
     <header className={styles.header}>
-      {/*<div className={styles.gradient}>*/}
-      {/*  <div className={styles.shape}></div>*/}
-      {/*  <div className={styles.shape1}></div>*/}
-      {/*</div>*/}
+      <div className={styles.gradient}>
+        <img src={gradient} alt="" />
+        {/*<div className={styles.shape}></div>*/}
+        {/*<div className={styles.shape1}></div>*/}
+      </div>
       <h1 className={styles.title}>{t('header.title')}</h1>
       <h2 className={styles.missionHeading}>{t('header.mission')}</h2>
       <p className={styles.subtitle}>

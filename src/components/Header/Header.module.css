@@ -70,13 +70,11 @@
 }
 
 .gradient {
-  margin-top: 100px;
+  margin-top: 60px;
   position: absolute;
-  transform: rotate(60deg);
   right: 0;
   z-index: 1;
-  height: 100vh;
-  width: 50vw;
+  height: 90vh;
 }
 
 .shape1 {

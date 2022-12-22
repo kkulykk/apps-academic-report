@@ -1,7 +1,4 @@
 .section {
-  /* display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 10px; */
   padding-top: 100px;
   padding-bottom: 30px;
 }
@@ -22,6 +19,7 @@
 
 .link {
   text-decoration: underline;
+  color: var(--text);
 }
 
 .link:hover,
