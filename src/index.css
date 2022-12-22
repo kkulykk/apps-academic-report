@@ -32,13 +32,12 @@ img {
 ul {
   list-style: none;
   margin: 0;
-  /* padding: 0; */
 }
 
 h1,
 h2,
 h3 {
-  margin: 0px;
+  margin: 0;
 }
 
 *,
@@ -56,4 +55,6 @@ p {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  padding: 0;
+  margin: 0;
 }

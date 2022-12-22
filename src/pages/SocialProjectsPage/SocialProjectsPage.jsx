@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
 import AppBar from '../../components/AppBar/AppBar';
 import Container from '../../components/Container';
 
@@ -13,6 +15,7 @@ import img7 from '../../imgs/socialProjects/project-07.jpg';
 import styles from './SocialProjectsPage.module.css';
 
 const SocialProjectsPage = () => {
+  const [t] = useTranslation();
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
@@ -23,7 +26,7 @@ const SocialProjectsPage = () => {
 
   return (
     <>
-      <AppBar name="Суспільно-орієнтовані проекти" />
+      <AppBar name={t('pages.socialProjects.title')} />
       <Container>
         <section className={styles.section}>
           <div className={styles.wrapper}>

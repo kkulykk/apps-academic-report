@@ -1,6 +1,8 @@
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
 import AppBar from '../../components/AppBar/AppBar';
 import Container from '../../components/Container';
-import { useState } from 'react';
 
 import styles from './ProfessorWinsPage.module.css';
 
@@ -13,6 +15,7 @@ import img6 from '../../imgs/profWins/prof-wins-06.jpg';
 import img7 from '../../imgs/profWins/prof-wins-07.jpg';
 
 const ProfessorsWinsPage = () => {
+  const [t] = useTranslation();
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
@@ -23,7 +26,7 @@ const ProfessorsWinsPage = () => {
 
   return (
     <>
-      <AppBar name="Успіхи викладачів" />
+      <AppBar name={t('pages.teachersWins.title')} />
       <Container>
         <section className={styles.section}>
           <div className={styles.wrapper}>

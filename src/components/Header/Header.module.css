@@ -1,15 +1,23 @@
 .header {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
-  background-image: url('../../imgs/mobile/header/header-background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
+  justify-content: center;
+  background-color: var(--background);
+  height: 100vh;
   padding-top: 35px;
   padding-left: 20px;
   padding-bottom: 35px;
+}
+
+.title {
+  font-family: 'e-Ukraine Head', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6em;
+  line-height: 148.4%;
+  color: var(--text);
+  white-space: pre-line;
+  z-index: 3;
 }
 
 .headerLabel {
@@ -17,40 +25,99 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 10px;
-  padding-right: 20px;
+  padding: 10px 20px 10px 10px;
   margin-bottom: 150px;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   background-color: rgba(102, 45, 145, 0.9);
-  color: #ffffff;
-  font-family: 'CirceRounded';
+  color: var(--text);
+  font-family: 'CirceRounded', serif;
   font-weight: 900;
   font-size: 13px;
   text-align: right;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  z-index: 3;
 }
 
 .missionWrapper {
-  background-color: rgba(255, 255, 255, 0.6);
-  width: 100%;
-  border-top-left-radius: 65px;
-  border-bottom-left-radius: 65px;
-  padding: 25px 20px 25px 50px;
-  text-align: left;
-  font-size: 12px;
-  font-weight: 700;
-  color: #58595b;
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text);
 }
 
 .missionHeading {
-  color: rgba(102, 45, 145);
-  font-weight: 700;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
-  line-height: 164.9%;
+  font-family: 'e-Ukraine Head', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 72px;
+  text-transform: capitalize;
+  color: var(--text);
+  z-index: 3;
+}
+
+.subtitle {
+  max-width: 700px;
+  z-index: 3;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.gradient {
+  margin-top: 100px;
+  position: absolute;
+  transform: rotate(60deg);
+  right: 0;
+  z-index: 1;
+  height: 100vh;
+  width: 50vw;
+}
+
+.shape1 {
+  display: flex;
+  align-items: center;
+  filter: blur(53px);
+  opacity: 90%;
+  background: linear-gradient(0deg, #7dff00 0%, #9100ff 100%);
+  animation: morph 9s ease-in-out infinite;
+  border-radius: 30% 40% 30% 70% / 30% 30% 100% 40%;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 20px #000;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-size: 100% 200%;
+    margin-left: 140px;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    background-size: 400% 350%;
+    margin-left: 130px;
+  }
+
+  70% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-size: 100% 100%;
+    margin-left: 190px;
+    margin-bottom: 200px;
+    height: 450px;
+    width: 500px;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-size: 100% 200%;
+    margin-left: 140px;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -80,14 +147,12 @@
 
 @media (min-width: 768px) {
   .header {
-    padding-top: 90px;
-    padding-left: 90px;
-    background-image: url('../../imgs/tablet/header/header-background.jpg');
+    padding: 90px;
   }
+
   .headerLabel {
     font-size: 18px;
-    padding: 20px;
-    padding-right: 40px;
+    padding: 20px 40px 20px 20px;
     margin-bottom: 240px;
   }
 
@@ -98,29 +163,18 @@
   .missionHeading {
     font-size: 16px;
   }
-
-  .missionWrapper {
-    width: 70%;
-    border-top-left-radius: 75px;
-    border-bottom-left-radius: 75px;
-    padding: 30px 40px 30px 60px;
-    text-align: left;
-    font-size: 16px;
-  }
 }
 
 @media (min-width: 1200px) {
   .header {
     padding-top: 100px;
     padding-bottom: 90px;
-
-    background-image: url('../../imgs/desktop/header/header-background.jpg');
   }
+
   .headerLabel {
     width: 80%;
     font-size: 26px;
-    padding: 20px;
-    padding-right: 90px;
+    padding: 20px 90px 20px 20px;
     margin-bottom: 220px;
   }
 

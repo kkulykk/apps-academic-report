@@ -1,21 +1,23 @@
+import { useTranslation, Trans } from 'react-i18next';
+
 import styles from './Header.module.css';
-import facultyLogoSvg from '../../imgs/uku_applied_sciences _faculty_logo.svg';
 
 const Header = () => {
+  const [t] = useTranslation();
   return (
     <header className={styles.header}>
-      <div className={styles.headerLabel}>
-        <img className={styles.logo} src={facultyLogoSvg} width="100" height="40" alt="logo" />
-
-        <span>Академічний звіт 2020-2021</span>
-      </div>
-      <div className={styles.missionWrapper}>
-        <h2 className={styles.missionHeading}>Місія</h2>
-        <p>
-          Факультет прикладних наук УКУ готує лідерів галузі, що своїми знаннями, навичками і настановами змінюватимуть
-          сьогоднішнє та майбутнє України та світу.
-        </p>
-      </div>
+      {/*<div className={styles.gradient}>*/}
+      {/*  <div className={styles.shape}></div>*/}
+      {/*  <div className={styles.shape1}></div>*/}
+      {/*</div>*/}
+      <h1 className={styles.title}>{t('header.title')}</h1>
+      <h2 className={styles.missionHeading}>{t('header.mission')}</h2>
+      <p className={styles.subtitle}>
+        <Trans
+          i18nKey="header.subtitle"
+          components={[<span style={{ textTransform: 'uppercase', color: '#8BC751', fontWeight: '700' }} />]}
+        />
+      </p>
     </header>
   );
 };

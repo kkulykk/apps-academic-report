@@ -1,7 +1,8 @@
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
 import AppBar from '../../components/AppBar/AppBar';
 import Container from '../../components/Container';
-
-import { useState } from 'react';
 
 import styles from './SciencePage.module.css';
 
@@ -17,6 +18,7 @@ import soft from '../../imgs/science/soft.jpg';
 import fb from '../../imgs/science/pro-fb-na-sajt.jpg';
 
 const SciencePage = () => {
+  const [t] = useTranslation();
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
@@ -27,7 +29,7 @@ const SciencePage = () => {
 
   return (
     <>
-      <AppBar name="Наука" />
+      <AppBar name={t('pages.science.title')} />
       <Container>
         <section className={styles.section}>
           <h3 className={styles.heading}>Співпраця зі стратегічними партнерами у сфері науки та освіти</h3>

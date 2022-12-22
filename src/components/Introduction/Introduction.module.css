@@ -3,20 +3,13 @@
   padding-bottom: 75px;
   width: 100%;
   height: fit-content;
-  background-image: url('../../imgs/mobile/introduction/dots.png'), url('../../imgs/mobile/introduction/rectangle1.png'),
-    url('../../imgs/mobile/introduction/rectangle3.png'), url('../../imgs/mobile/introduction/rectangle2.png');
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top 5px right 10px, top -40px right -20px, left -20px bottom -35px, left -20px bottom -20px;
+  background-color: black;
 }
 
 .headingWrapper {
   display: flex;
   width: 65%;
-  padding: 14px;
-  padding-left: 20px;
-  border-top-right-radius: 95px;
-  border-bottom-right-radius: 95px;
-  background-color: rgb(102, 45, 145);
+  padding: 14px 14px 14px 20px;
   color: white;
   font-size: 14px;
   font-weight: 700;
@@ -27,6 +20,7 @@
 .textWrapper {
   margin-top: 30px;
   display: flex;
+  color: white;
   flex-direction: column-reverse;
   align-items: center;
 }
@@ -34,7 +28,6 @@
 .introductionText {
   text-align: left;
   font-size: 14px;
-
   margin: 0;
 }
 
@@ -46,11 +39,10 @@
   text-align: right;
   background-image: url('../../imgs/mobile/introduction/circle.png');
   background-repeat: no-repeat;
-  background-position: bottom 0px right 0px;
+  background-position: bottom 0 right 0;
   padding-right: 20px;
   margin-right: -20px;
   padding-bottom: 20px;
-  margin-bottom: -20px;
   margin-bottom: 10px;
 }
 
@@ -58,7 +50,6 @@
   width: 100%;
   height: auto;
   border-radius: 25px;
-
   overflow: auto;
 }
 

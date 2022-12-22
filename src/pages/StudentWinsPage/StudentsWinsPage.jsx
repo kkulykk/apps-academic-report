@@ -1,6 +1,10 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
 import AppBar from '../../components/AppBar/AppBar';
 import Container from '../../components/Container';
+
+import styles from './StudentsWinsPage.module.css';
 
 import img1 from '../../imgs/studWins/stud-wins-01.jpg';
 import img2 from '../../imgs/studWins/stud-wins-02.jpg';
@@ -16,9 +20,8 @@ import img11 from '../../imgs/studWins/stud-wins-11.jpg';
 import img12 from '../../imgs/studWins/stud-wins-12.jpg';
 import img13 from '../../imgs/studWins/stud-wins-13.jpg';
 
-import styles from './StudentsWinsPage.module.css';
-
 const StudentsWinsPage = () => {
+  const [t] = useTranslation();
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
@@ -35,7 +38,7 @@ const StudentsWinsPage = () => {
 
   return (
     <>
-      <AppBar name="Студентські перемоги" />
+      <AppBar name={t('pages.studentsWins.title')} />
       <Container>
         <section className={styles.section}>
           <div className={styles.wrapper}>

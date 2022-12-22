@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 import AppBar from '../../components/AppBar/AppBar';
 import Container from '../../components/Container';
 
@@ -8,27 +10,31 @@ import deskImg2 from '../../imgs/desktop/bacalavr.jpg';
 
 import styles from './IntroCampaignResPage.module.css';
 
-const IntroCampaignResPage = () => (
-  <>
-    <AppBar name="Результати вступної кампанії" />
-    <Container>
-      <section className={styles.section}>
-        <div className={styles.imgWrapper}>
-          <picture>
-            <source srcSet={deskImg2} media="(min-width:768px)" />
-            <img src={mobImg2} className={styles.img} alt="Ukraine map" />
-          </picture>
-        </div>
+const AdmissionCampaignResPage = () => {
+  const [t] = useTranslation();
 
-        <div className={styles.imgWrapper}>
-          <picture>
-            <source srcSet={deskImg1} media="(min-width:768px)" />
-            <img src={mobImg1} className={styles.img} alt="Ukraine map" />
-          </picture>
-        </div>
-      </section>
-    </Container>
-  </>
-);
+  return (
+    <>
+      <AppBar name={t('pages.admissionCampaign.title')} />
+      <Container>
+        <section className={styles.section}>
+          <div className={styles.imgWrapper}>
+            <picture>
+              <source srcSet={deskImg2} media="(min-width:768px)" />
+              <img src={mobImg2} className={styles.img} alt="Ukraine map" />
+            </picture>
+          </div>
 
-export default IntroCampaignResPage;
+          <div className={styles.imgWrapper}>
+            <picture>
+              <source srcSet={deskImg1} media="(min-width:768px)" />
+              <img src={mobImg1} className={styles.img} alt="Ukraine map" />
+            </picture>
+          </div>
+        </section>
+      </Container>
+    </>
+  );
+};
+
+export default AdmissionCampaignResPage;
