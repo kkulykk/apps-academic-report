@@ -3,21 +3,58 @@ import { Trans, useTranslation } from 'react-i18next';
 
 import AppBar from '../../components/AppBar/AppBar';
 import Container from '../../components/Container';
+import { getLanguageImage } from '../../utils/services';
 
 import styles from './SciencePage.module.css';
 
-import cvpr from '../../imgs/science/cvpr.png';
-import eccv from '../../imgs/science/eccv.png';
-import iecsit from '../../imgs/science/iecsit.png';
-import contribuling from '../../imgs/science/contribuling.png';
-import nyuUK from '../../imgs/science/nyuUK.png';
-import neuroEN from '../../imgs/science/neuroEN.png';
-import torontoEN from '../../imgs/science/torontoEN.png';
-import googleEN from '../../imgs/science/googleEN.png';
-import wienEN from '../../imgs/science/wienEN.png';
-import dataxEN from '../../imgs/science/dataxEN.png';
-import daschoolEN from '../../imgs/science/daschoolEN.png';
-import aihouseEN from '../../imgs/science/aihouseEN.png';
+const images = {
+  cvpr: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2Fcvpr.png?alt=media&token=9637f82f-d635-428a-9c09-dcc686ef23ef',
+  eccv: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2Feccv.png?alt=media&token=4618dde5-6ec4-47b5-82ba-9b6b561844fd',
+  iecsit:
+    'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2Fiecsit.png?alt=media&token=6e409dc5-5481-47c3-8a5c-625278cad638',
+  contribuling:
+    'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2Fcontribuling.png?alt=media&token=cdd5980b-47ea-4230-b6d3-3c95788f12d4',
+  kyiv: {
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FkyivEN.png?alt=media&token=6522a727-315a-47f9-9b70-6e599a7921fe',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FkyivUK.png?alt=media&token=1708199e-2548-4307-bfa8-5fdfdcd45af8'
+  },
+  nyu: {
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FnyuEN.png?alt=media&token=c5e2f550-42ef-416c-9a55-30c7545cd212',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FnyuUK.png?alt=media&token=ce82e556-f62b-4124-a2fa-48e3059dc47d'
+  },
+  neuro: {
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FneuroEN.png?alt=media&token=0c1f893a-bff3-4481-a293-d14b39e3257e',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FneuroUK.png?alt=media&token=46a72fdb-98da-42e8-aa5c-65095d2c9187'
+  },
+  toronto: {
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FtorontoEN.png?alt=media&token=3122681a-0045-4b6e-8c77-d392b4fb886f',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FtorontoUK.png?alt=media&token=8b197e09-ad06-4cc7-b420-15ea66e2479e'
+  },
+  google: {
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FgoogleEN.png?alt=media&token=5306a3ee-d1e5-4f9a-8146-42a6e34871a7',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FgoogleUK.png?alt=media&token=9b76511d-8cca-4906-bb1b-0763d1864cf4'
+  },
+  wien: {
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FwienEN.png?alt=media&token=18b78fd0-9e44-4944-aeaa-fc4f8ba61ada',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FwienUK.png?alt=media&token=cb88a402-7b9d-47c0-a340-74e1a5fdd473'
+  },
+  datax: {
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FdataxEN.png?alt=media&token=a3308975-20ef-46c6-b692-bd53a15ae2a9',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FdataxUK.png?alt=media&token=913f2aa2-a6e9-4e65-a8a9-0084d8947530'
+  },
+  daschool: {
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FdaschoolEN.png?alt=media&token=c0c884d6-b2df-4c59-8e55-126ed9fcf044',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FdaschoolUK.png?alt=media&token=db765bd7-8c91-4d9c-9e24-4a7832678be4'
+  },
+  aihouse: {
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FaihouseEN.png?alt=media&token=4cf5ad1e-5fa4-4633-a5c3-9efca01649b8',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FaihouseUK.png?alt=media&token=648aa427-7d2f-4643-bb8d-9dce77420929'
+  },
+  gamejam: {
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FgamejamEN.png?alt=media&token=ef329262-5f40-4398-be9c-a299cf5770a8',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FgamejamUK.png?alt=media&token=5c85be5f-ade4-43ea-9ae1-87d40a463386'
+  }
+};
 
 const SciencePage = () => {
   const [t] = useTranslation();
@@ -40,7 +77,7 @@ const SciencePage = () => {
 
           <div className={styles.wrapperPart}>
             <div className={styles.imgWrapper}>
-              <img src={cvpr} alt={t('pages.science.article1')} />
+              <img src={images.cvpr} alt={t('pages.science.article1')} />
             </div>
             <p className={styles.description} style={{ marginTop: '40px' }}>
               <Trans
@@ -102,7 +139,7 @@ const SciencePage = () => {
 
           <div className={styles.wrapperPart}>
             <div className={styles.imgWrapper}>
-              <img src={eccv} alt={t('pages.science.article2')} />
+              <img src={images.eccv} alt={t('pages.science.article2')} />
             </div>
             <p className={styles.description}>
               <Trans
@@ -134,9 +171,9 @@ const SciencePage = () => {
 
           <div className={styles.wrapperPart}>
             <div className={styles.imgWrapper}>
-              <img src={iecsit} alt={t('pages.science.article3')} />
+              <img src={images.iecsit} alt={t('pages.science.article3')} />
             </div>
-            <p className={styles.description}>
+            <p className={styles.description} style={{ marginTop: '40px' }}>
               <Trans
                 i18nKey={'pages.science.article3Description'}
                 components={[
@@ -157,7 +194,7 @@ const SciencePage = () => {
 
           <div className={styles.wrapperPart}>
             <div className={styles.imgWrapper}>
-              <img src={contribuling} alt={t('pages.science.article4')} />
+              <img src={images.contribuling} alt={t('pages.science.article4')} />
             </div>
             <p className={styles.description}>
               <Trans
@@ -179,11 +216,9 @@ const SciencePage = () => {
           </div>
 
           <div className={styles.wrapperPart}>
-            TODO: add banner
-            {/*<div className={styles.imgWrapper}>*/}
-            {/*  <img src={contribuling} alt="ContribuLing 2022" />*/}
-            {/*</div>*/}
-            <h2 className={styles.banersHead}>{t('pages.science.article5')}</h2>
+            <div className={styles.imgWrapper}>
+              <img src={getLanguageImage(images.kyiv)} alt="ContribuLing 2022" />
+            </div>
             <p className={styles.description}>
               <Trans
                 i18nKey={'pages.science.article5Description'}
@@ -207,7 +242,7 @@ const SciencePage = () => {
           <div className={styles.workshops}>
             <div className={styles.wrapper}>
               <div className={styles.imgWrapper}>
-                <img src={nyuUK} alt={t('pages.science.internship1')} />
+                <img src={getLanguageImage(images.nyu)} alt={t('pages.science.internship1')} />
                 <button
                   className={styles.expandBtn}
                   type="button"
@@ -266,7 +301,7 @@ const SciencePage = () => {
 
             <div className={styles.wrapper}>
               <div className={styles.imgWrapper}>
-                <img src={neuroEN} alt={t('pages.science.internship2')} />
+                <img src={getLanguageImage(images.neuro)} alt={t('pages.science.internship2')} />
                 <button
                   className={styles.expandBtn}
                   type="button"
@@ -322,7 +357,7 @@ const SciencePage = () => {
 
             <div className={styles.wrapper}>
               <div className={styles.imgWrapper}>
-                <img src={torontoEN} alt={t('pages.science.internship3')} />
+                <img src={getLanguageImage(images.toronto)} alt={t('pages.science.internship3')} />
                 <button
                   className={styles.expandBtn}
                   type="button"
@@ -369,7 +404,7 @@ const SciencePage = () => {
 
             <div className={styles.wrapper}>
               <div className={styles.imgWrapper}>
-                <img src={googleEN} alt={t('pages.science.internship4')} />
+                <img src={getLanguageImage(images.google)} alt={t('pages.science.internship4')} />
                 <button
                   className={styles.expandBtn}
                   type="button"
@@ -407,7 +442,7 @@ const SciencePage = () => {
 
             <div className={styles.wrapper}>
               <div className={styles.imgWrapper}>
-                <img src={wienEN} alt={t('pages.science.internship5')} />
+                <img src={getLanguageImage(images.wien)} alt={t('pages.science.internship5')} />
                 <button
                   className={styles.expandBtn}
                   type="button"
@@ -463,7 +498,7 @@ const SciencePage = () => {
 
             <div className={styles.wrapper}>
               <div className={styles.imgWrapper}>
-                <img src={dataxEN} alt={t('pages.science.internship6')} />
+                <img src={getLanguageImage(images.datax)} alt={t('pages.science.internship6')} />
                 <button
                   className={styles.expandBtn}
                   type="button"
@@ -501,7 +536,7 @@ const SciencePage = () => {
 
             <div className={styles.wrapper}>
               <div className={styles.imgWrapper}>
-                <img src={daschoolEN} alt={t('pages.science.internship7')} />
+                <img src={getLanguageImage(images.daschool)} alt={t('pages.science.internship7')} />
                 <button
                   className={styles.expandBtn}
                   type="button"
@@ -539,7 +574,7 @@ const SciencePage = () => {
 
             <div className={styles.wrapper}>
               <div className={styles.imgWrapper}>
-                <img src={aihouseEN} alt={t('pages.science.internship8')} />
+                <img src={getLanguageImage(images.aihouse)} alt={t('pages.science.internship8')} />
                 <button
                   className={styles.expandBtn}
                   type="button"
@@ -577,8 +612,7 @@ const SciencePage = () => {
 
             <div className={styles.wrapper}>
               <div className={styles.imgWrapper}>
-                TODO: Add banner
-                <img src={daschoolEN} alt={t('pages.science.internship9')} />
+                <img src={getLanguageImage(images.gamejam)} alt={t('pages.science.internship9')} />
                 <button
                   className={styles.expandBtn}
                   type="button"
