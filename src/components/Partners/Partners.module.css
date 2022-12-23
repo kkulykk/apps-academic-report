@@ -3,17 +3,13 @@
   padding-bottom: 75px;
   width: 100%;
   height: fit-content;
-  background-image: url('../../imgs/mobile/partners/firework1.png'), url('../../imgs/mobile/partners/ellipse1.png'),
-    url('../../imgs/mobile/partners/wirework2.png'), url('../../imgs/mobile/partners/ecllipse2.png');
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top -30px right 0px, top 120px right 45px, left bottom -50px, left 20px bottom 25px;
+  background-position: top -30px right 0, top 120px right 45px, left bottom -50px, left 20px bottom 25px;
 }
 
 .headingWrapper {
   display: flex;
   width: 65%;
-  padding: 14px;
-  padding-left: 20px;
+  padding: 14px 14px 14px 20px;
   border-top-right-radius: 95px;
   border-bottom-right-radius: 95px;
   background-color: rgb(102, 45, 145);
@@ -78,19 +74,11 @@
   .partners {
     padding-top: 100px;
     padding-bottom: 100px;
-
-    background-image: url('../../imgs/tablet/partners/firework01.png'), url('../../imgs/tablet/partners/ecllipse01.png'),
-      url('../../imgs/tablet/partners/firework02.png'), url('../../imgs/tablet/partners/ellipse02.png'),
-      url('../../imgs/tablet/partners/ellipse03.png');
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: top -50px right 0px, top 120px right 250px, left bottom -120px, left 10px bottom 60px,
-      right 10px bottom 50px;
   }
 
   .headingWrapper {
     width: 55%;
-    padding: 20px;
-    padding-left: 90px;
+    padding: 20px 20px 20px 90px;
     font-size: 16px;
   }
 
@@ -118,19 +106,11 @@
   .partners {
     padding-top: 220px;
     padding-bottom: 220px;
-
-    background-image: url('../../imgs/tablet/partners/firework01.png'), url('../../imgs/tablet/partners/ecllipse01.png'),
-      url('../../imgs/tablet/partners/firework02.png'), url('../../imgs/tablet/partners/ellipse02.png'),
-      url('../../imgs/tablet/partners/ellipse03.png');
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: top -50px right 0px, top 120px right 250px, left bottom -120px, left 10px bottom 60px,
-      right 10px bottom 50px;
   }
 
   .headingWrapper {
     width: 55%;
-    padding: 25px;
-    padding-left: 120px;
+    padding: 25px 25px 25px 120px;
     font-size: 18px;
   }
 
@@ -156,8 +136,7 @@
 @media (min-width: 1400px) {
   .headingWrapper {
     width: 55%;
-    padding: 35px;
-    padding-left: 240px;
+    padding: 35px 35px 35px 240px;
     font-size: 20px;
   }
 }

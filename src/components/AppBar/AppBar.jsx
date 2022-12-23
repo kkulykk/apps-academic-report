@@ -85,20 +85,10 @@ const AppBar = ({ name }) => {
 
       <Offcanvas show={show} onHide={handleClose} className={styles.menuContainer} placement="end">
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>
-            <Link className={styles.logo} to="/">
-              <img className={styles.logo} src={FacultyLogo} width="50" height="50" alt="logo" />
-            </Link>
-
-            {name ? (
-              <div className={styles.nameGroup}>
-                <span className={styles.mainName}>{t('appBar.title')}</span>
-                <span className={styles.name}>{name}</span>
-              </div>
-            ) : (
-              <img className={styles.logo} src={UCULogo} width="50" height="50" alt="UCU Logo" />
-            )}
-          </Offcanvas.Title>
+          <Link className={styles.logo} to="/">
+            <img className={styles.logo} src={FacultyLogo} width="50" height="50" alt="logo" />
+          </Link>
+          <img className={styles.logo} src={UCULogo} width="50" height="50" alt="UCU Logo" />
         </Offcanvas.Header>
         <Offcanvas.Body>
           <nav className={styles.itemsWrapper}>
