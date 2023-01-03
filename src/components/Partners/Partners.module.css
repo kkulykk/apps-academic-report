@@ -36,7 +36,10 @@
 }
 
 .sponsoredPartner {
-  max-width: 100px;
+  margin: 10px 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .imgWrapper:first-of-type {
@@ -64,10 +67,6 @@
   .partnersHeading {
     font-size: 22px;
   }
-
-  .sponsoredPartner {
-    max-width: 150px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -91,10 +90,6 @@
   .partnersHeading {
     font-size: 25px;
     margin-bottom: 20px;
-  }
-
-  .sponsoredPartner {
-    max-width: 200px;
   }
 
   .strategyPartners {
@@ -122,10 +117,6 @@
   .partnersHeading {
     font-size: 30px;
     margin-bottom: 30px;
-  }
-
-  .sponsoredPartner {
-    max-width: 250px;
   }
 
   .partnersWrapper {

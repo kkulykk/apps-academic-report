@@ -5,8 +5,10 @@ import styles from './Partners.module.css';
 const images = {
   strategical:
     'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fmain%2FstrategicalPartners.svg?alt=media&token=8133c84c-b20c-4aac-9fbe-a3649eff66f6',
+  sponsoredResearch:
+    'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fmain%2FsponsoredResearch.svg?alt=media&token=dd2e39a2-6165-4098-a31b-9641e7a9bd70',
   partners:
-    'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fmain%2Fpartners.svg?alt=media&token=b4ab3702-5186-4966-9e9e-2fbcb9334cc8'
+    'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fmain%2Fpartners.svg?alt=media&token=cdcf7bb5-e117-45cc-8f9d-efa0c0ad12df'
 };
 
 const Partners = () => {
@@ -23,21 +25,16 @@ const Partners = () => {
         </p>
         <h3 className={styles.partnersHeading}>Стратегічні партнери:</h3>
         <ul className={styles.partnersWrapper}>
-          <img className={styles.strategyPartners} src={images.strategical} alt="eleks logo" />
+          <img className={styles.strategyPartners} src={images.strategical} alt="Strategical partners" />
         </ul>
 
-        {/*<h3 className={styles.partnersHeading}>Sponsored Research Agreement:</h3>*/}
-        {/*<ul className={styles.partnersWrapper}>*/}
-        {/*<li className={styles.imgWrapper}>*/}
-        {/*  <img className={styles.sponsoredPartner} src={fbRealityLab} alt="eleks logo" />*/}
-        {/*</li>*/}
-        {/*<li className={styles.imgWrapper}>*/}
-        {/*  <img className={styles.sponsoredPartner} src={advaSoft} alt="softServe logo" />*/}
-        {/*</li>*/}
-        {/*</ul>*/}
+        <h3 className={styles.partnersHeading}>Sponsored Research Agreement:</h3>
+        <ul className={styles.partnersWrapper}>
+          <img className={styles.sponsoredPartner} src={images.sponsoredResearch} alt="Sponsored research" />
+        </ul>
 
         <h3 className={styles.partnersHeading}>Партнери:</h3>
-        <img className={styles.allPartners} src={images.partners} alt="partners logos" />
+        <img src={images.partners} alt="Partners logos" />
       </Container>
     </section>
   );

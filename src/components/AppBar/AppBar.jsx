@@ -49,7 +49,7 @@ const AppBar = ({ name }) => {
     { title: t('pages.admissionCampaign.title'), to: '/admission-campaign-results' },
     { title: t('pages.warStories.title'), to: '/small-stories-of-a-big-war' },
     { title: t('pages.socialProjects.title'), to: '/social-projects' },
-    { title: t('pages.structuralChanges.title'), to: '/structure-changes' },
+    { title: t('pages.structuralChanges.title'), to: '/new-members' },
     { title: t('pages.graduates.title'), to: '/graduates' }
   ];
 
