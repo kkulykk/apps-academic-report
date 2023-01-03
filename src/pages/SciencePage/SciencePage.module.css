@@ -90,7 +90,6 @@
 }
 
 .link {
-  /*text-decoration: underline;*/
   color: var(--green);
   font-weight: 700;
   cursor: pointer;
@@ -139,7 +138,7 @@
   }
 
   .expandBtn {
-    bottom: 0px;
+    bottom: 0;
   }
 }
 
@@ -169,7 +168,7 @@
   }
 
   .expandBtn {
-    bottom: 0px;
+    bottom: 0;
   }
 }
 

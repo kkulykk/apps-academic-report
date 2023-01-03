@@ -2,7 +2,9 @@ import Container from '../Container';
 
 import styles from './Introduction.module.css';
 
-import decan from '../../imgs/Introduction/dekan.jpg';
+const images = {
+  dean: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fmain%2Fdean.jpg?alt=media&token=0860da7f-e670-435d-9d22-d362ddb68d62'
+};
 
 const Introduction = () => {
   return (
@@ -24,7 +26,7 @@ const Introduction = () => {
 
           <div className={styles.wrapper}>
             <div className={styles.imgWrapper}>
-              <img src={decan} alt="man" />
+              <img src={images.dean} alt="Yaroslav Prytula" />
             </div>
             <div className={styles.nameWrapper}>
               <span className={styles.name}>Ярослав Притула</span>

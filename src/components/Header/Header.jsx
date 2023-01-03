@@ -1,7 +1,5 @@
 import { useTranslation, Trans } from 'react-i18next';
 
-import Line from '../Line';
-
 import styles from './Header.module.css';
 
 import gradient from '../../imgs/gradient.svg';

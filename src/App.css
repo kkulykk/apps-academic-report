@@ -58,4 +58,17 @@
 .offcanvas-body,
 .offcanvas-header {
   background-color: var(--menu) !important;
+
+  padding-left: 90px !important;
+  padding-right: 90px !important;
+}
+
+.offcanvas-header {
+  justify-content: space-between !important;
+}
+
+.offcanvas-body {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-around !important;
 }
