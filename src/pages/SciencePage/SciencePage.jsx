@@ -8,6 +8,14 @@ import { getLanguageImage } from '../../utils/services';
 import styles from './SciencePage.module.css';
 
 const images = {
+  rectorsAward: {
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FrectorsAwardEN.png?alt=media&token=2af82819-4f82-4d4a-b4de-74bb730b269a',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FrectorsAwardUK.png?alt=media&token=55db7ed8-b11c-4451-92ec-d8e94677b30a'
+  },
+  phd: {
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FphdEN.png?alt=media&token=c167f0b4-aa13-484a-92cd-1e173a8985bb',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FphdUK.png?alt=media&token=6466ff6e-aab5-49bb-937c-2dc7887cb7c7'
+  },
   cvpr: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2Fcvpr.png?alt=media&token=9637f82f-d635-428a-9c09-dcc686ef23ef',
   eccv: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2Feccv.png?alt=media&token=4618dde5-6ec4-47b5-82ba-9b6b561844fd',
   iecsit:
@@ -53,6 +61,14 @@ const images = {
   gamejam: {
     en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FgamejamEN.png?alt=media&token=ef329262-5f40-4398-be9c-a299cf5770a8',
     uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FgamejamUK.png?alt=media&token=5c85be5f-ade4-43ea-9ae1-87d40a463386'
+  },
+  appsCamp: {
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FappsCampEN.png?alt=media&token=3ef07923-da9a-4eb7-b1f3-ed70b2bfa960',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FappsCampUK.png?alt=media&token=080be0f9-ae78-41eb-8080-ea1f614925e1'
+  },
+  vulyk: {
+    en: '',
+    uk: ''
   }
 };
 
@@ -67,12 +83,48 @@ const SciencePage = () => {
   const [open7, setOpen7] = useState(false);
   const [open8, setOpen8] = useState(false);
   const [open9, setOpen9] = useState(false);
+  const [open10, setOpen10] = useState(false);
+  const [open11, setOpen11] = useState(false);
 
   return (
     <>
       <AppBar name={t('pages.science.title')} />
       <Container>
         <section className={styles.section}>
+          <h3 className={styles.heading}>{t('pages.science.awardsTitle')}</h3>
+
+          <div className={styles.wrapperPart}>
+            <div className={styles.imgWrapper}>
+              <img src={getLanguageImage(images.rectorsAward)} alt={t('pages.science.awardsTitle')} />
+            </div>
+            <p className={styles.description} style={{ marginTop: '40px' }}>
+              <Trans i18nKey={'pages.science.rectorsAward'} components={[<br />]} />
+            </p>
+          </div>
+
+          <div className={styles.wrapperPart}>
+            <div className={styles.imgWrapper}>
+              <img src={getLanguageImage(images.phd)} alt={t('pages.science.awardsTitle')} />
+            </div>
+            <p className={styles.description} style={{ marginTop: '40px' }}>
+              <Trans
+                i18nKey={'pages.science.phd'}
+                components={[
+                  <br />,
+                  <span
+                    className={styles.link}
+                    onClick={() => {
+                      window.open(
+                        'https://www.facebook.com/Inria-Lille-Nord-Europe-132199733544881/?__cft__[0]=AZV9pV1L7eFQAakM1VIBlNEk3TQCazH6LFQtPWrJtyUoVINCeakid0KPWK92hFYCGIzkZUNkFwNk909LdKR_Jq3K0Tnm8adidep3uEvCAhl0gG_D1wiwPaVJ_IH5bYNm2IGaMdqOwhINVVcFnAi7uTF5Uf9dkJg7-iCmXqY_ndsDJMPj-2YMItB3fED74dG0Nqs&__tn__=kK-R',
+                        '_blank'
+                      );
+                    }}
+                  />
+                ]}
+              />
+            </p>
+          </div>
+
           <h3 className={styles.heading}>{t('pages.science.conferencesTitle')}</h3>
 
           <div className={styles.wrapperPart}>
@@ -630,6 +682,56 @@ const SciencePage = () => {
               {open9 ? (
                 <p className={styles.description}>
                   <Trans i18nKey={'pages.science.internship9Description'} components={[<br />]} />
+                </p>
+              ) : null}
+            </div>
+          </div>
+          <h3 className={styles.heading}>{t('pages.science.publicOrientedProjectsTitle')}</h3>
+          <div className={styles.workshops}>
+            <div className={styles.wrapper}>
+              <div className={styles.imgWrapper}>
+                <img src={getLanguageImage(images.appsCamp)} alt={t('pages.science.publicOrientedProjectsTitle')} />
+                <button
+                  className={styles.expandBtn}
+                  type="button"
+                  onClick={() => {
+                    setOpen10(!open10);
+                  }}
+                >
+                  {open10 ? (
+                    <span className="material-icons">keyboard_double_arrow_up</span>
+                  ) : (
+                    <span className="material-icons">keyboard_double_arrow_down</span>
+                  )}
+                </button>
+              </div>
+              {open10 ? (
+                <p className={styles.description}>
+                  <Trans i18nKey={'pages.science.project2'} components={[<br />]} />
+                </p>
+              ) : null}
+            </div>
+
+            <div className={styles.wrapper}>
+              <div className={styles.imgWrapper}>
+                <img src={getLanguageImage(images.vulyk)} alt={t('pages.science.publicOrientedProjectsTitle')} />
+                <button
+                  className={styles.expandBtn}
+                  type="button"
+                  onClick={() => {
+                    setOpen11(!open11);
+                  }}
+                >
+                  {open11 ? (
+                    <span className="material-icons">keyboard_double_arrow_up</span>
+                  ) : (
+                    <span className="material-icons">keyboard_double_arrow_down</span>
+                  )}
+                </button>
+              </div>
+              {open11 ? (
+                <p className={styles.description}>
+                  <Trans i18nKey={'pages.science.project1'} components={[<br />]} />
                 </p>
               ) : null}
             </div>
