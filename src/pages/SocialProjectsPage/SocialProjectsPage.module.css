@@ -43,7 +43,7 @@
 .expandBtn {
   position: absolute;
   bottom: 0;
-  right: 14px;
+  right: 11px;
   z-index: 10;
   padding: 0;
   display: flex;
