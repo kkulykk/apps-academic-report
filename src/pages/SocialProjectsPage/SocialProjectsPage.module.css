@@ -105,7 +105,8 @@
   }
 
   .expandBtn {
-    bottom: 0;
+    bottom: 5px;
+    right: 18px;
   }
 }
 
@@ -124,7 +125,8 @@
   }
 
   .expandBtn {
-    bottom: 0;
+    bottom: 5px;
+    right: 18px;
   }
 }
 
@@ -143,5 +145,6 @@
 
   .expandBtn {
     bottom: 5px;
+    right: 14px;
   }
 }
