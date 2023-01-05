@@ -63,12 +63,12 @@ const images = {
     uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FgamejamUK.png?alt=media&token=5c85be5f-ade4-43ea-9ae1-87d40a463386'
   },
   appsCamp: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FappsCampEN.png?alt=media&token=3ef07923-da9a-4eb7-b1f3-ed70b2bfa960',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FappsCampUK.png?alt=media&token=080be0f9-ae78-41eb-8080-ea1f614925e1'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FappsCampEN.png?alt=media&token=4e3b321b-a7f5-4567-b2d5-ab6f9294805f',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FappsCampUK.png?alt=media&token=3b00f7a9-320b-441d-9290-74672c3f5cb2'
   },
   vulyk: {
-    en: '',
-    uk: ''
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FvulykEN.png?alt=media&token=fe02ba6d-db00-4e2d-b0b0-9010d7cff986',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FvulykUK.png?alt=media&token=f512358a-e250-4244-9a39-6a02ee69d493'
   }
 };
 
