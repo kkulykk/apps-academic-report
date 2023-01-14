@@ -1,95 +1,49 @@
 import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
 
 import AppBar from '../../components/AppBar/AppBar';
-import Container from '../../components/Container';
-
-import strategyIcon from '../../imgs/strategy/icon_strategy.svg';
-import icon1 from '../../imgs/strategy/group1.svg';
-import icon2 from '../../imgs/strategy/group2.svg';
-import icon3 from '../../imgs/strategy/group3.svg';
-import icon4 from '../../imgs/strategy/group4.svg';
-import icon5 from '../../imgs/strategy/group5.svg';
-import icon6 from '../../imgs/strategy/group6.svg';
+import { getLanguageImage } from '../../utils/services';
 
 import styles from './StrategyPage.module.css';
 
+const images = {
+  desktop: {
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fstrategic-objectives%2FstrategicObjectivesEN.svg?alt=media&token=defc9b43-79f4-4e7b-8050-b045397b893a',
+    // TODO: Add UK image
+    uk: ''
+  },
+  mobile: {
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fstrategic-objectives%2FstrategicObjectivesMobileEN.svg?alt=media&token=151b1fba-712e-4e80-bdb7-3b22e400a7d6',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fstrategic-objectives%2FstrategicObjectivesMobileUK.svg?alt=media&token=c3d2a110-ce3d-454d-8a37-c23690268b34'
+  }
+};
+
 const StrategyPage = () => {
   const [t] = useTranslation();
+  const isMobile = useMediaQuery('(max-width: 950px)');
+
+  function useMediaQuery(query) {
+    const [matches, setMatches] = useState(false);
+
+    useEffect(() => {
+      const mediaQuery = window.matchMedia(query);
+      setMatches(mediaQuery.matches);
+      const handler = (event) => setMatches(event.matches);
+      mediaQuery.addEventListener('change', handler);
+      return () => mediaQuery.removeEventListener('change', handler);
+    }, [query]);
+
+    return matches;
+  }
 
   return (
     <>
       <AppBar name={t('pages.strategyGoals2025.title')} />
-      <Container>
-        <section className={styles.strategy}>
-          <div className={styles.headingWrapper}>
-            <img className={styles.strategyIcon} src={strategyIcon} width="40" height="40" alt="ledder up" />
-            <span className={styles.heading}>
-              Стратегічні цілі <br /> факультету 2025
-            </span>
-          </div>
-
-          <ul className={styles.list}>
-            <li className={styles.item}>
-              <div className={styles.imgWrapper}>
-                <img className={styles.listIcon} src={icon1} alt="dialog" />
-              </div>
-              <span className={styles.text}>
-                наші випускники є тими, хто творять нові робочі місця. Ми активно залучаємо студентів до викладення,
-                науки та бізнес-проектів
-              </span>
-            </li>
-
-            <li className={styles.item}>
-              <div className={styles.imgWrapper}>
-                <img className={styles.listIcon} src={icon2} alt="people connections" />
-              </div>
-              <span className={styles.text}>
-                сформована alumni спільнота, яка продовжує навчання та формування випускників впродовж життя та залучає
-                їх до різних освітніх ініціатив
-              </span>
-            </li>
-
-            <li className={styles.item}>
-              <div className={styles.imgWrapper}>
-                <img className={styles.listIcon} src={icon3} alt="people" />
-              </div>
-              <span className={styles.text}>
-                сформована потужна команда постійних викладачів як через навчання молодих викладачів, так і через
-                залучення зіркових викладачів. Ми піклуємось про наших працівників та створюємо комфортні умови
-                онбордингу та праці
-              </span>
-            </li>
-
-            <li className={styles.item}>
-              <div className={styles.imgWrapper}>
-                <img className={styles.listIcon} src={icon4} alt="note" />
-              </div>
-              <span className={styles.text}>
-                науковий доробок та сформована мережа партнерств робить факультет помітним та співмірним з кращими
-                прикладами у співмірних унівеситетах світу
-              </span>
-            </li>
-
-            <li className={styles.item}>
-              <div className={styles.imgWrapper}>
-                <img className={styles.listIcon} src={icon5} alt="flags" />
-              </div>
-              <span className={styles.text}>факультет є майданчиком для постійних експериментів</span>
-            </li>
-
-            <li className={styles.item}>
-              <div className={styles.imgWrapper}>
-                <img className={styles.listIcon} src={icon6} alt="sector" />
-              </div>
-              <span className={styles.text}>
-                факультет активно розбудовує спільноту друзів факультету та активно взаємодіє зі спільнотою, зокрема,
-                через консалтинг, запровадження курсів суспільно-орієнтованого навчання та впровадження курсів
-                "цифрового мислення" в світоглядне ядро та/чи загальноуніверситетські курси
-              </span>
-            </li>
-          </ul>
-        </section>
-      </Container>
+      <img
+        className={styles.image}
+        src={isMobile ? getLanguageImage(images.mobile) : getLanguageImage(images.desktop)}
+        alt="people connections"
+      />
     </>
   );
 };
