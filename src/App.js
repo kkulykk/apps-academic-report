@@ -35,7 +35,7 @@ const App = () => {
           <Route path="/certificate-programs" element={<CertificateProgramsPage />} />
           <Route path="/science" element={<SciencePage />} />
           <Route path="/ratings" element={<RatingsPage />} />
-          <Route path="/graduates" element={<GraduatesPage />} />
+          <Route path="/alumni" element={<GraduatesPage />} />
           <Route path="/who-we-are" element={<WhoWeArePage />} />
         </Routes>
         <ScrollUpBtn />
