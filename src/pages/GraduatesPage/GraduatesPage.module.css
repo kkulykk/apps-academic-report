@@ -1,10 +1,7 @@
 .section {
-  /* display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 20px; */
   padding-top: 100px;
   padding-bottom: 30px;
-  height: 100wh;
+  /*height: 100wh;*/
 }
 
 .imgWrapper img {
@@ -16,6 +13,8 @@
 .description {
   margin-top: 30px;
   font-size: 14px;
+  color: var(--text);
+  font-weight: normal;
 }
 
 .description a,

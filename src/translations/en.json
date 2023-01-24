@@ -5,14 +5,15 @@
   "header": {
     "title": "@cademic report 2021-2022",
     "mission": "Mission",
-    "subtitle": " Факультет прикладних наук УКУ готує лідерів галузі, що своїми знаннями, навичками і настановами змінюватимуть сьогоднішнє та майбутнє України та світу."
+    "subtitle": "Факультет прикладних наук УКУ готує лідерів галузі, що своїми знаннями, навичками і настановами змінюватимуть сьогоднішнє та майбутнє України та світу."
   },
   "pages": {
     "certificatePrograms": {
       "title": "Certificate programs"
     },
     "graduates": {
-      "title": "Graduates"
+      "title": "Alumni",
+      "text": "From year to year, the APPS UCU alumni community is growing both in its quantity and quality, and we are pleased that today we have a small but strong community of graduates of the faculty who are ready to join the creation of quality IT education in UCU, Ukraine and the world.<0></0>In July 2022, at the Graduation celebrations, the APPS UCU Alumni community received another replenishment. 39 students of the Computer Science program, 19 students of the IT and Business Analytics program, and 9 students of the Master’s program in Data Science have successfully completed their studies at the Faculty.<0></0>We are glad that many of our graduates continue their studies in master’s programs or internships at the best universities in the world."
     },
     "admissionCampaign": {
       "title": "Admission campaign results"
