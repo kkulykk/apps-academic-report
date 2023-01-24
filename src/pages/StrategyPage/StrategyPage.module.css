@@ -14,12 +14,231 @@
   text-transform: uppercase;
 }
 
-.image {
-  width: 100%;
+.strategyIcon {
+  margin-right: 10px;
+  height: 40px;
 }
 
-@media (max-width: 950px) {
-  .image {
-    margin-top: 60px;
+.list {
+  position: relative;
+  margin-top: 40px;
+  overflow: hidden;
+  font-weight: normal;
+}
+
+.list::before {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #262f56;
+  top: 0px;
+  left: 6px;
+  width: 1200px;
+  transform-origin: top left;
+  transform: rotate(90deg);
+}
+
+.item {
+  display: flex;
+  align-self: center;
+}
+
+.item::before {
+  position: absolute;
+  content: '';
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #8bc34a;
+}
+
+.listIcon {
+  height: 35px;
+}
+
+.text {
+  font-size: 15px;
+}
+
+@media (max-width: 480px) {
+  .list {
+    padding-left: 30px;
+  }
+
+  .item:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .item::before {
+    transform: translate(-6px, 70%);
+    transform-origin: center left;
+    left: 6px;
+  }
+
+  .listIcon {
+    height: 35px;
+    margin-right: 20px;
+  }
+
+  .text {
+    width: 70%;
+  }
+
+  .imgWrapper {
+    width: 30%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .strategy {
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+
+  .listIcon {
+    height: 45px;
+  }
+
+  .list {
+    max-width: 550px;
+    padding-left: 30px;
+  }
+
+  .item::before {
+    transform: translate(-6px, 70%);
+    transform-origin: center left;
+    left: 6px;
+  }
+
+  .item:not(:first-child) {
+    margin-top: 50px;
+  }
+
+  .text {
+    width: 70%;
+  }
+
+  .imgWrapper {
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .strategy {
+    padding-top: 170px;
+    padding-bottom: 100px;
+  }
+
+  .headingWrapper {
+    font-size: 18px;
+  }
+
+  .strategyIcon {
+    margin-right: 10px;
+    height: 45px;
+  }
+
+  .listIcon {
+    height: 50px;
+    margin-right: 20px;
+  }
+
+  .list {
+    max-width: 550px;
+    padding-left: 50px;
+  }
+
+  .item:not(:first-child) {
+    margin-top: 50px;
+  }
+
+  .item::before {
+    transform: translate(-6px, 70%);
+    transform-origin: center left;
+    left: 6px;
+  }
+
+  .text {
+    font-size: 18px;
+    width: 70%;
+  }
+
+  .imgWrapper {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .strategy {
+    padding-top: 200px;
+    padding-bottom: 120px;
+  }
+
+  .headingWrapper {
+    align-self: flex-start;
+    font-size: 20px;
+  }
+
+  .strategyIcon {
+    margin-right: 10px;
+    height: 50px;
+  }
+
+  .listIcon {
+    height: 60px;
+    width: auto;
+    margin-bottom: 45px;
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    overflow: visible;
+  }
+
+  .list::before {
+    width: 100%;
+    transform: rotate(0deg);
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  .item:not(:first-child) {
+    margin-left: 30px;
+  }
+
+  .item::before {
+    position: absolute;
+    content: '';
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: #8bc34a;
+    top: -7px;
+  }
+
+  .text {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .listIcon {
+    height: 70px;
+    width: auto;
+    margin-bottom: 45px;
+  }
+
+  .item {
+    width: 16%;
   }
 }

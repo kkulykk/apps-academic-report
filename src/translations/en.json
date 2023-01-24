@@ -91,7 +91,14 @@
       "itInitiativesDesc": "<1>Important IT initiatives in the first days after the full-scale invasion</1><0></0><0></0>At the beginning of the war, there were many initiatives that were needed here and now. For example, our IT army, which also includes our students, created a <2>telegram bot</2> to facilitate logistics for people travelling from the central and eastern regions to western Ukraine.<0></0><0></0>In addition, UCU developers, with the support of the IT community, have developed a <3>platform</3> for registering and cooperating all volunteer projects in the country."
     },
     "strategyGoals2025": {
-      "title": "Strategic objectives of the faculty"
+      "title": "Strategic objectives of the faculty",
+      "subtitle": "Strategic objectives <0></0>of the faculty 2025",
+      "goal1": "our graduates are the ones who create new jobs. We actively engage students in teaching, science and business projects",
+      "goal2": "formed alumni community that continues the education and formation of graduates throughout their lives and involves them in various educational initiatives",
+      "goal3": "a powerful team of teachers has been formed both through the training of young teachers and through the involvement of distinguished teachers. We care about our employees and create comfortable onboarding and working conditions",
+      "goal4": "the scientific achievements and the established network of partnerships make the faculty visible and prominent with the best examples in peer universities of the world",
+      "goal5": "the faculty is a platform for constant experiments",
+      "goal6": "the faculty actively builds a community of friends of the faculty and interacts with the community, in particular through consulting, the introduction of socially-oriented courses and the introduction of \"digital thinking\" courses in the worldview core and/or university-wide courses"
     },
     "structuralChanges": {
       "title": "APPS.UCU New members",
