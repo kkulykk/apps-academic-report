@@ -47,7 +47,7 @@ const AppBar = ({ name }) => {
     },
     { title: t('pages.science.title'), to: '/science' },
     { title: t('pages.admissionCampaign.title'), to: '/admission-campaign-results' },
-    { title: t('pages.warStories.title'), to: '/small-stories-of-a-big-war' },
+    { title: t('pages.warStories.title'), to: '/little-stories-of-a-big-war' },
     { title: t('pages.socialProjects.title'), to: '/social-projects' },
     { title: t('pages.structuralChanges.title'), to: '/new-members' },
     { title: t('pages.graduates.title'), to: '/alumni' }
@@ -94,7 +94,14 @@ const AppBar = ({ name }) => {
           <nav className={styles.itemsWrapper}>
             {pages.map((page, num) => {
               return (
-                <MenuItem isMobile={isMobile} title={page.title} to={page.to} onClick={scrollToTop} number={num + 1} />
+                <MenuItem
+                  key={num}
+                  isMobile={isMobile}
+                  title={page.title}
+                  to={page.to}
+                  onClick={scrollToTop}
+                  number={num + 1}
+                />
               );
             })}
           </nav>
