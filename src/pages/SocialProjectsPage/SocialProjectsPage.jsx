@@ -73,9 +73,6 @@ const SocialProjectsPage = () => {
   const [open11, setOpen11] = useState(false);
   const [open12, setOpen12] = useState(false);
 
-
-
-
   return (
     <>
       <AppBar name={t('pages.socialProjects.title')} />
@@ -107,10 +104,7 @@ const SocialProjectsPage = () => {
                     <span
                       className={styles.link}
                       onClick={() => {
-                        window.open(
-                          'https://dzygaspaw.com/',
-                          '_blank'
-                        );
+                        window.open('https://dzygaspaw.com/', '_blank');
                       }}
                     />,
                     <b />
@@ -146,10 +140,7 @@ const SocialProjectsPage = () => {
                     <span
                       className={styles.link}
                       onClick={() => {
-                        window.open(
-                          'https://onguard.in.ua/',
-                          '_blank'
-                        );
+                        window.open('https://onguard.in.ua/', '_blank');
                       }}
                     />,
                     <b />
@@ -161,7 +152,10 @@ const SocialProjectsPage = () => {
 
           <div className={styles.wrapper}>
             <div className={styles.imgWrapper}>
-              <img src={getLanguageImage(images.volunteeringCenter)} alt={t('pages.socialProjects.volunteeringCenter')} />
+              <img
+                src={getLanguageImage(images.volunteeringCenter)}
+                alt={t('pages.socialProjects.volunteeringCenter')}
+              />
               <button
                 className={styles.expandBtn}
                 type="button"
@@ -185,10 +179,7 @@ const SocialProjectsPage = () => {
                     <span
                       className={styles.link}
                       onClick={() => {
-                        window.open(
-                          'https://warinua.ucu.edu.ua/help-ukrainian-army/',
-                          '_blank'
-                        );
+                        window.open('https://warinua.ucu.edu.ua/help-ukrainian-army/', '_blank');
                       }}
                     />,
                     <b />
@@ -217,13 +208,7 @@ const SocialProjectsPage = () => {
             </div>
             {open4 ? (
               <p className={styles.description}>
-                <Trans
-                  i18nKey={'pages.socialProjects.zbirNaMashynuDesc'}
-                  components={[
-                    <br />,
-                    <b />
-                  ]}
-                />
+                <Trans i18nKey={'pages.socialProjects.zbirNaMashynuDesc'} components={[<br />, <b />]} />
               </p>
             ) : null}
           </div>
@@ -269,7 +254,10 @@ const SocialProjectsPage = () => {
 
           <div className={styles.wrapper}>
             <div className={styles.imgWrapper}>
-              <img src={getLanguageImage(images.objectDetectionDataset)} alt={t('pages.socialProjects.objectDetectionDataset')} />
+              <img
+                src={getLanguageImage(images.objectDetectionDataset)}
+                alt={t('pages.socialProjects.objectDetectionDataset')}
+              />
               <button
                 className={styles.expandBtn}
                 type="button"
@@ -333,10 +321,7 @@ const SocialProjectsPage = () => {
                     <span
                       className={styles.link}
                       onClick={() => {
-                        window.open(
-                          'https://saveartua.com/ua/map',
-                          '_blank'
-                        );
+                        window.open('https://saveartua.com/ua/map', '_blank');
                       }}
                     />,
                     <span
@@ -365,7 +350,10 @@ const SocialProjectsPage = () => {
 
           <div className={styles.wrapper}>
             <div className={styles.imgWrapper}>
-              <img src={getLanguageImage(images.thermalAccumulators)} alt={t('pages.socialProjects.thermalAccumulators')} />
+              <img
+                src={getLanguageImage(images.thermalAccumulators)}
+                alt={t('pages.socialProjects.thermalAccumulators')}
+              />
               <button
                 className={styles.expandBtn}
                 type="button"
@@ -404,7 +392,10 @@ const SocialProjectsPage = () => {
 
           <div className={styles.wrapper}>
             <div className={styles.imgWrapper}>
-              <img src={getLanguageImage(images.informationPlatform)} alt={t('pages.socialProjects.informationPlatform')} />
+              <img
+                src={getLanguageImage(images.informationPlatform)}
+                alt={t('pages.socialProjects.informationPlatform')}
+              />
               <button
                 className={styles.expandBtn}
                 type="button"
@@ -429,10 +420,7 @@ const SocialProjectsPage = () => {
                     <span
                       className={styles.link}
                       onClick={() => {
-                        window.open(
-                          'https://post-to-stop-war.in.ua/',
-                          '_blank'
-                        );
+                        window.open('https://post-to-stop-war.in.ua/', '_blank');
                       }}
                     />
                   ]}
@@ -443,7 +431,10 @@ const SocialProjectsPage = () => {
 
           <div className={styles.wrapper}>
             <div className={styles.imgWrapper}>
-              <img src={getLanguageImage(images.allUkrainianSchool)} alt={t('pages.socialProjects.allUkrainianSchool')} />
+              <img
+                src={getLanguageImage(images.allUkrainianSchool)}
+                alt={t('pages.socialProjects.allUkrainianSchool')}
+              />
               <button
                 className={styles.expandBtn}
                 type="button"
@@ -482,7 +473,10 @@ const SocialProjectsPage = () => {
 
           <div className={styles.wrapper}>
             <div className={styles.imgWrapper}>
-              <img src={getLanguageImage(images.artemDymydScholarship)} alt={t('pages.socialProjects.artemDymydScholarship')} />
+              <img
+                src={getLanguageImage(images.artemDymydScholarship)}
+                alt={t('pages.socialProjects.artemDymydScholarship')}
+              />
               <button
                 className={styles.expandBtn}
                 type="button"
@@ -514,14 +508,11 @@ const SocialProjectsPage = () => {
                       }}
                     />,
                     <span
-                    className={styles.link}
-                    onClick={() => {
-                      window.open(
-                        'https://supporting.ucu.edu.ua/en/donate/?order=artem_dymyd',
-                        '_blank'
-                      );
-                    }}
-                  />
+                      className={styles.link}
+                      onClick={() => {
+                        window.open('https://supporting.ucu.edu.ua/en/donate/?order=artem_dymyd', '_blank');
+                      }}
+                    />
                   ]}
                 />
               </p>
@@ -562,14 +553,11 @@ const SocialProjectsPage = () => {
                       }}
                     />,
                     <span
-                    className={styles.link}
-                    onClick={() => {
-                      window.open(
-                        'https://betha.in.ua/',
-                        '_blank'
-                      );
-                    }}
-                  />
+                      className={styles.link}
+                      onClick={() => {
+                        window.open('https://betha.in.ua/', '_blank');
+                      }}
+                    />
                   ]}
                 />
               </p>

@@ -15,6 +15,13 @@
     "admissionCampaign": {
       "title": "Admission campaign results"
     },
+    "warStories": {
+      "title": "Little stories of a Big War",
+      "subtitle": "The APPS UCU and the University community are involved in the action against the aggressor in different ways. Volunteering, fundraising, and working on technological solutions that help our military - ultimately, successful education and research also lay the bricks for our Victory. Among the people involved in the faculty, some are defending Ukraine at the front with weapons in their hands. As of now, we cannot tell you about all of our heroes, but we have the stories of three of them.",
+      "andriyRomanyuk": "<1>Andriy Romanyuk</1> is a lecturer with over 20 years of experience and the author of more than 30 scientific and educational works. He has been working at the faculty since its foundation and teaches the course \"Fundamentals of Programming\" to students.<0></0><0></0>On the second day of Russia's full-scale invasion, Andriy Romanyuk joined the military and is now defending Ukraine from the Russian invaders.<0></0><0></0>Read <2>the interview</2> to find out Mr. Romanyuk's thoughts on the war, his fellow soldiers, and the help of volunteers.<0></0>We recently <3>spoke</3> with Mr. Romanyuk again.",
+      "andriyKhoma": "<1>Andriy Khoma</1> is a former student of UCU's Faculty of Applied Sciences who volunteered for the Armed Forces of Ukraine from the first day of the war. Before the war, he was a game developer, creating games on various platforms. Now he is a grenade launcher fighting with the Russians in eastern Ukraine.<0></0><0></0>Read about how a game developer became a soldier in this <2>article</2>.",
+      "yuriyOstapchuk": "<1>Yuriy Ostapchuk</1> is a former lecturer at Master's degree program in Data Science. At the beginning of the war, Yuriy volunteered to join the Kharkiv Special Operations Detachment \"Azov.\" While performing a combat mission, he was seriously injured in the legs by an enemy mine explosion. Yuriy was hospitalized in Kyiv for a long time and underwent several surgeries."
+    },
     "science": {
       "title": "Scientific and educational achievements",
       "awardsTitle": "Awards and achievements",

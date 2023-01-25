@@ -15,6 +15,7 @@ import GraduatesPage from './pages/GraduatesPage';
 import WhoWeArePage from './pages/WhoWeArePage/WhoWeArePage';
 
 import './App.css';
+import WarStoriesPage from './pages/WarStoriesPage';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/social-projects" element={<SocialProjectsPage />} />
           <Route path="/science" element={<SciencePage />} />
           <Route path="/alumni" element={<GraduatesPage />} />
+          <Route path="/little-stories-of-a-big-war" element={<WarStoriesPage />} />
           <Route path="/who-we-are" element={<WhoWeArePage />} />
         </Routes>
         <ScrollUpBtn />
