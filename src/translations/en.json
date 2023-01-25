@@ -3,26 +3,17 @@
     "title": "Academic report 2021-2022"
   },
   "header": {
-    "title": "@cademic report 2021-2022",
+    "title": "@cademic report \n[2021'22]",
     "mission": "Mission",
     "subtitle": "Факультет прикладних наук УКУ готує лідерів галузі, що своїми знаннями, навичками і настановами змінюватимуть сьогоднішнє та майбутнє України та світу."
   },
   "pages": {
-    "certificatePrograms": {
-      "title": "Certificate programs"
-    },
     "graduates": {
       "title": "Alumni",
       "text": "From year to year, the APPS UCU alumni community is growing both in its quantity and quality, and we are pleased that today we have a small but strong community of graduates of the faculty who are ready to join the creation of quality IT education in UCU, Ukraine and the world.<0></0>In July 2022, at the Graduation celebrations, the APPS UCU Alumni community received another replenishment. 39 students of the Computer Science program, 19 students of the IT and Business Analytics program, and 9 students of the Master’s program in Data Science have successfully completed their studies at the Faculty.<0></0>We are glad that many of our graduates continue their studies in master’s programs or internships at the best universities in the world."
     },
     "admissionCampaign": {
       "title": "Admission campaign results"
-    },
-    "teachersWins": {
-      "title": "Teachers' successes"
-    },
-    "ratings": {
-      "title": "Ratings"
     },
     "science": {
       "title": "Scientific and educational achievements",
@@ -103,9 +94,6 @@
     "structuralChanges": {
       "title": "APPS.UCU New members",
       "description": "This academic year 2021-2022 turned out to be difficult due to objective circumstances, however, we are glad that several wonderful people joined the community of the Faculty of Applied Sciences of UCU. <0></0><0></0>First of all, <1>Yulia Kolodii</1> became the new head of the Bachelor's program “IT and Business Analytics”, taking over the baton from Yulia Kleban, who has been leading the program since its opening in 2017. Yulia Kolodii joined the faculty team in 2018 as an assistant in Mathematical Analysis, Discrete Mathematics and Probability Theory courses, and later became a full lecturer in these courses.<0></0><0></0>In the Fall semester of 2022, <2>Dmytro Kushnir</2>, a 2019 graduate of the Faculty, returned to UCU as a lecturer. Now Dmytro performs “Principles of Computer Organization”, “Architecture of Computer Systems” and “Operating Systems”.<0></0>We also welcome to the team of teachers <3>Tetiana Gerasymova</3>, who now teaches \"Fundamentals of Programming\" to our freshmen. Tetiana studied at the Faculty of Mechanics and Mathematics of Taras Shevchenko National University of Kyiv and completed her postgraduate studies. She devoted her life to the effectiveness of learning as she worked a lot with standardized tests (EIT, SAT, GMAT, GRE, etc.).<0></0><0></0><4>Oleksii Ignatenko</4>, Doctor of Physical and Mathematical Sciences, joined us on a permanent basis in early 2022, but has been cooperating with the faculty since 2020 – he taught a course on game theory for students of our Master's program “Data Science”. Now Oleksii teaches the courses “System Analysis” and “Natural Language Processing” for our undergraduate students. Oleksii is fond of science and therefore he is also engaged in its popularization. He actively performs on various platforms with lectures about game theory, and also writes blogs.<0></0><0></0>We are pleased to welcome Professor <5>Vadim Yermolayev</5> to the faculty team.<0></0>Vadim has been teaching at the Data Science Master's program since the first year of its running – 2016, courses on “Data Structure Algorithms” and “Academic Writing”. Vadim Yermolaiev also directs the <6>“Master's Symposium on Advances in Data Mining, Machine Learning, and Computer Vision MS-AMLV”</6>. In the new semester, Vadim will continue his cooperation with the Master's program and will also teach the course “Database Fundamentals” for undergraduate students.<0></0><0></0>Also this year, <7>Daryna Petrenko</7> joined us and will help coordinate our master's program and engage in project activities.\n\n"
-    },
-    "studentsWins": {
-      "title": "Students' wins"
     },
     "whoWeAre": {
       "title": "Who we are?"
