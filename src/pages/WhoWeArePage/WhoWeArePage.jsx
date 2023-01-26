@@ -8,8 +8,14 @@ import styles from './WhoWeArePage.module.css';
 
 const images = {
   timeline: {
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineUK.png?alt=media&token=cb90dca6-343d-439c-a7af-3651b3ffc70a',
-    en: ''
+    mobile: {
+      uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineMobileEN.svg?alt=media&token=45a6f0ec-fe60-4a29-9c3f-ff19aff85a2f',
+      en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineMobileEN.svg?alt=media&token=45a6f0ec-fe60-4a29-9c3f-ff19aff85a2f'
+    },
+    desktop: {
+      en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineDesktopEN.svg?alt=media&token=235e1737-e206-4cb8-8e7e-23c4b066be65',
+      uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineDesktopUK.svg?alt=media&token=2b269421-8f87-4712-b103-f1a0f320ff41'
+    }
   },
   students: {
     uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FstudentsUK.png?alt=media&token=45a0174a-0e1e-4de5-8b25-4bba9ea67085',
@@ -66,8 +72,8 @@ const WhoWeArePage = () => {
 
           <div className={styles.bgTop}>
             <picture>
-              <source srcSet={images.timeline.uk} media="(min-width:768px)" />
-              <img src={images.timeline.uk} className={styles.img} alt="clouds" />
+              <source srcSet={getLanguageImage(images.timeline.desktop)} media="(min-width:768px)" />
+              <img src={getLanguageImage(images.timeline.mobile)} className={styles.img} alt="clouds" />
             </picture>
           </div>
         </section>
