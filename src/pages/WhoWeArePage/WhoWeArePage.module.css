@@ -42,6 +42,8 @@
 
 .bgTop {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .bgTop img {
@@ -101,7 +103,7 @@
   }
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .section {
     padding-top: 120px;
     padding-bottom: 70px;

@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 import AppBar from '../../components/AppBar/AppBar';
 import Container from '../../components/Container';
@@ -9,21 +9,21 @@ import styles from './WhoWeArePage.module.css';
 const images = {
   timeline: {
     mobile: {
-      uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineMobileEN.svg?alt=media&token=45a6f0ec-fe60-4a29-9c3f-ff19aff85a2f',
-      en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineMobileEN.svg?alt=media&token=45a6f0ec-fe60-4a29-9c3f-ff19aff85a2f'
+      uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineMobileEN.svg?alt=media&token=c5dd5923-052e-4e79-9f5c-b4ffa112cd38',
+      en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineMobileEN.svg?alt=media&token=c5dd5923-052e-4e79-9f5c-b4ffa112cd38'
     },
     desktop: {
-      en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineDesktopEN.svg?alt=media&token=235e1737-e206-4cb8-8e7e-23c4b066be65',
-      uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineDesktopUK.svg?alt=media&token=2b269421-8f87-4712-b103-f1a0f320ff41'
+      en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineDesktopEN.svg?alt=media&token=04bef019-6a37-4121-9417-59716cc5e550',
+      uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineDesktopUK.svg?alt=media&token=a957ed2f-65a6-4e69-8f27-8fef984f13de'
     }
   },
   students: {
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FstudentsUK.png?alt=media&token=45a0174a-0e1e-4de5-8b25-4bba9ea67085',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FstudentsUK.svg?alt=media&token=3e71ab67-d020-4476-8db9-7f3a456cd4c9',
     en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FstudentsEN.png?alt=media&token=3c9a35dd-14c4-4dcc-bc32-99ca1fd6e18c'
   },
   employees: {
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FemployeesUK.png?alt=media&token=32e8f387-5c09-4a0c-81b2-3e6820dadb9e',
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FemployeesEN.png?alt=media&token=a5e16063-3c9f-49d5-aebe-164404a04dde'
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FemployeesUK.svg?alt=media&token=bbefb40d-7195-4bea-aeb4-2131a4555553',
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FemployeesEN.svg?alt=media&token=f57ad27d-04a3-485f-8da5-0b7be7a6b857'
   }
 };
 
@@ -36,8 +36,7 @@ const WhoWeArePage = () => {
       <Container>
         <section className={styles.section}>
           <p className={styles.text}>
-            Факультет прикладних наук УКУ готує лідерів галузі, що своїми знаннями, навичками і настановами
-            змінюватимуть сьогоднішнє та майбутнє України та світу.
+            <Trans i18nKey={'pages.whoWeAre.subtitle'} />
           </p>
           <div className={styles.chartWrapper}>
             <img className={styles.chartIcon} src={getLanguageImage(images.employees)} alt="employees" />
@@ -45,15 +44,7 @@ const WhoWeArePage = () => {
           </div>
 
           <p className={styles.text}>
-            Наші бакалаврські програми ‘’Комп’ютерні науки’’, ‘’ІТ та бізнес-аналітика’’, а також дворічна магістерська
-            програма з комп’ютерних наук за спеціалізацією ‘’Науки про дані’’ розширяють фронтири освіти у сфері
-            комп’ютерних наук та інформаційних технологій, а наші випускники – не просто успішні працівники
-            всесвітньовідомих ІТ компаній, вони є лідерами, що готові творити нові продукти і послуги, нові ідеї та нові
-            сенси як у галузі інформаційних технологій, так і в інших сферах людського життя.
-            <br />
-            Програми факультету розраховані на вмотивованих студентів, націлених на творчу самостійну працю над своїм
-            професійним вдосконаленням і готових нести відповідальність за використання унікальних нагод для навчання,
-            які перед ними відкриє ця програма.
+            <Trans i18nKey={'pages.whoWeAre.mainText'} components={[<br />]} />
           </p>
           <div className={styles.videos}>
             <iframe
