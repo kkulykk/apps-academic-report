@@ -1,3 +1,4 @@
+import Zoom from 'react-medium-image-zoom';
 import { useTranslation } from 'react-i18next';
 
 import AppBar from '../../components/AppBar/AppBar';
@@ -8,6 +9,7 @@ import mobImg1 from '../../imgs/mobile/ukraine_mob.jpg';
 import deskImg1 from '../../imgs/desktop/ukraine.jpg';
 
 import styles from './IntroCampaignResPage.module.css';
+import 'react-medium-image-zoom/dist/styles.css';
 
 const images = {
   bachelors: {
@@ -29,17 +31,21 @@ const AdmissionCampaignResPage = () => {
       <Container>
         <section className={styles.section}>
           <div className={styles.imgWrapper}>
-            <picture>
-              <source srcSet={getLanguageImage(images.bachelors)} media="(min-width:768px)" />
-              <img src={getLanguageImage(images.bachelors)} className={styles.img} alt="Ukraine map" />
-            </picture>
+            <Zoom>
+              <picture>
+                <source srcSet={getLanguageImage(images.bachelors)} media="(min-width:768px)" />
+                <img src={getLanguageImage(images.bachelors)} className={styles.img} alt="Ukraine map" />
+              </picture>
+            </Zoom>
           </div>
 
           <div className={styles.imgWrapper}>
-            <picture>
-              <source srcSet={deskImg1} media="(min-width:768px)" />
-              <img src={mobImg1} className={styles.img} alt="Ukraine map" />
-            </picture>
+            <Zoom>
+              <picture>
+                <source srcSet={deskImg1} media="(min-width:768px)" />
+                <img src={mobImg1} className={styles.img} alt="Ukraine map" />
+              </picture>
+            </Zoom>
           </div>
         </section>
       </Container>

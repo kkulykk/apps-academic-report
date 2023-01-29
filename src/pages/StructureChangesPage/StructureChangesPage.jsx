@@ -1,3 +1,4 @@
+import Zoom from 'react-medium-image-zoom';
 import { Trans, useTranslation } from 'react-i18next';
 
 import AppBar from '../../components/AppBar/AppBar';
@@ -5,6 +6,7 @@ import Container from '../../components/Container';
 import { getLanguageImage } from '../../utils/services';
 
 import styles from './StructureChangesPage.module.css';
+import 'react-medium-image-zoom/dist/styles.css';
 
 const images = {
   en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fnew-members%2FnewMembersEN.png?alt=media&token=1402510e-4ac0-436f-8031-8ec52e0848cc',
@@ -20,7 +22,9 @@ const StructureChangesPage = () => {
       <Container>
         <section className={styles.section}>
           <div className={styles.imgWrapper}>
-            <img src={getLanguageImage(images)} alt="New members" />
+            <Zoom>
+              <img src={getLanguageImage(images)} alt="New members" />
+            </Zoom>
           </div>
 
           <p className={styles.text}>

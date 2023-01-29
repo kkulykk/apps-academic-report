@@ -72,3 +72,7 @@
   flex-direction: column !important;
   justify-content: space-around !important;
 }
+
+[data-rmiz-modal-content] {
+  background: var(--background);
+}

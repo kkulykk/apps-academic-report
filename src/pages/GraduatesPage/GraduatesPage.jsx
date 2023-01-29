@@ -1,3 +1,4 @@
+import Zoom from 'react-medium-image-zoom';
 import { Trans, useTranslation } from 'react-i18next';
 
 import AppBar from '../../components/AppBar/AppBar';
@@ -5,6 +6,7 @@ import Container from '../../components/Container';
 import { getLanguageImage } from '../../utils/services';
 
 import styles from './GraduatesPage.module.css';
+import 'react-medium-image-zoom/dist/styles.css';
 
 const images = {
   alumni:
@@ -31,15 +33,17 @@ const GraduatesPage = () => {
           <p className={styles.description}>
             <Trans i18nKey={'pages.graduates.text'} components={[<br />]} />
           </p>
-          <div className={styles.imgWrapper}>
-            <picture>
-              <img
-                src={getLanguageImage(images.furtherStudies)}
-                className={styles.img}
-                alt="Where alumni continue studying"
-              />
-            </picture>
-          </div>
+          <Zoom>
+            <div className={styles.imgWrapper}>
+              <picture>
+                <img
+                  src={getLanguageImage(images.furtherStudies)}
+                  className={styles.img}
+                  alt="Where alumni continue studying"
+                />
+              </picture>
+            </div>
+          </Zoom>
         </section>
       </Container>
     </>
