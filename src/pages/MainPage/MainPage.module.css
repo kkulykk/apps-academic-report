@@ -1,0 +1,13 @@
+.main {
+  background-repeat: no-repeat;
+  background-position: right 0 top 100px;
+  background-size: 90%;
+  background-image: url('../../imgs/gradient.svg');
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .main {
+    background-size: 90%;
+    background-position: right 0 top 150px;
+  }
+}

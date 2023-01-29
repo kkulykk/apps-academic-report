@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 import Container from '../Container';
 
 import styles from './Partners.module.css';
@@ -12,28 +14,26 @@ const images = {
 };
 
 const Partners = () => {
+  const [t] = useTranslation();
   return (
     <section className={styles.partners}>
       <div className={styles.headingWrapper}>
-        <span>наші партнери</span>
+        <div className={styles.partnersLine}></div>
+        <span>{t('partners.title')}</span>
       </div>
       <Container>
-        <p className={styles.text}>
-          Завдяки підтримці компаній-партнерів факультет прикладних наук має змогу надавати стипендії найкращим
-          студентам. Також спільно з спеціалістами цих компаній ми організовуємо курси, зимові та літні школи, мітапи та
-          багато іншого, що допомагає студентам покращувати свої знання та навички у сфері ІТ.
-        </p>
-        <h3 className={styles.partnersHeading}>Стратегічні партнери:</h3>
+        <p className={styles.text}>{t('partners.description')}</p>
+        <h3 className={styles.partnersHeading}>{t('partners.strategicPartners')}</h3>
         <ul className={styles.partnersWrapper}>
           <img className={styles.strategyPartners} src={images.strategical} alt="Strategical partners" />
         </ul>
 
-        <h3 className={styles.partnersHeading}>Sponsored Research Agreement:</h3>
+        <h3 className={styles.partnersHeading}>{t('partners.sponsoredResearchAgreement')}</h3>
         <ul className={styles.partnersWrapper}>
           <img className={styles.sponsoredPartner} src={images.sponsoredResearch} alt="Sponsored research" />
         </ul>
 
-        <h3 className={styles.partnersHeading}>Партнери:</h3>
+        <h3 className={styles.partnersHeading}>{t('partners.partners')}</h3>
         <img src={images.partners} alt="Partners logos" />
       </Container>
     </section>

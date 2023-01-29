@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--background);
   height: 100vh;
   padding-top: 35px;
   padding-left: 20px;
@@ -11,6 +10,7 @@
 
 .textContent {
   justify-content: center;
+  z-index: 1;
 }
 
 .line {
@@ -23,10 +23,12 @@
   font-family: 'e-Ukraine Head', serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 2em;
+  font-size: calc(2.3rem + 0.6vw);
   line-height: 148.4%;
   color: var(--text);
   white-space: pre-line;
+  margin-bottom: 50px;
+  padding-right: 30px;
 }
 
 .headerLabel {
@@ -49,21 +51,40 @@
   z-index: 3;
 }
 
+.missionLine {
+  position: relative;
+  width: 10%;
+  height: 1.5px;
+  background-color: var(--text);
+}
+
+.missionLine:after {
+  position: absolute;
+  bottom: -2px;
+  left: 2px;
+  height: 5px;
+  width: 5px;
+  background: var(--text);
+  content: '';
+  border-radius: 5px;
+}
+
+.missionLine:after {
+  right: -1px;
+  left: auto;
+}
+
 .missionWrapper {
-  font-family: 'Roboto', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: var(--text);
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 
 .missionHeading {
   font-family: 'e-Ukraine Head', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 20px;
   line-height: 72px;
   text-transform: capitalize;
   color: var(--text);
@@ -76,12 +97,12 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  padding-right: 30px;
 }
 
 .gradient {
   position: absolute;
-  right: 0;
-  height: 90vh;
+  right: -200px;
 }
 
 .shape1 {
@@ -97,31 +118,19 @@
   box-shadow: 0 0 20px #000;
 }
 
-@keyframes morph {
-  0% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    background-size: 100% 200%;
-    margin-left: 140px;
+@media (max-width: 767px) {
+  .line {
+    display: none;
   }
 
-  50% {
-    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-    background-size: 400% 350%;
-    margin-left: 130px;
+  .missionLine {
+    width: 15%;
   }
 
-  70% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    background-size: 100% 100%;
-    margin-left: 190px;
-    margin-bottom: 200px;
-    height: 450px;
-    width: 500px;
-  }
-  100% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    background-size: 100% 200%;
-    margin-left: 140px;
+  .textContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -141,16 +150,6 @@
 
   .logo {
     width: 120px;
-  }
-
-  .missionHeading {
-    font-size: 13px;
-  }
-
-  .missionWrapper {
-    width: 90%;
-    padding-right: 40px;
-    font-size: 13px;
   }
 }
 
@@ -202,17 +201,8 @@
     width: 200px;
   }
 
-  .missionWrapper {
-    width: 60%;
-    padding: 50px 80px 50px 80px;
-    border-top-left-radius: 110px;
-    border-bottom-left-radius: 110px;
-    text-align: left;
-    font-size: 20px;
-  }
-
   .missionHeading {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 

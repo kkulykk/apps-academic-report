@@ -1,33 +1,60 @@
 .introduction {
-  padding-top: 75px;
-  padding-bottom: 75px;
   width: 100%;
+  background: none;
   height: fit-content;
-  background-color: black;
 }
 
 .headingWrapper {
+  font-family: 'e-Ukraine Head', serif;
+  font-style: normal;
+  font-weight: 400;
   display: flex;
-  width: 65%;
+  align-items: center;
+  gap: 30px;
+  font-size: 20px;
+  line-height: 72px;
+  text-transform: capitalize;
+  color: var(--text);
   padding: 14px 14px 14px 20px;
-  color: white;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
+}
+
+.gradient {
+  position: absolute;
+  left: 0;
+  top: 1300px;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.headingLine {
+  position: relative;
+  width: 20%;
+  height: 1.5px;
+  background-color: var(--text);
 }
 
 .textWrapper {
-  margin-top: 30px;
   display: flex;
+  width: 100%;
+  max-width: 1000px;
+  gap: 55px;
+  z-index: 1;
   color: white;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
+}
+
+.deansText {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: none;
 }
 
 .introductionText {
   text-align: left;
-  font-size: 14px;
+  font-weight: normal;
+  font-size: 18px;
   margin: 0;
 }
 
@@ -37,51 +64,41 @@
 
 .wrapper {
   text-align: right;
-  padding-right: 20px;
-  margin-right: -20px;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
 }
 
 .imgWrapper {
-  width: 100%;
-  height: auto;
   border-radius: 25px;
   overflow: auto;
 }
 
 .imgWrapper img {
-  max-width: 100%;
-  height: auto;
+  height: 300px;
+  width: auto;
   object-fit: cover;
   aspect-ratio: 1/1;
 }
 
 .nameWrapper {
-  font-size: 12px;
-  padding-top: 10px;
+  white-space: pre-line;
+  font-size: 18px;
+  font-weight: normal;
+  padding-top: 40px;
+  text-align: end;
 }
 
 .name {
+  font-size: 24px;
   font-weight: 700;
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
   .headingWrapper {
-    font-size: 14px;
+    font-size: 20px;
     padding-left: 40px;
-  }
-
-  .textWrapper {
-    margin-top: 50px;
   }
 
   .wrapper {
     max-width: 350px;
-    padding-right: 40px;
-    margin-right: -40px;
-    padding-bottom: 20px;
-    margin-bottom: -20px;
   }
 }
 
@@ -94,30 +111,29 @@
   .headingWrapper {
     width: 55%;
     padding: 20px 20px 20px 90px;
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .textWrapper {
     flex-direction: row;
-    -webkit-align-items: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
-
-    margin-top: 50px;
   }
 
   .introductionText {
-    width: 60%;
-    margin-right: 20px;
     font-size: 16px;
   }
 
   .wrapper {
-    width: 40%;
     text-align: right;
-    padding-right: 40px;
-    margin-right: -40px;
-    padding-bottom: 20px;
-    margin-bottom: -20px;
+  }
+
+  .gradient {
+    top: 1000px;
+  }
+
+  .name {
+    font-size: 18px;
   }
 
   .nameWrapper {
@@ -133,55 +149,45 @@
 
   .headingWrapper {
     padding: 25px 25px 25px 120px;
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .textWrapper {
     flex-direction: row;
-    margin-top: 60px;
   }
 
   .introductionText {
-    margin-right: 50px;
     font-size: 18px;
   }
 
   .wrapper {
     background-repeat: no-repeat;
     background-position: right 0 bottom 0;
-    padding-right: 80px;
-    margin-right: -80px;
-    padding-bottom: 40px;
-    margin-bottom: -40px;
   }
 }
 
 @media (min-width: 1400px) {
   .introduction {
-    padding-top: 220px;
-    padding-bottom: 220px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 
   .headingWrapper {
     width: 55%;
     padding: 35px 35px 35px 240px;
-    font-size: 20px;
+    font-size: 26px;
   }
 
   .textWrapper {
     flex-direction: row;
-    margin-top: 80px;
+    margin-top: 30px;
   }
 
   .introductionText {
-    margin-right: 50px;
     font-size: 18px;
   }
 
   .imgWrapper {
     height: fit-content;
-  }
-  .wrapper {
-    width: 370px;
   }
 }

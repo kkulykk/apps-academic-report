@@ -3,9 +3,22 @@
     "title": "Academic report 2021-2022"
   },
   "header": {
-    "title": "@cademic report \n[2021'22]",
-    "mission": "Mission",
-    "subtitle": "Факультет прикладних наук УКУ готує лідерів галузі, що своїми знаннями, навичками і настановами змінюватимуть сьогоднішнє та майбутнє України та світу."
+    "title": "@cademic report \n [2021'22]",
+    "mission": "APPS UCU Mission",
+    "subtitle": "<0>Faculty of Applied Sciences of UCU</0> forms the leaders in the field, who will use their knowledge to influence the present and the future Ukraine and the world."
+  },
+  "introduction": {
+    "deansWord": "The dean's word",
+    "deansText": "\"New standard of IT education\" is a slogan that was born in 2015 at the beginning of the discussion on the introduction of the IT field of study at UCU. The slogan that became and is a magnet for students; slogan that convinced our numerous partners; a slogan that encouraged colleagues from other universities to create new educational products; slogan that ignited our team. Six rich and incredibly interesting years passed, which formed the Faculty of Applied Sciences and a large community of friends of the Faculty. We tried a lot, we achieved a lot, we set new big goals for ourselves. But this slogan will continue to be an important element of our strategy. We continue to witness, serve, communicate and create a new standard in IT education.",
+    "deansName": "Yaroslav Prytula",
+    "deansTitle": "Dean of the Faculty \n of Applied Sciences of UCU"
+  },
+  "partners": {
+    "title": "Our partners",
+    "description": "Thanks to the support of our partner companies, the Faculty of Applied Sciences can provide scholarships to the best students. We also organize courses, winter and summer schools, meetups, and much more together with the specialists of these companies to help students improve their knowledge and skills in the field of IT.",
+    "strategicPartners": "Strategic partners",
+    "sponsoredResearchAgreement": "Sponsored Research Agreement",
+    "partners": "Partners"
   },
   "pages": {
     "graduates": {
