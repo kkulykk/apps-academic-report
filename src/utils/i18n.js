@@ -9,7 +9,7 @@ i18n
   .use(initReactI18next)
   .use(LanguageDetector)
   .init({
-    fallbackLng: 'en',
+    lng: 'uk', // default language
     resources: {
       en: {
         translation: translationEN

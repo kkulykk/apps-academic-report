@@ -1,4 +1,5 @@
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import CloseButton from 'react-bootstrap/CloseButton';
 import i18n from 'i18next';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -19,6 +20,10 @@ const AppBar = ({ name }) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  useEffect(() => {
+    console.log(i18n.language);
+  }, [])
+
   document.body.style.position = show ? 'fixed' : '';
 
   function useMediaQuery(query) {
@@ -33,6 +38,13 @@ const AppBar = ({ name }) => {
     }, [query]);
 
     return matches;
+  }
+
+  function handleUcuLogoClick() {
+    if (i18n.language === 'en')
+      window.open('https://ucu.edu.ua/en/')
+    else
+      window.open('https://ucu.edu.ua/')
   }
 
   const scrollToTop = () => {
@@ -65,7 +77,7 @@ const AppBar = ({ name }) => {
           <span className={styles.name}>{name}</span>
         </div>
       ) : (
-        <img className={styles.logo} src={UCULogo} width="50" height="50" alt="UCU Logo" />
+          <img className={styles.logo} src={UCULogo} onClick={handleUcuLogoClick} width="50" height="50" alt="UCU Logo" />
       )}
 
       <div className={styles.buttonsContainer}>
@@ -84,11 +96,12 @@ const AppBar = ({ name }) => {
       </div>
 
       <Offcanvas show={show} onHide={handleClose} className={styles.menuContainer} placement="end">
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header>
           <Link className={styles.logo} to="/">
             <img className={styles.logo} src={FacultyLogo} width="50" height="50" alt="logo" />
           </Link>
           <img className={styles.logo} src={UCULogo} width="50" height="50" alt="UCU Logo" />
+          <CloseButton variant="white" onClick={handleClose}/>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <nav className={styles.itemsWrapper}>
