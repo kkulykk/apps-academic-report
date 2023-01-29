@@ -25,12 +25,6 @@
   src: local('e-Ukraine Head'), url(./fonts/e-UkraineHead-Regular.otf) format('opentype');
 }
 
-/*@font-face {*/
-/*  font-family: 'CirceRounded';*/
-/*  font-weight: 600;*/
-/*  src: local('CirceRounded'), url(./fonts/CirceRounded-Regular5.ttf) format('truetype');*/
-/*}*/
-
 .App {
   text-align: left;
   font-family: 'Roboto', serif;
@@ -58,7 +52,6 @@
 .offcanvas-body,
 .offcanvas-header {
   background-color: var(--menu) !important;
-
   padding-left: 90px !important;
   padding-right: 90px !important;
 }
@@ -75,4 +68,12 @@
 
 [data-rmiz-modal-content] {
   background: var(--background);
+}
+
+@media (max-width: 768px) {
+  .offcanvas-body,
+  .offcanvas-header {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
 }

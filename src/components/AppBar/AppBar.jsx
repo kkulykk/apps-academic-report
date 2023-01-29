@@ -22,7 +22,7 @@ const AppBar = ({ name }) => {
 
   useEffect(() => {
     console.log(i18n.language);
-  }, [])
+  }, []);
 
   document.body.style.position = show ? 'fixed' : '';
 
@@ -41,10 +41,8 @@ const AppBar = ({ name }) => {
   }
 
   function handleUcuLogoClick() {
-    if (i18n.language === 'en')
-      window.open('https://ucu.edu.ua/en/')
-    else
-      window.open('https://ucu.edu.ua/')
+    if (i18n.language === 'en') window.open('https://ucu.edu.ua/en/');
+    else window.open('https://ucu.edu.ua/');
   }
 
   const scrollToTop = () => {
@@ -77,7 +75,7 @@ const AppBar = ({ name }) => {
           <span className={styles.name}>{name}</span>
         </div>
       ) : (
-          <img className={styles.logo} src={UCULogo} onClick={handleUcuLogoClick} width="50" height="50" alt="UCU Logo" />
+        <img className={styles.logo} src={UCULogo} onClick={handleUcuLogoClick} width="50" height="50" alt="UCU Logo" />
       )}
 
       <div className={styles.buttonsContainer}>
@@ -100,8 +98,15 @@ const AppBar = ({ name }) => {
           <Link className={styles.logo} to="/">
             <img className={styles.logo} src={FacultyLogo} width="50" height="50" alt="logo" />
           </Link>
-          <img className={styles.logo} src={UCULogo} width="50" height="50" alt="UCU Logo" />
-          <CloseButton variant="white" onClick={handleClose}/>
+          <img
+            className={styles.logo}
+            src={UCULogo}
+            onClick={handleUcuLogoClick}
+            width="50"
+            height="50"
+            alt="UCU Logo"
+          />
+          <CloseButton variant="white" onClick={handleClose} />
         </Offcanvas.Header>
         <Offcanvas.Body>
           <nav className={styles.itemsWrapper}>

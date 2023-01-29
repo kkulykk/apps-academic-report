@@ -1,9 +1,10 @@
-import instLogo from '../../imgs/footer/insta_icon.png';
-import yotubeLogo from '../../imgs/footer/youtube_icon.png';
-import fbLogo from '../../imgs/footer/fb_icon.png';
 import Container from '../Container';
 
 import styles from './Footer.module.css';
+
+import instLogo from '../../imgs/footer/instagramIcon.svg';
+import yotubeLogo from '../../imgs/footer/youtubeIcon.svg';
+import fbLogo from '../../imgs/footer/facebookIcon.svg';
 
 const Footer = () => {
   return (
