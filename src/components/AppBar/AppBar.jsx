@@ -20,10 +20,6 @@ const AppBar = ({ name }) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  useEffect(() => {
-    console.log(i18n.language);
-  }, []);
-
   document.body.style.position = show ? 'fixed' : '';
 
   function useMediaQuery(query) {
