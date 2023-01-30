@@ -5,7 +5,9 @@ import AppBar from '../../components/AppBar';
 
 import styles from './StrategyPage.module.css';
 
-import gradient from '../../imgs/gradient2.svg';
+import gradient2 from '../../imgs/gradient2.svg';
+import gradient3 from '../../imgs/gradient3.svg';
+
 
 const images = {
   strategyIcon:
@@ -83,8 +85,11 @@ const StrategyPage = () => {
             </li>
           </ul>
         </section>
-        <div className={styles.gradient}>
-          <img src={gradient} alt="" />
+        <div className={styles.gradient2}>
+          <img src={gradient2} alt="" />
+        </div>
+        <div className={styles.gradient3}>
+          <img src={gradient3} alt="" />
         </div>
       </Container>
     </>

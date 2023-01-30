@@ -7,10 +7,18 @@
   padding-bottom: 30px;
 }
 
-.gradient {
+.gradient2 {
   position: absolute;
   left: 0;
-  top: 200px;
+  top: 270px;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.gradient3 {
+  position: absolute;
+  right: 0;
+  top: -50px;
   height: 90vh;
   overflow: hidden;
 }
@@ -70,6 +78,14 @@
 }
 
 @media (max-width: 480px) {
+  .gradient2 {
+    top: 400px;
+  }
+
+  .gradient3 {
+    top: 100px;
+  }
+
   .list {
     padding-left: 30px;
   }

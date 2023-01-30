@@ -8,6 +8,15 @@
   font-weight: normal;
 }
 
+.gradient {
+  transform: rotate(180deg);
+  position: absolute;
+  left: -250px;
+  top: 700px;
+  height: 90vh;
+  overflow: hidden;
+}
+
 .link {
   color: var(--green);
   font-weight: 700;
@@ -84,10 +93,18 @@
     flex-direction: row;
     align-items: normal;
   }
+
   .imgWrapper {
     width: 50%;
   }
+
   .text {
     width: 50%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .gradient {
+    display: none;
   }
 }

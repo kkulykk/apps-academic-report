@@ -11,6 +11,24 @@
   padding-bottom: 50px;
 }
 
+.gradient2 {
+  transform: rotate(180deg);
+  position: absolute;
+  right: 0;
+  top: 500px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.gradient3 {
+  transform: rotate(180deg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 80vh;
+  overflow: hidden;
+}
+
 .text {
   max-width: 920px;
   text-align: center;
@@ -109,6 +127,16 @@
 
   .description {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gradient2 {
+    display: none;
+  }
+
+  .gradient3 {
+    display: none;
   }
 }
 

@@ -8,6 +8,9 @@ import { getLanguageImage } from '../../utils/services';
 import styles from './StructureChangesPage.module.css';
 import 'react-medium-image-zoom/dist/styles.css';
 
+import gradient from '../../imgs/gradient4.svg';
+
+
 const images = {
   en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fnew-members%2FnewMembersEN.png?alt=media&token=1402510e-4ac0-436f-8031-8ec52e0848cc',
   uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fnew-members%2FnewMembersUK.png?alt=media&token=38b20627-1853-429d-9bdd-15d2a6a38c04'
@@ -90,6 +93,9 @@ const StructureChangesPage = () => {
             />
           </p>
         </section>
+        <div className={styles.gradient}>
+          <img src={gradient} alt="" />
+        </div>
       </Container>
     </>
   );

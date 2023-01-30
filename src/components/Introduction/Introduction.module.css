@@ -144,7 +144,6 @@
 @media (min-width: 1200px) {
   .introduction {
     padding-top: 130px;
-    padding-bottom: 130px;
   }
 
   .headingWrapper {
@@ -168,8 +167,7 @@
 
 @media (min-width: 1400px) {
   .introduction {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 170px;
   }
 
   .headingWrapper {

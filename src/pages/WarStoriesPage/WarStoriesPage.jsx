@@ -7,6 +7,10 @@ import { getLanguageImage } from '../../utils/services';
 
 import styles from './WarStoriesPage.module.css';
 
+import gradient2 from '../../imgs/gradient2.svg';
+import gradient3 from '../../imgs/gradient3.svg';
+
+
 const images = {
   AndriyKhoma: {
     uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwar-stories%2FAndriyKhomaUK.png?alt=media&token=7596099b-af9b-47c7-a0cb-faa5d3c4c0f3',
@@ -147,6 +151,12 @@ const WarStoriesPage = () => {
             ) : null}
           </div>
         </section>
+        <div className={styles.gradient2}>
+          <img src={gradient2} alt="" />
+        </div>
+        <div className={styles.gradient3}>
+          <img src={gradient3} alt="" />
+        </div>
       </Container>
     </>
   );
