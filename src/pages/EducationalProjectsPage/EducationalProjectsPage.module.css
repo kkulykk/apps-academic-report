@@ -1,0 +1,208 @@
+.section {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  max-width: 400px;
+}
+
+.image {
+  width: fit-content;
+}
+
+.wrapperPart:not(:first-of-type) {
+  margin-top: 40px;
+}
+
+.workshops {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+}
+
+.section a {
+  text-decoration: none;
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.heading:not(:first-of-type) {
+  margin-top: 50px;
+}
+
+.wrapper p {
+  padding: 45px 20px 20px;
+  margin: 0 20px;
+  position: relative;
+  top: -40px;
+  z-index: 3;
+  border-left: 3px solid rgb(135, 46, 172);
+  border-right: 3px solid rgb(135, 46, 172);
+  border-bottom: 3px solid rgb(135, 46, 172);
+}
+
+.imgWrapper img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  z-index: 5;
+  object-fit: cover;
+}
+
+.imgWrapper {
+  position: relative;
+}
+
+.expandBtn {
+  position: absolute;
+  bottom: 0;
+  right: 11px;
+  z-index: 10;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(135, 46, 172);
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.banersHead {
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+.description {
+  font-size: 14px;
+  color: var(--text);
+  font-weight: normal;
+}
+
+.link {
+  color: var(--green);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: var(--menu);
+}
+
+.description ul {
+  padding: 0;
+}
+
+.description a {
+  position: relative;
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 1px solid rgb(88, 89, 91);
+}
+
+.description a::after {
+  position: absolute;
+  top: 10px;
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  color: var(--text);
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 70px;
+    max-width: 588px;
+  }
+
+  .heading {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .expandBtn {
+    bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 140px;
+    padding-bottom: 100px;
+    max-width: 600px;
+  }
+
+  .heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .heading:not(:first-of-type) {
+    margin-top: 70px;
+  }
+
+  .banersHead {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .expandBtn {
+    bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 180px;
+    padding-bottom: 120px;
+    max-width: 920px;
+  }
+
+  .workshops {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+
+  .heading {
+    font-size: 25px;
+    margin-bottom: 35px;
+  }
+
+  .heading:not(:first-of-type) {
+    margin-top: 80px;
+  }
+
+  .banersHead {
+    margin-top: 25px;
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .expandBtn {
+    bottom: 5px;
+  }
+}

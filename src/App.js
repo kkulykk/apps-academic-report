@@ -11,6 +11,7 @@ import AdmissionCampaignResPage from './pages/IntroCampaignResPage/IntroCampaign
 import StructureChangesPage from './pages/StructureChangesPage/StructureChangesPage';
 import SocialProjectsPage from './pages/SocialProjectsPage';
 import SciencePage from './pages/SciencePage/SciencePage';
+import EducationalProjectsPage from './pages/EducationalProjectsPage';
 import GraduatesPage from './pages/GraduatesPage';
 import WhoWeArePage from './pages/WhoWeArePage/WhoWeArePage';
 
@@ -27,7 +28,8 @@ const App = () => {
           <Route path="/admission-campaign-results" element={<AdmissionCampaignResPage />} />
           <Route path="/new-members" element={<StructureChangesPage />} />
           <Route path="/social-projects" element={<SocialProjectsPage />} />
-          <Route path="/science" element={<SciencePage />} />
+          <Route path="/research" element={<SciencePage />} />
+          <Route path="/educational-projects" element={<EducationalProjectsPage />} />
           <Route path="/alumni" element={<GraduatesPage />} />
           <Route path="/little-stories-of-a-big-war" element={<WarStoriesPage />} />
           <Route path="/who-we-are" element={<WhoWeArePage />} />
