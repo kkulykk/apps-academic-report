@@ -74,17 +74,6 @@ const images = {
 
 const SciencePage = () => {
   const [t] = useTranslation();
-  const [open1, setOpen1] = useState(false);
-  const [open2, setOpen2] = useState(false);
-  const [open3, setOpen3] = useState(false);
-  const [open4, setOpen4] = useState(false);
-  const [open5, setOpen5] = useState(false);
-  const [open6, setOpen6] = useState(false);
-  const [open7, setOpen7] = useState(false);
-  const [open8, setOpen8] = useState(false);
-  const [open9, setOpen9] = useState(false);
-  const [open10, setOpen10] = useState(false);
-  const [open11, setOpen11] = useState(false);
 
   return (
     <>
