@@ -5,16 +5,9 @@ import AppBar from '../../components/AppBar';
 
 import styles from './StrategyPage.module.css';
 
+import gradient from '../../imgs/gradient2.svg';
+
 const images = {
-  desktop: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fstrategic-objectives%2FstrategicObjectivesEN.svg?alt=media&token=defc9b43-79f4-4e7b-8050-b045397b893a',
-    // TODO: Add UK image
-    uk: ''
-  },
-  mobile: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fstrategic-objectives%2FstrategicObjectivesMobileEN.svg?alt=media&token=151b1fba-712e-4e80-bdb7-3b22e400a7d6',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fstrategic-objectives%2FstrategicObjectivesMobileUK.svg?alt=media&token=c3d2a110-ce3d-454d-8a37-c23690268b34'
-  },
   strategyIcon:
     'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fstrategic-objectives%2Ficon_strategy.svg?alt=media&token=892a6414-980c-4c57-881b-2ac1cdcdb2e1',
   icon1:
@@ -90,6 +83,9 @@ const StrategyPage = () => {
             </li>
           </ul>
         </section>
+        <div className={styles.gradient}>
+          <img src={gradient} alt="" />
+        </div>
       </Container>
     </>
   );

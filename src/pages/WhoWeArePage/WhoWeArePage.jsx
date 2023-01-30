@@ -11,7 +11,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 const images = {
   timeline: {
     mobile: {
-      uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineMobileEN.svg?alt=media&token=c5dd5923-052e-4e79-9f5c-b4ffa112cd38',
+      uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineMobileUK.svg?alt=media&token=a02030da-8f63-4c51-b8d0-573c55e34e34',
       en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineMobileEN.svg?alt=media&token=c5dd5923-052e-4e79-9f5c-b4ffa112cd38'
     },
     desktop: {
@@ -21,7 +21,7 @@ const images = {
   },
   students: {
     uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FstudentsUK.svg?alt=media&token=3e71ab67-d020-4476-8db9-7f3a456cd4c9',
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FstudentsEN.png?alt=media&token=3c9a35dd-14c4-4dcc-bc32-99ca1fd6e18c'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FstudentsEN.svg?alt=media&token=205c6ce8-e996-46fd-b497-710583502b52'
   },
   employees: {
     uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FemployeesUK.svg?alt=media&token=bbefb40d-7195-4bea-aeb4-2131a4555553',
@@ -51,12 +51,14 @@ const WhoWeArePage = () => {
           <div className={styles.videos}>
             <iframe
               src={'https://www.youtube.com/embed/H6DZyAM3t4A'}
+              style={{ borderRadius: '15px' }}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               title="Embedded youtube"
             />
             <iframe
               src={'https://www.youtube.com/embed/-OVKrbpkOtQ'}
+              style={{ borderRadius: '15px' }}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               title="Embedded youtube"
