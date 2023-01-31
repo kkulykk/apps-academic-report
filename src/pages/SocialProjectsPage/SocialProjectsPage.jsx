@@ -55,6 +55,10 @@ const images = {
   itInitiatives: {
     en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FitInitiativesEN.png?alt=media&token=00ebe12a-ab54-48ce-b25e-1ab39894c15a',
     uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FitInitiativesUK.png?alt=media&token=c25bf626-a45c-4b4c-bb7d-6f3a76792ed2'
+  },
+  justAnswerUkraine: {
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FJustAnswerUkraineEN.png?alt=media&token=524b2dfe-1883-4f5c-b43f-409e222bfe10',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FJustAnswerUkraineUK.png?alt=media&token=d3ab6a86-d1f3-4351-8636-59b743d96ddf'
   }
 };
 
@@ -72,6 +76,7 @@ const SocialProjectsPage = () => {
   const [open10, setOpen10] = useState(false);
   const [open11, setOpen11] = useState(false);
   const [open12, setOpen12] = useState(false);
+  const [open13, setOpen13] = useState(false);
 
   return (
     <>
@@ -540,6 +545,51 @@ const SocialProjectsPage = () => {
               <p className={styles.description}>
                 <Trans
                   i18nKey={'pages.socialProjects.itInitiativesDesc'}
+                  components={[
+                    <br />,
+                    <b />,
+                    <span
+                      className={styles.link}
+                      onClick={() => {
+                        window.open(
+                          'https://l.facebook.com/l.php?u=https%3A%2F%2Ft.me%2Fhelp_onroad_ua_bot%3Ffbclid%3DIwAR0coZr9eB8zV1_XUaE0K-gV5BuNAek164nfrA3Ty2_XgJEDylMO5LmF59Y&h=AT1id1h7bvry1PyLCINfw7JTNGPez6AbnfkSMDP593JrxWdLHE9Hk_k7iTcrOoh-BVd4kEYbRWYrf7RbbNBfEFfLsaNgIVW_bi_REJCPw4LCBw2OS21GDzpJkoA_v_FHUFl9&__tn__=-UK-R&c[0]=AT1Ri5AdqpqNhrzw5dhlfx3YN-r7Lm8MkX6TP66-ZX0b8XbPNXc1W0zy9MA5wvUZFgCyxIXyqegnQ9pAWvLH51AdUorVj15iJXR9tgCO10hVhT8NjPOewFC-WVw6M6kNU9GQjtr4hMX3xG75bqrw_8q0425pb8c0QUC5LMQra-UG4YU47giyhiIfnhpYSgGzlUIZo3XqpzBPbA',
+                          '_blank'
+                        );
+                      }}
+                    />,
+                    <span
+                      className={styles.link}
+                      onClick={() => {
+                        window.open('https://betha.in.ua/', '_blank');
+                      }}
+                    />
+                  ]}
+                />
+              </p>
+            ) : null}
+          </div>
+
+          <div className={styles.wrapper}>
+            <div className={styles.imgWrapper}>
+              <img src={getLanguageImage(images.justAnswerUkraine)} alt={t('pages.socialProjects.JustAnswerUkraine')} />
+              <button
+                className={styles.expandBtn}
+                type="button"
+                onClick={() => {
+                  setOpen13(!open13);
+                }}
+              >
+                {open13 ? (
+                  <span className="material-icons">keyboard_double_arrow_up</span>
+                ) : (
+                  <span className="material-icons">keyboard_double_arrow_down</span>
+                )}
+              </button>
+            </div>
+            {open13 ? (
+              <p className={styles.description}>
+                <Trans
+                  i18nKey={'pages.socialProjects.JustAnswerUkraineDesc'}
                   components={[
                     <br />,
                     <b />,

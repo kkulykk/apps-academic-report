@@ -12,8 +12,8 @@ const images = {
   alumni:
     'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Falumni%2Falumni.jpg?alt=media&token=31ae868e-fa32-4c38-bce6-e27e9f6650bc',
   furtherStudies: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Falumni%2FfurtherStudiesEN.png?alt=media&token=3a3785a8-59e4-4d43-b8e8-4592e618c356',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Falumni%2FfurtherStudiesUK.png?alt=media&token=7ca39d4c-b294-4eea-845d-832bb3c0a313'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Falumni%2FfurtherStudiesEN.svg?alt=media&token=6fe0930e-72dd-442c-a3c4-a2d6566c7857',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Falumni%2FfurtherStudiesUK.svg?alt=media&token=a510a1ea-7a97-4ca3-8199-6f488ef901e7'
   }
 };
 

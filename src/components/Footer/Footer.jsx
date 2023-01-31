@@ -13,6 +13,8 @@ import locationIcon from '../../imgs/footer/locationIcon.svg';
 import instLogo from '../../imgs/footer/instagramIcon.svg';
 import yotubeLogo from '../../imgs/footer/youtubeIcon.svg';
 import fbLogo from '../../imgs/footer/facebookIcon.svg';
+import linkedinLogo from '../../imgs/footer/linkedinIcon.svg';
+
 
 const Footer = () => {
   const [t] = useTranslation();
@@ -22,16 +24,20 @@ const Footer = () => {
         <div className={styles.footerContent}>
           <img src={ucuAndAppsLogo} alt="logo" />
           <nav className={styles.socialWrapper}>
-            <a className={styles.link} href="https://www.instagram.com/ucu_apps/">
-              <img src={instLogo} alt="logo" />
+            <a className={styles.link} href="https://www.instagram.com/ucu_apps/" target="_blank" rel="noreferrer">
+              <img src={instLogo} alt="Instagram logo" />
             </a>
 
-            <a className={styles.link} href="https://www.youtube.com/channel/UCAXm37jEuwO_HicFxSs7b0g">
-              <img src={yotubeLogo} alt="logo" />
+            <a className={styles.link} href="https://www.youtube.com/channel/UCAXm37jEuwO_HicFxSs7b0g" target="_blank" rel="noreferrer">
+              <img src={yotubeLogo} alt="YouTube logo" />
             </a>
 
-            <a className={styles.link} href="https://www.facebook.com/csatucu">
-              <img src={fbLogo} alt="logo" />
+            <a className={styles.link} href="https://www.facebook.com/csatucu" target="_blank" rel="noreferrer">
+              <img src={fbLogo} alt="Facebook logo" />
+            </a>
+
+            <a className={styles.link} href="https://www.linkedin.com/company/ucu-apps/" target="_blank" rel="noreferrer">
+              <img src={linkedinLogo} alt="Linkedin logo" />
             </a>
           </nav>
           <div className={styles.info}>

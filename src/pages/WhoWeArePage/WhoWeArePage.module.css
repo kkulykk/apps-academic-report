@@ -31,11 +31,6 @@
   font-size: 14px;
 }
 
-.text:first-of-type {
-  font-size: 15px;
-  font-weight: 700;
-}
-
 .list {
   padding-left: 70px;
 }
@@ -155,10 +150,6 @@
     font-size: 16px;
   }
 
-  .text:first-of-type {
-    font-size: 17px;
-  }
-
   .list {
     padding-left: 130px;
   }
@@ -177,10 +168,6 @@
 
   .text {
     font-size: 18px;
-  }
-
-  .text:first-of-type {
-    font-size: 19px;
   }
 
   .list {

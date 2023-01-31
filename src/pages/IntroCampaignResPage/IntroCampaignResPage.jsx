@@ -13,8 +13,8 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 const images = {
   bachelors: {
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fadmission-campaign%2FadmissionCampaignBachelorsUK.png?alt=media&token=5e8fc157-db88-4057-8660-6b30a71f1413',
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fadmission-campaign%2FadmissionCampaignBachelorsEN.png?alt=media&token=f1f45c7d-70d4-4ba9-97b4-daa699cb225d'
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fadmission-campaign%2FadmissionCampaignBachelorsUK.svg?alt=media&token=8e989023-beaa-41af-938f-3fd6eddca8ca',
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fadmission-campaign%2FadmissionCampaignBachelorsEN.svg?alt=media&token=53bba618-0fb3-40ef-b376-a0fdafa1ad87'
   },
   masters: {
     uk: '',
