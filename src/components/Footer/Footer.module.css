@@ -2,6 +2,16 @@
   padding: 20px 0 50px;
 }
 
+.footer a {
+  text-decoration: none;
+  color: grey;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .info {
   display: flex;
   gap: 25px;

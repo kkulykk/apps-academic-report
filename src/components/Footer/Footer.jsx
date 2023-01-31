@@ -15,7 +15,6 @@ import yotubeLogo from '../../imgs/footer/youtubeIcon.svg';
 import fbLogo from '../../imgs/footer/facebookIcon.svg';
 import linkedinLogo from '../../imgs/footer/linkedinIcon.svg';
 
-
 const Footer = () => {
   const [t] = useTranslation();
   return (
@@ -28,7 +27,12 @@ const Footer = () => {
               <img src={instLogo} alt="Instagram logo" />
             </a>
 
-            <a className={styles.link} href="https://www.youtube.com/channel/UCAXm37jEuwO_HicFxSs7b0g" target="_blank" rel="noreferrer">
+            <a
+              className={styles.link}
+              href="https://www.youtube.com/channel/UCAXm37jEuwO_HicFxSs7b0g"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={yotubeLogo} alt="YouTube logo" />
             </a>
 
@@ -36,7 +40,12 @@ const Footer = () => {
               <img src={fbLogo} alt="Facebook logo" />
             </a>
 
-            <a className={styles.link} href="https://www.linkedin.com/company/ucu-apps/" target="_blank" rel="noreferrer">
+            <a
+              className={styles.link}
+              href="https://www.linkedin.com/company/ucu-apps/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={linkedinLogo} alt="Linkedin logo" />
             </a>
           </nav>
@@ -49,6 +58,11 @@ const Footer = () => {
               <div className={styles.footerItem}>
                 <img className={styles.icon} src={locationIcon} alt="location icon" />
                 <p className={styles.text}>{t('footer.address')}</p>
+              </div>
+              <div className={styles.footerItem}>
+                <a href="https://apps-ucu-report.netlify.app/" target="_blank" rel="noreferrer">
+                  <p className={styles.text}>{t('footer.academicReport20202021')}</p>
+                </a>
               </div>
             </div>
             <div className={styles.location}>
