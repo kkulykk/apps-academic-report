@@ -14,8 +14,8 @@ const images = {
     en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fadmission-campaign%2FadmissionCampaignBachelorsEN.svg?alt=media&token=53bba618-0fb3-40ef-b376-a0fdafa1ad87'
   },
   masters: {
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fadmission-campaign%2FadmissionCampaignMastersUK.svg?alt=media&token=a4f0487e-b5b9-4e06-85b1-4dbb3fb2f8a0',
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fadmission-campaign%2FadmissionCampaignMastersEN.svg?alt=media&token=94a5975d-ad1f-4c51-94ac-9e6bd5423406'
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fadmission-campaign%2FadmissionCampaignMastersUK.svg?alt=media&token=e692074e-1ffe-433d-ac02-cf69745cc9b9',
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fadmission-campaign%2FadmissionCampaignMastersEN.svg?alt=media&token=df9f45a3-1724-478f-a735-6f87731ae540'
   }
 };
 
