@@ -54,6 +54,7 @@
 .introductionText {
   text-align: left;
   font-weight: normal;
+  white-space: pre-line;
   font-size: 18px;
   margin: 0;
 }
