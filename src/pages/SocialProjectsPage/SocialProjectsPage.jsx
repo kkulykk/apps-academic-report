@@ -9,56 +9,56 @@ import styles from './SocialProjectsPage.module.css';
 
 const images = {
   mykolaShuhai: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FmykolaShuhaiEN.png?alt=media&token=56a932ea-5c67-449d-a76b-8f638351516c',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FmykolaShuhaiUK.png?alt=media&token=1cbe22d3-5f64-496a-be49-6bb78d530dd3'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FmykolaShuhaiEN.png?alt=media&token=a6e217e2-89a7-4c47-89b6-bac6125b664f',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FmykolaShuhaiUK.png?alt=media&token=5a0c761b-6386-4d79-ad76-7422afc9816d'
   },
   allUkrainianSchool: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FallUkrainianSchoolEN.png?alt=media&token=8225fae6-9429-42d7-8434-eb034665ba6a',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FallUkrainianSchoolUK.png?alt=media&token=3d1407ee-adf4-493a-8b45-a7aacf50ea7d'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FallUkrainianSchoolEN.png?alt=media&token=c539495a-0481-411f-bb43-ba9bcfb3d7f2',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FallUkrainianSchoolUK.png?alt=media&token=2bc1fb23-78f5-49e2-a2de-ef5d246f1bfc'
   },
   artemDymydScholarship: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FartemDymydScholarshipEN.png?alt=media&token=a25f3271-fb4e-4107-97e6-2cce0bd32bf6',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FartemDymydScholarshipUK.png?alt=media&token=1129206f-90b4-4147-82d3-f81a2d601ae1'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FartemDymydScholarshipEN.png?alt=media&token=fbe864d0-60fe-4ade-9b2c-d0b0b172a7d2',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FartemDymydScholarshipUK.png?alt=media&token=ad96b3a5-4fcd-4f3e-98a2-33938d641f42'
   },
   dzyga: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FdzygaEN.png?alt=media&token=1efa85d1-cea5-459f-af55-1a8da5c3eb24',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FdzygaUK.png?alt=media&token=3726c739-1fe7-428f-bf67-30a4f704b925'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FdzygaEN.png?alt=media&token=5f1a57a1-2520-41fc-bd92-da5538c607a0',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FdzygaUK.png?alt=media&token=7e423cd4-fa56-4315-97da-b1770fb9da96'
   },
   informationPlatform: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FinformationPlatformEN.png?alt=media&token=b1c09519-64b2-49af-ac65-00df4b62262e',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FinformationPlatformUK.png?alt=media&token=7793af7f-7776-4890-b78c-0be9540838a9'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FinformationPlatformEN.png?alt=media&token=0abf3f89-611d-42eb-9382-06fe42990de5',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FinformationPlatformUK.png?alt=media&token=cff933d7-a6d3-42fd-bfc6-45e4f5f5e200'
   },
   naVarti: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FnaVartiEN.png?alt=media&token=75a91230-f3b9-46da-b963-d1de30db676b',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FnaVartiUK.png?alt=media&token=4438f369-8367-402e-9526-7dad5fa6470f'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FnaVartiEN.png?alt=media&token=5902ffb1-e1a6-4ea1-a853-a50b126f4cba',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FnaVartiUK.png?alt=media&token=19ef2598-3950-47fb-9f3d-98e6be08631a'
   },
   objectDetectionDataset: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FobjectDetectionDatasetEN.png?alt=media&token=722781b3-5466-4c9e-90da-c291a2451c18',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FobjectDetectionDatasetUK.png?alt=media&token=3d136191-7208-44b4-b8aa-1bc92778f574'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FobjectDetectionDatasetEN.png?alt=media&token=527f0472-1f41-47a6-91ed-0cb6ed7a6f7f',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FobjectDetectionDatasetUK.png?alt=media&token=a001492e-0a28-4169-8e9d-57c7ea8a7892'
   },
   saveArtUA: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FsaveArtUAEN.png?alt=media&token=d8b80e39-77d1-491b-a82e-4604d6afbdf7',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FsaveArtUAUK.png?alt=media&token=c950ecc1-d36b-431e-9c56-e49392dd1c39'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FsaveArtUAEN.png?alt=media&token=56f4e382-ad46-46f9-bb5c-45735c0f17fd',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FsaveArtUAUK.png?alt=media&token=0c267765-a04b-4f3e-91ab-5ad108b2a5ad'
   },
   thermalAccumulators: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FthermalAccumulatorsEN.png?alt=media&token=008ebe3c-ad25-4c73-a8ce-307e3ca70d23',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FthermalAccumulatorsUK.png?alt=media&token=ba8762f0-5689-465c-a750-46300b80eb53'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FthermalAccumulatorsEN.png?alt=media&token=9f06d0aa-f16c-4e8d-8d11-558da5fb5a99',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FthermalAccumulatorsUK.png?alt=media&token=e6bc1645-6145-452b-ad3d-26d55f1c095f'
   },
   volunteeringCenter: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FvolunteeringCenterEN.png?alt=media&token=83cc382c-d9b5-43b0-a531-7933ac436995',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FvolunteeringCenterUK.png?alt=media&token=70228a81-ecdc-4241-bece-82865695b2ed'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FvolunteeringCenterEN.png?alt=media&token=b10955fc-b05f-43f2-ad57-bdd022bd3a45',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FvolunteeringCenterUK.png?alt=media&token=49e0d4a4-be3b-465f-bbc9-a1c7e4563d68'
   },
   zbirNaMashynu: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FzbirNaMashynuEN.png?alt=media&token=bfbc9bf1-46b7-4467-b2bf-650df5f07c0d',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FzbirNaMashynuUK.png?alt=media&token=d79ba9b0-9b5a-4d6e-a4b4-f77342a1629b'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FzbirNaMashynuEN.png?alt=media&token=d41d5d40-d9b3-4c66-8416-76ccc8d2e55d',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FzbirNaMashynuUK.png?alt=media&token=34864859-244c-4272-8933-e4bd573b6a9d'
   },
   itInitiatives: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FitInitiativesEN.png?alt=media&token=00ebe12a-ab54-48ce-b25e-1ab39894c15a',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FitInitiativesUK.png?alt=media&token=c25bf626-a45c-4b4c-bb7d-6f3a76792ed2'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FitInitiativesEN.png?alt=media&token=19b51b91-5162-451d-b344-7e56d5d10cdc',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FitInitiativesUK.png?alt=media&token=8d2b04bd-2b93-4a79-a42d-0f1d792fd144'
   },
   justAnswerUkraine: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FJustAnswerUkraineEN.png?alt=media&token=524b2dfe-1883-4f5c-b43f-409e222bfe10',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FJustAnswerUkraineUK.png?alt=media&token=d3ab6a86-d1f3-4351-8636-59b743d96ddf'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FJustAnswerUkraineEN.png?alt=media&token=e86ec034-4bc3-4ca1-b82a-30f95ec5fd69',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fsocial-projects%2FJustAnswerUkraineUK.png?alt=media&token=48953940-e73c-4586-b656-f29d23f89214'
   }
 };
 

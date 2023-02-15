@@ -10,7 +10,7 @@ const images = {
   sponsoredResearch:
     'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fmain%2FsponsoredResearch.svg?alt=media&token=dd2e39a2-6165-4098-a31b-9641e7a9bd70',
   partners:
-    'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fmain%2Fpartners.svg?alt=media&token=cdcf7bb5-e117-45cc-8f9d-efa0c0ad12df'
+    'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fmain%2Fpartners.svg?alt=media&token=3b9f7e06-9ec5-46d2-be94-360d52e8c787'
 };
 
 const Partners = () => {

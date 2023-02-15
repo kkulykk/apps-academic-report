@@ -10,10 +10,10 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 const images = {
   alumni:
-    'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Falumni%2Falumni.jpg?alt=media&token=31ae868e-fa32-4c38-bce6-e27e9f6650bc',
+    'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Falumni%2Falumni.jpeg?alt=media&token=784863ee-9b68-467d-875a-e35e7d6c8966',
   furtherStudies: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Falumni%2FfurtherStudiesEN.svg?alt=media&token=6fe0930e-72dd-442c-a3c4-a2d6566c7857',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Falumni%2FfurtherStudiesUK.svg?alt=media&token=a510a1ea-7a97-4ca3-8199-6f488ef901e7'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Falumni%2FfurtherStudiesEN.svg?alt=media&token=738f81f7-ce91-47e6-aadc-0c24a750af57',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Falumni%2FfurtherStudiesUK.svg?alt=media&token=ec753cb6-e2ea-4915-9702-76b513cd9442'
   }
 };
 

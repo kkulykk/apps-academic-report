@@ -13,16 +13,16 @@ import gradient3 from '../../imgs/gradient3.svg';
 
 const images = {
   AndriyKhoma: {
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwar-stories%2FAndriyKhomaUK.png?alt=media&token=7596099b-af9b-47c7-a0cb-faa5d3c4c0f3',
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwar-stories%2FAndriyKhomaEN.png?alt=media&token=fcebb738-65a5-4395-9c14-3bdb1fd6df05'
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwar-stories%2FAndriyKhomaUK.png?alt=media&token=2c5aa993-3da9-4918-b2e3-7c85cfd0c052',
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwar-stories%2FAndriyKhomaEN.png?alt=media&token=810aaa39-c114-4bb5-be3d-2ab249aa2603'
   },
   YuriyOstapchuk: {
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwar-stories%2FYuriyOstapchukUK.png?alt=media&token=f1d6fddd-c86b-48d4-a9fe-7830f57f32dc',
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwar-stories%2FYuriyOstapchukEN.png?alt=media&token=93194acf-3b4d-49c8-98a1-4d80c61fa6cb'
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwar-stories%2FYuriyOstapchukUK.png?alt=media&token=3235924f-02a8-4226-a10d-ce930d563ef3',
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwar-stories%2FYuriyOstapchukEN.png?alt=media&token=193b8f17-9f1a-441a-84e7-4301787df07b'
   },
   AndriyRomanyuk: {
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwar-stories%2FAndriyRomanyukUK.png?alt=media&token=c3e4688c-bffb-448f-8892-72c6bc70cf24',
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwar-stories%2FAndriyRomanyukEN.png?alt=media&token=6544a0e9-afa3-4efb-b9c8-0648c1920c19'
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwar-stories%2FAndriyRomanyukUK.png?alt=media&token=a41cd84a-7417-4141-8343-1d22d9c45f68',
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwar-stories%2FAndriyRomanyukEN.png?alt=media&token=0fdfa584-b64e-4d01-9fee-8741a12cfafa'
   }
 };
 

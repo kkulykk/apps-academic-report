@@ -8,26 +8,26 @@ import styles from './SciencePage.module.css';
 
 const images = {
   rectorsAward: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FrectorsAwardEN.png?alt=media&token=2af82819-4f82-4d4a-b4de-74bb730b269a',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FrectorsAwardUK.png?alt=media&token=55db7ed8-b11c-4451-92ec-d8e94677b30a'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FrectorsAwardEN.png?alt=media&token=082fc934-9131-4428-8439-f8aa166bdff8',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FrectorsAwardUK.png?alt=media&token=40be631b-7f26-496a-870a-2d8b5051fc25'
   },
   phd: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FphdEN.png?alt=media&token=c167f0b4-aa13-484a-92cd-1e173a8985bb',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FphdUK.png?alt=media&token=6466ff6e-aab5-49bb-937c-2dc7887cb7c7'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FphdEN.png?alt=media&token=5b443050-9427-4198-b768-7a72f5951069',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FphdUK.png?alt=media&token=fa0a94e4-e37f-4fef-89ea-857847046f52'
   },
-  cvpr: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2Fcvpr.png?alt=media&token=9637f82f-d635-428a-9c09-dcc686ef23ef',
-  eccv: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2Feccv.png?alt=media&token=4618dde5-6ec4-47b5-82ba-9b6b561844fd',
+  cvpr: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2Fcvpr.png?alt=media&token=f22de7f8-f437-483f-8f63-b4c15e331077',
+  eccv: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2Feccv.png?alt=media&token=6c070c57-a668-4914-aa42-e635b4416bd6',
   iecsit:
-    'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2Fiecsit.png?alt=media&token=6e409dc5-5481-47c3-8a5c-625278cad638',
+    'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2Fiecsit.png?alt=media&token=64f4267f-785b-47ca-8135-eb5f82a0c9e4',
   contribuling:
-    'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2Fcontribuling.png?alt=media&token=cdd5980b-47ea-4230-b6d3-3c95788f12d4',
+    'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2Fcontribuling.png?alt=media&token=b506ba5f-e729-47d6-b1cf-73edfc7ace81',
   kyiv: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FkyivEN.png?alt=media&token=6522a727-315a-47f9-9b70-6e599a7921fe',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FkyivUK.png?alt=media&token=1708199e-2548-4307-bfa8-5fdfdcd45af8'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FkyivEN.png?alt=media&token=3cf457e3-8bd9-4897-9822-fa5c81b0833d',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FkyivUK.png?alt=media&token=2775229a-0115-4ffc-bf4c-d7cb1cd3e550'
   },
   nyu: {
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FnyuEN.png?alt=media&token=c5e2f550-42ef-416c-9a55-30c7545cd212',
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FnyuUK.png?alt=media&token=ce82e556-f62b-4124-a2fa-48e3059dc47d'
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FnyuEN.png?alt=media&token=382795e4-faac-4bcb-82c4-92f67146af23',
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FnyuUK.png?alt=media&token=aa36d724-0150-44bd-8d7c-b1477334e27c'
   },
   neuro: {
     en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fscience%2FneuroEN.png?alt=media&token=0c1f893a-bff3-4481-a293-d14b39e3257e',

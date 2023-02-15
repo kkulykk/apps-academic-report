@@ -12,8 +12,8 @@ import gradient from '../../imgs/gradient4.svg';
 
 
 const images = {
-  en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fnew-members%2FnewMembersEN.png?alt=media&token=1402510e-4ac0-436f-8031-8ec52e0848cc',
-  uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fnew-members%2FnewMembersUK.png?alt=media&token=38b20627-1853-429d-9bdd-15d2a6a38c04'
+  en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fnew-members%2FnewMembersEN.png?alt=media&token=a68c6f8b-0849-4656-86ce-2d99b4be327c',
+  uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fnew-members%2FnewMembersUK.png?alt=media&token=c37d2dc2-341e-4829-a040-d086a04316d5'
 };
 
 const StructureChangesPage = () => {

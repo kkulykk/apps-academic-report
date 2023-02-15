@@ -11,21 +11,21 @@ import 'react-medium-image-zoom/dist/styles.css';
 const images = {
   timeline: {
     mobile: {
-      uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineMobileUK.svg?alt=media&token=a02030da-8f63-4c51-b8d0-573c55e34e34',
-      en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineMobileEN.svg?alt=media&token=c5dd5923-052e-4e79-9f5c-b4ffa112cd38'
+      uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineMobileUK.svg?alt=media&token=c2b08734-d362-46ef-a9be-3d46472a2e9d',
+      en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineMobileEN.svg?alt=media&token=e63cf7dc-6239-45f9-a1ed-2cae34b47961'
     },
     desktop: {
-      en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineDesktopEN.svg?alt=media&token=04bef019-6a37-4121-9417-59716cc5e550',
-      uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineDesktopUK.svg?alt=media&token=a957ed2f-65a6-4e69-8f27-8fef984f13de'
+      en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineDesktopEN.svg?alt=media&token=4cb034df-e3a2-443e-8d5b-317155242166',
+      uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FtimelineDesktopUK.svg?alt=media&token=6bf6ef9d-115b-4b7f-a92f-559331c06d1b'
     }
   },
   students: {
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FstudentsUK.svg?alt=media&token=3e71ab67-d020-4476-8db9-7f3a456cd4c9',
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FstudentsEN.svg?alt=media&token=205c6ce8-e996-46fd-b497-710583502b52'
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FstudentsUK.svg?alt=media&token=db5875f5-4056-44de-909c-22de184b2e95',
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FstudentsEN.svg?alt=media&token=7248573a-7578-4db2-9611-6b26417511d9'
   },
   employees: {
-    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FemployeesUK.svg?alt=media&token=bbefb40d-7195-4bea-aeb4-2131a4555553',
-    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FemployeesEN.svg?alt=media&token=f57ad27d-04a3-485f-8da5-0b7be7a6b857'
+    uk: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FemployeesUK.svg?alt=media&token=3ebf66e6-9858-45cd-869b-174a58cf8513',
+    en: 'https://firebasestorage.googleapis.com/v0/b/academic-report.appspot.com/o/images%2Fwho-we-are%2FemployeesEN.svg?alt=media&token=94df6afc-6f5e-4a49-8dfd-139e82e881f8'
   }
 };
 
